@@ -12,13 +12,13 @@ import pandas as pd
 # connect our server, and 'python' is name of dataset 
 # host is ip address, 
 # 'text_mining' is user, 
-# '610411102' is password
+# if your wnat password, please email to me
 #---------------------------------------------------------------
 conn = ( pymysql.connect(host = '114.34.138.146',
                          port = 3306,
                          user='text_mining',
-                         password='610411102',
-                         database='python',  
+                         password='password',
+                         database='origin_data',  
                          charset="utf8") )     
                          
 #---------------------------------------------------------------
@@ -61,12 +61,11 @@ conn.close()
 #---------------------------------------------------------------                         
 
 # you can input data, then how take data from SQL server?
-
 conn = ( pymysql.connect(host = '114.34.138.146',
                          port = 3306,
                          user='text_mining',
-                         password='610411102',
-                         database='python',  
+                         password='password',
+                         database='origin_data',  
                          charset="utf8") )     
                          
 cursor = conn.cursor()                         
