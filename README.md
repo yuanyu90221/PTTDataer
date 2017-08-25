@@ -9,11 +9,11 @@
 附件提供 python 連接 SQL server 教學，有中英註解，如果不清楚再 email 詢問我。
 <br><br>
 
-由於這是我個人架設的平台，資源有限，請不要進行惡意攻擊。以下我提供一個單純瀏覽的帳密，如果想要分享自己的 data ，請 email 給我，我會提供另一組帳密。另外同一時間使用人數過多，速度上可能會降低，請多包涵。
-e-mail : samlin266118@gmail.com 
-連接網址為 : http://114.34.138.146/phpmyadmin/index.php
-IP adress : 114.34.138.146
-user : guest 
+由於這是我個人架設的平台，資源有限，請不要進行惡意攻擊。以下我提供一個單純瀏覽的帳密，如果想要分享自己的 data ，請 email 給我，我會提供另一組帳密。另外同一時間使用人數過多，速度上可能會降低，請多包涵。<br><br>
+e-mail : samlin266118@gmail.com <br>
+連接網址為 : http://114.34.138.146/phpmyadmin/index.php <br>
+IP adress : 114.34.138.146<br>
+user : guest <br>
 password : 123
 
 <br><br>
