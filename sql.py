@@ -42,14 +42,14 @@ sql_string = (  'create table article_date( '+
                 'id text(100),'+
                 'date text(100) )' 
                 )
-# 將以上 SQL 指令丟到 server 去初始化你的 data 
+# 將以上 SQL 指令丟到 MYSQL 去初始化你的 data 
 conn.cursor().execute( sql_string )
 # 如果出現以下 error, 代表名稱重複
 # if error : (1050, "Table 'article_date' already exists")
 # that means you need change your data name
 #---------------------------------------------------------------                         
-# update data to SQL server
-# 將資料 update 到 server, 以上面的 data 為例
+# update data to MYSQL
+# 將資料 update 到 MYSQL, 以上面的 data 為例
 # id   date
 # 1    2017-03-01
 # 2    2017-03-02
@@ -65,19 +65,19 @@ for i in range(1,4,1):
                                 ' values(%s,%s)',
                                 ( id,date ) ) )
 
-# update data to SQL server
+# update data to MYSQL
 conn.commit()
 # this command is stop connect, you must run it
 # 關閉 connect, 否則將無法結束上傳的動作
 conn.close()
 # 現在, 你的 data 已經成功上傳到 server 上, 
 # 可以開 http://114.34.138.146/phpmyadmin/index.php 進行查看
-# now, your data have been updated to article_date in SQL server
+# now, your data have been updated to article_date in MYSQL
 #---------------------------------------------------------------                         
 #---------------------------------------------------------------                         
 #---------------------------------------------------------------                         
 # 在以上指令後, 你已經會上傳 data, 那要如何下載 data 呢?
-# you can input data, then how take data from SQL server?
+# you can input data, then how take data from MYSQL?
 conn = ( pymysql.connect(host = '114.34.138.146',
                          port = 3306,
                          user='text_mining',
@@ -93,7 +93,7 @@ data = cursor.fetchall()
 # close connect
 conn.close()
 #---------------------------------------------------------------                         
-# 從 server 抓下來的型態為 tuple, 不利於分析, 
+# 從 MYSQL 抓下來的型態為 tuple, 不利於分析, 
 # 一般是使用 dataframe, 因此進行轉換
 # type of data is tuple, we can change to dataframe
 print( type( data ) )
