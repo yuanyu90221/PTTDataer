@@ -22,9 +22,9 @@ password : 123
 <!--匯出請選擇 "test" 樣板，將會匯出所有 data ， csv 檔， big 5 編碼 -->
 
 
-已爬data<br><br>
+已爬data，目前約 10 萬筆，持續更新中<br><br>
 
-|SQL name|中文名|筆數|
+|SQL name|中文名|DATA 筆數|
 |--------|-----|----|
 |appledaily|蘋果日報|5513|
 |cw_magazine|天下雜誌|41547|
