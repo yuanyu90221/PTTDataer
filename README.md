@@ -23,19 +23,21 @@ password : 123
 <!--匯出請選擇 "test" 樣板，將會匯出所有 data ， csv 檔， big 5 編碼 -->
 
 
-## 已爬 data，目前超過 10 萬筆，持續更新中<br><br>
+## 已爬 data，目前超過 20 萬筆，持續更新中<br><br>
 
 |SQL name|中文名|DATA 筆數|
 |--------|-----|----|
-|appledaily|蘋果日報|5513|
-|cw_magazine|天下雜誌|41547|
-|ptt_HomeTeach|PTT 家教版|5195|
-|ptt_job|PTT 工作版|5174|
-|ptt_Oversea_Job|PTT 海外工作版|5639|
-|ptt_part_time|PTT part time 版|3865|
-|ptt_Soft_Job|PTT 軟體工作版|23155|
-|ptt_TaiwanJobs|PTT 台灣工作版|1835|
-|ptt_Tech_Job|PTT 科技工作版|19305|
+|appledaily|蘋果日報|8000|
+|cw_magazine|天下雜誌|40000|
+|ptt_HomeTeach|PTT 家教版|27000|
+|ptt_job|PTT 工作版|6000|
+|ptt_movie|PTT 電影|19000|
+|ptt_Oversea_Job|PTT 海外工作版|8000|
+|ptt_part_time|PTT part time 版|50000|
+|ptt_Soft_Job|PTT 軟體工作版|20000|
+|ptt_Stock|PTT 股票版|8000|
+|ptt_TaiwanJobs|PTT 台灣工作版|5000|
+|ptt_Tech_Job|PTT 科技工作版|20000|
 
 
 
