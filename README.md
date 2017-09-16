@@ -25,22 +25,22 @@ password : 123
 
 ##  目前已爬超過 60 萬筆 data ( 6GB )，持續更新中<br><br>
 
-|SQL name|中文名|DATA 筆數|
-|--------|-----|----|
-|appledaily|蘋果日報|10000|
-|cw_magazine|天下雜誌|40000|
-|ptt_e_shopping|PTT 網路購物版|0|
-|ptt_HomeTeach|PTT 家教版|27000|
-|ptt_Japan_Travel|PTT 日本旅遊版|80000|
-|ptt_job|PTT 工作版|7000|
-|ptt_movie|PTT 電影|111000|
-|ptt_Oversea_Job|PTT 海外工作版|10000|
-|ptt_part_time|PTT part time 版|130000|
-|ptt_Soft_Job|PTT 軟體工作版|20000|
-|ptt_Stock|PTT 股票版|68000|
-|ptt_TaiwanJobs|PTT 台灣工作版|6000|
-|ptt_Tech_Job|PTT 科技工作版|50000|
-|ptt_WomenTalk|PTT 女性聊天|69000|
+|SQL name|中文名|DATA 筆數|other|
+|--------|-----|----|-|
+|appledaily|蘋果日報|10000|每日更新|
+|cw_magazine|天下雜誌|40000|每日更新|
+|ptt_e_shopping|PTT 網路購物版|0|爬蟲中|
+|ptt_HomeTeach|PTT 家教版|27000|每日更新|
+|ptt_Japan_Travel|PTT 日本旅遊版|80000|每日更新|
+|ptt_job|PTT 工作版|7000|每日更新|每日更新|
+|ptt_movie|PTT 電影|111000|每日更新|
+|ptt_Oversea_Job|PTT 海外工作版|10000|每日更新|
+|ptt_part_time|PTT part time 版|130000|每日更新|
+|ptt_Soft_Job|PTT 軟體工作版|20000|每日更新|
+|ptt_Stock|PTT 股票版|68000|爬蟲中|
+|ptt_TaiwanJobs|PTT 台灣工作版|6000|每日更新|
+|ptt_Tech_Job|PTT 科技工作版|50000|每日更新|
+|ptt_WomenTalk|PTT 女性聊天|69000|爬蟲中|
 
 
 
