@@ -27,20 +27,27 @@ password : 123
 
 |SQL name|中文名|DATA 筆數|other|
 |--------|-----|----|-|
-|appledaily|蘋果日報|10000|每日更新|
+|appledaily|蘋果日報|15000|每日更新|
 |cw_magazine|天下雜誌|40000|每日更新|
-|ptt_e_shopping|PTT 網路購物版|0|爬蟲中|
+|ptt_car|PTT 汽車版|150|爬蟲中|
+|ptt_e_shopping|PTT 網路購物版|50000|爬蟲中|
+|ptt_Finance|PTT 金融業版|80|爬蟲中|
+|ptt_HardwareSale|PTT 硬體買賣版|166|爬蟲中|
 |ptt_HomeTeach|PTT 家教版|27000|每日更新|
-|ptt_Japan_Travel|PTT 日本旅遊版|80000|每日更新|
-|ptt_job|PTT 工作版|7000|每日更新|每日更新|
+|ptt_Japan_Travel|PTT 日本旅遊版|100000|爬蟲中|
+|ptt_job|PTT 工作版|7000|每日更新|
+|ptt_Lifeismoney|PTT 省錢版|3000|爬蟲中|
+|ptt_MacShop|PTT apple產品買賣版|15000|爬蟲中|
 |ptt_movie|PTT 電影|111000|每日更新|
 |ptt_Oversea_Job|PTT 海外工作版|10000|每日更新|
 |ptt_part_time|PTT part time 版|130000|每日更新|
+|ptt_prozac|PTT 憂鬱版|8000|爬蟲中|
 |ptt_Soft_Job|PTT 軟體工作版|20000|每日更新|
 |ptt_Stock|PTT 股票版|68000|爬蟲中|
 |ptt_TaiwanJobs|PTT 台灣工作版|6000|每日更新|
 |ptt_Tech_Job|PTT 科技工作版|50000|每日更新|
-|ptt_WomenTalk|PTT 女性聊天|69000|爬蟲中|
+|ptt_toberich|PTT 創業版|80|爬蟲中|
+|ptt_WomenTalk|PTT 女性聊天|100000|爬蟲中|
 
 
 
