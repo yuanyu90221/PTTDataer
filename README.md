@@ -5,10 +5,10 @@
 <!--資料科學家是當今最紅的職業，根據 CareerCast.com 網站，2016 best job is data scientist。
 問題是，要如何成為資料科學家？資料取得不易，沒資料幾乎不可能成為資料科學家，，，，，，，，， -->
 
-
-附件 sql.py 提供 python 連接 MYSQL 教學，有中英註解，如果不清楚再 email 詢問我。
+## 附件
+1. sql.py 提供 python 連接 MYSQL 教學，有中英註解，如果不清楚再 email 詢問我。
 <br><br>
-附件 craw_ptt.py 提供爬取 PTT 文章，並且上傳到 MYSQL，不過內文中並沒有給密碼，可能會有 ERROR，需要密碼請寄信給我。
+2. craw_ptt.py 提供爬取 PTT 文章，並且上傳到 MYSQL，不過內文中並沒有給密碼，可能會有 ERROR，需要密碼請寄信給我。
 <br><br>
 
 以下我提供一個單純瀏覽下載的帳密，如果想要分享自己的 data ，請 email 給我，我會提供另一組帳密。<br>
