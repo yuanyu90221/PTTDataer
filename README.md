@@ -8,7 +8,7 @@
 ## 附件
 1. sql.py 提供 python 連接 MYSQL 教學，有中英註解，如果不清楚再 email 詢問我。
 <br><br>
-2. craw_ptt.py 提供爬取 PTT 文章，並且上傳到 MYSQL，不過內文中並沒有給密碼，可能會有 ERROR，需要密碼請寄信給我。
+2. craw_ptt.py 提供爬取 PTT 文章，並且上傳到 MYSQL code，附上中文註解，不過 code 中並沒有設定密碼，會有 ERROR，需要密碼請寄信給我。
 <br><br>
 
 以下我提供一個單純瀏覽下載的帳密，如果想要分享自己的 data ，請 email 給我，我會提供另一組帳密。<br>
