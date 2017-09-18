@@ -61,7 +61,7 @@ def craw_ptt_data_fun(article_url,temp,i,index_url,sql_name,max_date_time,bo="hi
     title = temp[i].find('a').get_text()# 抓文章 title
     print(i,title)        
     # author_ip
-    # 抓發文者ip  r"[[0-9]*\.[0-9]*\.[0-9]*\.[0-9]]*" 是正規化擷取文字
+    # 抓發文者ip  r"[[0-9]*\.[0-9]*\.[0-9]*\.[0-9]]*" 是正規化表示法
     author_ip = soup2.find(string = re.compile(r"[[0-9]*\.[0-9]*\.[0-9]*\.[0-9]]*"))
     if( str( type(author_ip) ) == "<class 'NoneType'>" ):
         return 0
@@ -213,7 +213,7 @@ def date_to_numeric(date):
         return 0
     if( re.search('※',date) ):
         #print(date)
-        # r"[0-9]*/[0-9]*/[0-9]* [[0-9]*:[0-9]*:[0-9]*]*" 為正規化擷取文字
+        # r"[0-9]*/[0-9]*/[0-9]* [[0-9]*:[0-9]*:[0-9]*]*" 為正規化表示法
         date = str( re.findall( r"[0-9]*/[0-9]*/[0-9]* [[0-9]*:[0-9]*:[0-9]*]*" , date ) )        
         date = date.replace("['",'')
         date = date.replace("']",'')
