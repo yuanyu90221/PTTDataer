@@ -133,7 +133,7 @@ def main_craw_ptt(i,ptt_class_name,sql_name,bo):
     res = requests.get(index_url,verify = True) # 讀取 html 原始碼
     soup = BeautifulSoup(res.text, "lxml")# html轉為漂亮   幫助觀察原始碼 
     
-    temp = soup.find_all("",{'class':'r-ent'})
+    temp = soup.find_all("",{'class':'r-ent'})# 抓取文章網址的 html 格式, 網址在 class=r-ent 底下
     
     for i in range( len( temp ) ): # i=12 len( temp )
         #print(i)
