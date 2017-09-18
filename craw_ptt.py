@@ -143,15 +143,15 @@ def main_craw_ptt(i,ptt_class_name,sql_name,bo):
         elif( str( temp2 ) != 'None' ):# 非空才執行爬蟲
             #print(i)
             article_url = temp[i].find('a')['href']# 抓文章網址
-            article_url = index_name+article_url# 與 index 合併
+            article_url = index_name+article_url# 由於文章網址非正規，因此與 index 合併
             title = temp[i].find('a').get_text()# 抓 title
             # article_url = 'https://www.ptt.cc/bbs/Soft_Job/M.1503652456.A.526.html'
-            response = requests.session().get( article_url )#response, 網站狀態, 200代表成功
-            if( response.status_code == 404 ):
+            response = requests.session().get( article_url )#response, 網站狀態
+            if( response.status_code == 404 ):# 404 代表錯誤
                 print(404)
             elif( re.search('[公告]',title) ):# 不抓公告
                 print('[公告]')
-            elif( response.status_code == 200  ):# 200才抓文章
+            elif( response.status_code == 200  ):# 200代表網站狀態成功
                 if(bo == 'new'):# 更新data, 每日抓新文章, 
                     # max date time 比對, 小於sql中的 max time, 代表是舊文章, 不抓
                     date_time = catch_ptt_history_date_time(ptt_class_name,sql_name)
@@ -162,7 +162,9 @@ def main_craw_ptt(i,ptt_class_name,sql_name,bo):
         else:
             print('other')
 #---------------------------------------------------------------------------------  
-# 修正爬取 data, 由於可能在抓到目錄 index=100 時, 第5篇時出現error, 則由第6篇重新抓取
+# 修正爬取 data
+# 因為我是由目錄一頁一頁抓取, 如果停在 index = 100, 則下次會從 99 開始, 因此 100 目錄下會抓取不完全
+# ex: 在抓到目錄 index=100 時, 第5篇時出現error, 則由 index = 100的第6篇重新抓取
 def fix_data(i,ptt_class_name,sql_name,bo,j):
     #ptt_class_name = 'Soft_Job'
     index_name = 'http://www.ptt.cc'
@@ -266,7 +268,7 @@ def catch_ptt_history_index(ptt_class_name,sql_name):
     
     return index
 #---------------------------------------------------------------------------------  
-# 抓 SQL 中 data 的時間, 新data時間不能小於 SQL 中 max data time
+# 抓 SQL 中 data 的時間, 新data時間不能小於 SQL 中 max data time, 小於代表舊文章
 def catch_ptt_history_date_time(ptt_class_name,sql_name):
     conn = ( pymysql.connect(host = '114.34.138.146',
                              port = 3306,
@@ -292,7 +294,7 @@ def catch_ptt_history_date_time(ptt_class_name,sql_name):
     
     return date_time  
 #---------------------------------------------------------------------------------            
-# 抓最近目錄的 index, index 有上一頁的連結, 由此連結去抓最近的 index
+# 抓最新目錄的 index, index 有上一頁的連結, 由此連結去抓最新的 index
 def craw_last_index(ptt_class_name):   
     #ptt_class_name = 'Soft_Job'
     index_url = 'https://www.ptt.cc/bbs/' + ptt_class_name + '/index.html'
@@ -306,7 +308,7 @@ def craw_last_index(ptt_class_name):
     
     return last_index
 #--------------------------------------------------------------------------------- 
-# 使用 ubuntu - crontab-e, 設定排程, 每日自動抓最新 data 
+# 使用 ubuntu cmd : crontab-e, 設定排程, 每日自動抓最新 data 
 def auto_craw_new_ptt_data(amount,ptt_class_name,sql_name):    
     #ptt_class_name = 'Soft_Job'
     last_index = craw_last_index(ptt_class_name)    
@@ -320,7 +322,7 @@ def auto_craw_new_ptt_data(amount,ptt_class_name,sql_name):
         main_craw_ptt(i,ptt_class_name,sql_name,bo='new')
     
 #---------------------------------------------------------------------------------
-# 使用 ubuntu - crontab-e, 設定排程, 每小時自動抓歷史 data,
+# 使用 ubuntu cmd :  crontab-e, 設定排程, 每小時自動抓歷史 data,
 def auto_craw_history_ptt_data(amount,ptt_class_name,sql_name):
 
     #amount = 10
@@ -372,7 +374,8 @@ for i in range(10):
 	# 由於長時間連線可能造成連接問題, 因此給予 sleep
     time.sleep(60*10)
 #------------------------------------------------------------------------
-# 建立文件, 紀錄index進度, 每小時成功建立文件, 也代表程式沒有 error
+# 建立文件, 紀錄index進度, 每小時成功建立文件, 也代表程式沒有 error, 
+# 如果某一小時漏掉該文件, 代表出現 error, 基本上經過我多次 debug, 不會出現 error
 test=[]
 test.append(1)
 test = {'test':test}
