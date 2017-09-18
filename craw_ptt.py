@@ -61,7 +61,7 @@ def craw_ptt_data_fun(article_url,temp,i,index_url,sql_name,max_date_time,bo="hi
     title = temp[i].find('a').get_text()# 抓文章 title
     print(i,title)        
     # author_ip
-    # 抓發文者ip
+    # 抓發文者ip  r"[[0-9]*\.[0-9]*\.[0-9]*\.[0-9]]*" 是正規化擷取文字
     author_ip = soup2.find(string = re.compile(r"[[0-9]*\.[0-9]*\.[0-9]*\.[0-9]]*"))
     if( str( type(author_ip) ) == "<class 'NoneType'>" ):
         return 0
