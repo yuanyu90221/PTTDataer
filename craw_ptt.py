@@ -120,7 +120,7 @@ def craw_ptt_data_fun(article_url,temp,i,index_url,sql_name,max_date_time,bo="hi
     cursor.close()# 關閉
     conn.close()  # 關閉
 #---------------------------------------------------------------------------------    
-# 抓 ptt 目錄, 由目錄去抓 ptt 文章網址, 利用網址進行 craw_ptt_data_fun , 抓取data
+# 抓 ptt 目錄, 由目錄去抓 ptt 文章網址, 抓到文章網址後, 利用該網址進行 craw_ptt_data_fun , 抓取data
 # 注意, 八掛版會遇到 18 禁, 需要進行其他處理, 大部分的板沒有 18 禁
 def main_craw_ptt(i,ptt_class_name,sql_name,bo):
     #ptt_class_name = 'Soft_Job'
