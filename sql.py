@@ -11,7 +11,7 @@ import pandas as pd
 #---------------------------------------------------------------
 # 連接 server, host 是 ip 位置, 
 # 'text_mining' 是帳號, 密碼部分請 email 詢問我
-# connect our server, and 'python' is name of dataset 
+# connect our server, and 'origin_data' is name of dataset 
 # host is ip address, 
 # 'text_mining' is user, 
 # if your wnat password, please email to me
