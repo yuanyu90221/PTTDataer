@@ -25,21 +25,25 @@ password : 123
 <!--匯出請選擇 "test" 樣板，將會匯出所有 data ， csv 檔， big 5 編碼 -->
 
 
-##  目前已爬超過 100 萬筆 data ( 10GB )，持續更新中<br><br>
+##  目前已爬超過 130 萬筆 data ( 10GB )，持續更新中<br><br>
 
 |SQL name|中文名|DATA 筆數|other|
 |--------|-----|----|-|
 |appledaily|蘋果日報|15000|每日更新|
 |cw_magazine|天下雜誌|40000|每日更新|
-|ptt_car|PTT 汽車版|150|爬蟲中|
-|ptt_e_shopping|PTT 網路購物版|50000|爬蟲中|
-|ptt_Finance|PTT 金融業版|80|爬蟲中|
-|ptt_HardwareSale|PTT 硬體買賣版|166|爬蟲中|
+|ptt_car|PTT 汽車版|73000|爬蟲中|
+|ptt_e_shopping|PTT 網路購物版|71000|爬蟲中|
+|ptt_Finance|PTT 金融業版|18000|爬蟲中|
+|ptt_Food|PTT 食物版|21000|每日更新|
+|ptt_happy|PTT 開心版|27000|每日更新|
+|ptt_HardwareSale|PTT 硬體買賣版|80000|爬蟲中|
+|ptt_Hate|PTT 黑特版|76000|每日更新|
 |ptt_HomeTeach|PTT 家教版|27000|每日更新|
 |ptt_Japan_Travel|PTT 日本旅遊版|100000|爬蟲中|
 |ptt_job|PTT 工作版|7000|每日更新|
-|ptt_Lifeismoney|PTT 省錢版|3000|爬蟲中|
-|ptt_MacShop|PTT apple產品買賣版|15000|爬蟲中|
+|ptt_JOB_Hunting|PTT 工作求職版|20000|每日更新|
+|ptt_Lifeismoney|PTT 省錢版|37000|爬蟲中|
+|ptt_MacShop|PTT apple產品買賣版|140000|爬蟲中|
 |ptt_movie|PTT 電影|111000|每日更新|
 |ptt_Oversea_Job|PTT 海外工作版|10000|每日更新|
 |ptt_part_time|PTT part time 版|130000|每日更新|
