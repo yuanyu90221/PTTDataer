@@ -52,7 +52,7 @@ password : 123
 |ptt_Stock|PTT 股票版|68000|爬蟲中|
 |ptt_TaiwanJobs|PTT 台灣工作版|6000|每日更新|
 |ptt_Tech_Job|PTT 科技工作版|50000|每日更新|
-|ptt_toberich|PTT 創業版|80|爬蟲中|
+|ptt_toberich|PTT 創業版|24000|爬蟲中|
 |ptt_WomenTalk|PTT 女性聊天|100000|爬蟲中|
 
 
