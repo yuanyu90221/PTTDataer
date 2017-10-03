@@ -19,8 +19,8 @@
 e-mail : samlin266118@gmail.com <br>
 連接網址為 : https://linsam.servehttp.com/phpmyadmin/ <br>
 user : guest <br>
-password : 123
-
+password : 123 <br>
+PS: 在爬取文章部分，可能出現小錯誤，因此其中一個欄位 origin_article ，提供最原始的 data，如果有錯誤可額外進行提取，基本上99%的資料都是正確的。
 <br>
 歡迎有同樣熱情的朋友協助我，共同合作，由於我是資料分析( 數學系 )出身，並沒有 PHP、SQL 等專業知識，目前只是個雛形，沒有前端，後端部分也只是剛開始，因此需要這方面的夥伴，歡迎 email 討論。未來朝 open 的方向進行，目前資源不足，請多包涵。
 <br><br>
