@@ -11,8 +11,7 @@ import datetime
 
 def input_data_from_SQL(data_name = 'ptt_job'):
     #---------------------------------------------------------------                         
-    # 在以上指令後, 你已經會上傳 data, 那要如何下載 data 呢?
-    # you can input data, then how take data from MYSQL?
+    # 連接 MySQL
     conn = ( pymysql.connect(host = 'linsam.servehttp.com',
                              port = 3306,
                              user='guest',
@@ -21,10 +20,6 @@ def input_data_from_SQL(data_name = 'ptt_job'):
                              charset="utf8") )     
                              
     cursor = conn.cursor()                         
-    # input data from article_date
-    # ptt_happy
-    # ptt_prozac
-    # ptt_Hate
     cursor.execute('select * from ' + data_name)
     # 抓所有的 data
     sql_data = cursor.fetchall()
