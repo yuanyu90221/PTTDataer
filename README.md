@@ -37,8 +37,8 @@ password : 123 <br>
 
 |SQL name|中文名|DATA 筆數|other|
 |--------|-----|----|-|
-|appledaily|蘋果日報|15000|每日更新|
-|cw_magazine|天下雜誌|40000|每日更新|
+|appledaily|蘋果日報|15000|牽扯到著作權問題，已刪除|
+|cw_magazine|天下雜誌|40000|牽扯到著作權問題，已刪除|
 |ptt_car|PTT 汽車版|73000|爬蟲中|
 |ptt_e_shopping|PTT 網路購物版|71000|爬蟲中|
 |ptt_Finance|PTT 金融業版|18000|爬蟲中|
