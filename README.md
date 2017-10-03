@@ -7,7 +7,7 @@
 
 ## 2017/10/4 新增 upload_clean_data.py 
 新增可上傳 data 的帳號，提供各位進行 data clean 後，一個上傳/分享的管道，這樣就不需要每個人都進行 data clean，合作的概念。
-程式中提供一個 建立 data file 和上傳 data 的範例。
+程式中提供一個 建立 data file 和上傳 data 的範例。<br><br>
 由於人數過多，速度上偏慢，我目前是光世代100/40，近期會升級成100/100，希望在速度上會有所改善。
 
 ## 2017/10/3 新增 py_connect_sql_example.py ( 公開密碼 )
