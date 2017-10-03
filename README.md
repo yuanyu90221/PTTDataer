@@ -10,14 +10,17 @@
 ## 2017/10/4 新增 upload_clean_data.py 
 新增可上傳 data 的帳號，提供各位進行 data clean 後，一個上傳/分享的管道，這樣就不需要每個人都進行 data clean，合作的概念。
 程式中提供一個 建立 data file 和上傳 data 的範例。
+## 2017/10/4 由於人數過多，我目前是用光世代100/40，近期會升級成100/100，希望在速度上會有所改善。
+
+
 
 #### 附件
 1. sql.py 提供 python 連接 MYSQL 教學，有中英註解，如果不清楚再 email 詢問我。
 <br><br>
-2. craw_ptt.py 提供爬取 PTT 文章，並且上傳到 MYSQL code，附上中文註解，不過 code 中並沒有設定密碼，會有 ERROR，需要密碼請寄信給我。
+2. craw_ptt.py 提供爬取 PTT 文章，並且上傳到 MYSQL code，附上中文註解，不過 code 中並沒有設定密碼，會有 ERROR，帳號密碼請參考 py_connect_sql_example.py。
 <br><br>
 
-以下提供單純瀏覽下載的帳密，如想分享自己 data 的朋友，請 email 給我，我會提供另一組帳密。<br>
+
 由於這是我個人架設的平台，資源有限，請不要進行惡意攻擊。另外同一時間使用人數過多，速度上可能會降低，請多包涵。<br><br>
 e-mail : samlin266118@gmail.com <br>
 連接網址為 : https://linsam.servehttp.com/phpmyadmin/ <br>
