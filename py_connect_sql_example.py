@@ -75,7 +75,8 @@ def input_data_from_SQL(data_name = 'ptt_job'):
     return data
 #--------------------------------------------------------------- 
 #---------------------------------------------------------
-
+# 如想取得其他 data，可更改 data_name，data_name 可以參考
+# https://github.com/f496328mm/Crawler_and_Share 下的 SQL name
 job_data = input_data_from_SQL(data_name = 'ptt_job')
 
 
