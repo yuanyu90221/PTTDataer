@@ -1,5 +1,5 @@
 
-# history update 歷史修正紀錄
+# history update 歷史更新紀錄
 
 ## 2017/10/5 修正
 1. 根據 [issues 1](https://github.com/f496328mm/Crawler_and_Share/issues/1)，修正 craw_ptt.py。
