@@ -7,6 +7,7 @@
 ## 2017/10/5 修正
 1. 根據 [issues 1](https://github.com/f496328mm/Crawler_and_Share/issues/1)，修正 craw_ptt.py。
 2. 在 guest 權限上，加入 guest_dataset 資料庫權限，可供上傳/下載/建立 data table，提供測試、上傳自己爬取的 data。
+由於 test data 是做為測試用，我會不定時刪除，如需建立自己的 data，建議使用其他命名。
 3. 壞消息，我這網路無法升級到100/100，最高 100/40，我再想想看其他解決方法。
 ## 2017/10/4 修正
 1. 新增 py_connect_sql_example.py，公開密碼，權限為：可自由取得 SQL 中的 data，該程式中已將格式轉為 dataframe ，利於分析。
