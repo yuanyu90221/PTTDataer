@@ -42,7 +42,7 @@ password : 123 <br>
 <!--匯出請選擇 "test" 樣板，將會匯出所有 data ， csv 檔， big 5 編碼 -->
 
 
-##  目前已爬超過 140 萬筆 data ( 11GB )，持續更新中<br><br>
+##  目前已爬超過 130 萬筆 data ( 11GB )，持續更新中<br><br>
 
 |SQL name|中文名|DATA 筆數|other|
 |--------|-----|----|-|
