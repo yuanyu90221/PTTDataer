@@ -4,6 +4,9 @@
 
 <!--資料科學家是當今最紅的職業，根據 CareerCast.com 網站，2016 best job is data scientist。
 問題是，要如何成為資料科學家？資料取得不易，沒資料幾乎不可能成為資料科學家，，，，，，，，， -->
+## 2017/10/5 修正
+1. 根據 [issues 1](https://github.com/f496328mm/Crawler_and_Share/issues/1)，修正 craw_ptt.py。
+2. 在 guest 權限上，加入 guest_dataset 資料庫權限，可供上傳/下載/建立 data table，提供測試、上傳自己爬取的 data。
 
 ## 2017/10/4 修正
 1. 新增 py_connect_sql_example.py，公開密碼，權限為：可自由取得 SQL 中的 data，該程式中已將格式轉為 dataframe ，利於分析。
