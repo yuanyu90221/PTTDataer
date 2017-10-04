@@ -348,7 +348,7 @@ database='guest_dataset'  # 資料庫名稱
 #  create dataset
 
 ptt_class_name = 'cookclub' # 測試, 爬取 PTT 料理板
-sql_name = 'test2'         # 先創建自己的 data table, 測試用
+sql_name = 'test4'         # 先創建自己的 data table, 測試用
 
 create_ptt_dataset(sql_name)# 建立 data table
 create_based_ptt_data(ptt_class_name,sql_name)# 建立基礎的 data
@@ -357,6 +357,7 @@ create_based_ptt_data(ptt_class_name,sql_name)# 建立基礎的 data
 # ubuntu 可用 crontab -e 設定
 # 例如 0 0-23 * * * python3 /xxx/xxx/xxx/auto_craw_his_ptt_data.py
 # 以上 ubuntu 排程, 會每小時爬取一次 data, 我預設一次爬取 40 個目錄, 時間大約在 40~50 minute
+# 一個目錄約有 15 篇文章, 因此一小時約可爬取 600 篇文章, 一天約 14000 筆
 for i in range(20):
     print('i = ',i)
     auto_craw_history_ptt_data(4,ptt_class_name,sql_name)
