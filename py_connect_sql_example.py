@@ -1,8 +1,7 @@
 # -*- coding: utf-8 -*-
-"""
-Created on Sat Aug 26 01:22:35 2017
-@author: linsam
-"""
+
+# 開程式，可自由取得 SQL 中的 data，並將格式轉為 dataframe ，利於分析
+
 
 import pymysql
 import pandas as pd
