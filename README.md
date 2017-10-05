@@ -17,7 +17,7 @@
 4. 最近公開 MySQL，得到許多建議，因此近期會進行小調整。<br>
 5. 對於 time 欄位進行以下調整：資料按照時間排序，需要注意的是，前 1 %的文章中，時間特殊，需要另外校正，因此需要多加注意。<br>
 
-[history_Update](https://github.com/f496328mm/Crawler_and_Share/blob/master/history_Update.md)<br><br><br><br><br><br>
+[history_Update](https://github.com/f496328mm/Crawler_and_Share/blob/master/history_Update.md)<br><br><br><br><br>
 
 <!--
 ## 2017/10/3 
