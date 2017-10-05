@@ -1,9 +1,8 @@
 # -*- coding: utf-8 -*-
-"""
-Created on Sat Aug 26 01:22:35 2017
 
-@author: linsam
-"""
+# 該程式為測試用
+# 連接 SQL 下載 DATA 範例請參考 py_connect_sql_example.py
+# 連接 SQL 上傳 DATA 範例請參考 upload_clean_data.py
 
 import pymysql
 import pandas as pd
