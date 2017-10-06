@@ -7,6 +7,7 @@
 問題是，要如何成為資料科學家？資料取得不易，沒資料幾乎不可能成為資料科學家，，，，，，，，， -->
 ## 2017/10/7 
 1. 本人接到兵單，10/16 要去當兵了(一年)T.T，不過該平台會繼續開著，另外由於我是利用排程，因此爬蟲工作會繼續進行，issues 方面，會盡可能利用假日回應。
+2. 由於原先提供的 MySQL 網址是免費的，有流量限制，因此將 host 改為我的固定 IP。
 ## 2017/10/5 修正
 1. 根據 [issues 1](https://github.com/f496328mm/Crawler_and_Share/issues/1)，修正 craw_ptt.py。
 2. 在 guest 權限上，加入 guest_dataset 資料庫權限，可供上傳/下載/建立 data table，提供測試、上傳自己爬取的 data。
@@ -36,7 +37,7 @@
 
 由於這是我個人架設的平台，資源有限，請不要進行惡意攻擊。另外同一時間使用人數過多，速度上可能會降低，請多包涵。<br><br>
 e-mail : samlin266118@gmail.com <br>
-連接網址為 : https://linsam.servehttp.com/phpmyadmin/ <br>
+連接網址為 : http://114.34.138.146/phpmyadmin/ <br>
 user : guest <br>
 password : 123 <br>
 ### PS: 在爬取文章部分，可能出現小錯誤，因此其中一個欄位 origin_article ，提供最原始的 data，如果有錯誤可額外進行提取，基本上99%的資料都是正確的。
