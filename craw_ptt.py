@@ -13,7 +13,7 @@ from datetime import datetime as dtime
 # 建立 SQL 檔案
 def creat_sql_file(sql_string,dataset_name):
 
-    conn = ( pymysql.connect(host = 'linsam.servehttp.com',# SQL IP
+    conn = ( pymysql.connect(host = '114.34.138.146',# SQL IP
                              port = 3306,
                              user = user,# 帳號
                              password = password,# 密碼
@@ -29,7 +29,7 @@ def creat_sql_file(sql_string,dataset_name):
 def craw_ptt_data_fun(article_url,temp,i,index_url,sql_name,max_date_time,bo="his"):
     # bo = 'his' bo = 'new'
     # sql_name = 'ptt_Soft_Job'
-    conn = ( pymysql.connect(host = 'linsam.servehttp.com',# SQL IP
+    conn = ( pymysql.connect(host = '114.34.138.146',# SQL IP
                              port = 3306,
                              user = user,# 帳號
                              password = password,# 密碼
@@ -237,7 +237,7 @@ def date_to_numeric(date):
     return value
 #---------------------------------------------------------------------------------  
 def catch_ptt_max_index(ptt_class_name,sql_name):
-    conn = ( pymysql.connect(host = 'linsam.servehttp.com',
+    conn = ( pymysql.connect(host = '114.34.138.146',
                              port = 3306,
                              user = user,
                              password = password,
@@ -261,7 +261,7 @@ def catch_ptt_max_index(ptt_class_name,sql_name):
 #---------------------------------------------------------------------------------  
 # 抓 SQL 中 data 的時間, 新data時間不能小於 SQL 中 max data time
 def catch_ptt_history_date_time(ptt_class_name,sql_name):
-    conn = ( pymysql.connect(host = 'linsam.servehttp.com',
+    conn = ( pymysql.connect(host = '114.34.138.146',
                              port = 3306,
                              user = user,
                              password = password,
