@@ -9,7 +9,7 @@ import pymysql
 
 # 建立 SQL 檔案
 def creat_sql_file(sql_string,dataset_name):
-    conn = ( pymysql.connect(host = 'linsam.servehttp.com',# SQL IP
+    conn = ( pymysql.connect(host = '114.34.138.146',# SQL IP
                              port = 3306,
                              user='upload_user',# 帳號
                              password='f496328mm',# 密碼
@@ -30,7 +30,7 @@ def create_ptt_dataset(dataset_name='test'):
 # 建立 data file    
 create_ptt_dataset('test')
 
-conn = ( pymysql.connect(host = 'linsam.servehttp.com',# SQL IP
+conn = ( pymysql.connect(host = '114.34.138.146',# SQL IP
                          port = 3306,
                          user='upload_user',# 帳號
                          password='f496328mm',# 密碼
