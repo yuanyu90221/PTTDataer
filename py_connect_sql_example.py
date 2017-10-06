@@ -11,7 +11,7 @@ import datetime
 def input_data_from_SQL(data_name = 'ptt_job'):
     #---------------------------------------------------------------                         
     # 連接 MySQL
-    conn = ( pymysql.connect(host = 'linsam.servehttp.com',
+    conn = ( pymysql.connect(host = '114.34.138.146',
                              port = 3306,
                              user='guest',
                              password='123',
