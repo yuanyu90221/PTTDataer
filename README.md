@@ -46,7 +46,7 @@ password : 123 <br>
 ##  (origint_data) 目前已爬超過 130 萬筆 data ( 11GB )，持續更新中<br><br>
 以下為資料庫 ptt_data1.0 資訊，資料以每天 10 萬筆的速度增加
 
-|SQL name|DATA 筆數|other|
+|SQL name|DATA 筆數|類別|
 |--------|----|-|
 |AllTogether|9||
 |BabyMother|40||
