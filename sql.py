@@ -19,7 +19,7 @@ conn = ( pymysql.connect(host = '114.34.138.146',
                          port = 3306,
                          user='text_mining',
                          password='password',
-                         database='origin_data',  
+                         database='ptt_data1.0',  
                          charset="utf8") )     
                          
 #---------------------------------------------------------------
@@ -81,7 +81,7 @@ conn = ( pymysql.connect(host = '114.34.138.146',
                          port = 3306,
                          user='text_mining',
                          password='password',
-                         database='origin_data',  
+                         database='ptt_data1.0',  
                          charset="utf8") )     
                          
 cursor = conn.cursor()                         
