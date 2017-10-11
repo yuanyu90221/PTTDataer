@@ -2,9 +2,11 @@
 
 #### 在資料爆炸的年代，我們卻沒有容易取得 data 的管道，因此提供一個共享 data 的平台，一個人爬蟲力量有限，合作爬蟲力量無限。各位可以在這上面，update 自己爬到的 data ，download 其他人分享的 data。<br><br>( 最近公開 MySQL，得到許多建議，因此近期正在進行微調，如有不便請見諒。 )
 每天約新增 10 萬筆 data。<br>
-本人接到兵單，10/16 要去當兵了(一年)T.T。該平台會繼續開著，爬蟲方面設定排程繼續進行。issues 方面，會盡可能利用假日回應。
+本人接到兵單，10/16 要去當兵了(一年)T.T。該平台會繼續開著，爬蟲方面設定排程繼續進行。issues 方面，會盡可能利用假日回應。<br>
 <!--資料科學家是當今最紅的職業，根據 CareerCast.com 網站，2016 best job is data scientist。
 問題是，要如何成為資料科學家？資料取得不易，沒資料幾乎不可能成為資料科學家，，，，，，，，， -->
+## 2017/10/11
+1. py_connect_sql_example.py 中，將 origin_data 改為 ptt_data1.0，更改資料庫，origin_data 將不再更新，預計 10 天後，ptt_data1.0 資料量將超越 origin_data。<br>
 ## 2017/10/10
 1. 提高爬蟲效率，預計一天新增 10 萬筆 data ( 過去一天 4 萬筆 )。<br>
 ## 2017/10/9 
@@ -13,9 +15,6 @@
 2. 推文內容部分，如果有興趣，可以由 data 欄位 origin_article 進行 data clean ，額外提取。<br>
    未來我也會進行 data clean，並公開 code 與 data，但是可能需要一段時間，有興趣的朋友可自行嘗試。
 
-## 2017/10/7 
-1. 本人接到兵單，10/16 要去當兵了(一年)T.T。該平台會繼續開著，爬蟲方面設定排程繼續進行。issues 方面，會盡可能利用假日回應。
-2. 由於原先提供的 MySQL 網址是免費的，有流量限制，因此將 host 改為我的固定 IP。
 
 [history_Update](https://github.com/f496328mm/Crawler_and_Share/blob/master/history_Update.md)<br><br><br><br><br>
 
