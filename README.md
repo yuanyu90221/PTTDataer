@@ -44,7 +44,7 @@ password : 123 <br>
 
 
 ##  (origint_data) 目前已爬超過 130 萬筆 data ( 11GB )，持續更新中<br><br>
-以下為資料庫 ptt_data1.0 資訊，資料以每天 10 萬筆的速度增加
+以下為資料庫 ptt_data1.0 資訊，目前 40 萬筆文章，以每天 10 萬筆的速度增加
 
 |SQL name|DATA 筆數|類別|
 |--------|----|-|
@@ -56,11 +56,11 @@ password : 123 <br>
 |e_shopping|20|購物買賣|
 |Finance|20||
 |Food|92,480||
-|Gossiping|40,026||
+|Gossiping|40,026|八卦版|
 |happy|23,727|情感分析|
-|HardwareSale|53,301||
+|HardwareSale|53,301|購物買賣|
 |Hate|20|情感分析|
-|HomeTeach|19||
+|HomeTeach|19|工作相關資訊|
 |home_sale|18|購物買賣|
 |Japan_Travel|20||
 |job|8,827|工作相關資訊|
