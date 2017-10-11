@@ -5,11 +5,13 @@
 本人 10/16 要去當兵了(一年)T.T。該平台會繼續開著，爬蟲方面設定排程繼續進行。issues 方面，會盡可能利用假日回應。<br>
 <!--資料科學家是當今最紅的職業，根據 CareerCast.com 網站，2016 best job is data scientist。
 問題是，要如何成為資料科學家？資料取得不易，沒資料幾乎不可能成為資料科學家，，，，，，，，， -->
-## 2017/10/11
+
+## update
+#### 2017/10/11
 1. py_connect_sql_example.py 中，將 origin_data 改為 ptt_data1.0，更改資料庫，origin_data 將不再更新，預計 10 天後，ptt_data1.0 資料量將超越 origin_data。<br>
-## 2017/10/10
+#### 2017/10/10
 1. 提高爬蟲效率，預計一天新增 10 萬筆 data ( 過去一天 4 萬筆 )。<br>
-## 2017/10/9 
+#### 2017/10/9 
 1. 由於 origin_data 中，資料不夠完善，有小缺失，因此我重新爬取 data，放在 ptt_data1.0 中，並加入 guest 讀取權限。<br>
    另外 origin_data 依然會開放，但不進行更新，各位可以先進行 text mining，之後再更改資料庫即可，如有不便請多多包涵。
 2. 推文內容部分，如果有興趣，可以由 data 欄位 origin_article 進行 data clean ，額外提取。<br>
