@@ -15,7 +15,7 @@ def input_data_from_SQL(data_name = 'ptt_job'):
                              port = 3306,
                              user='guest',
                              password='123',
-                             database='origin_data',  
+                             database='ptt_data1.0',  
                              charset="utf8") )     
                              
     cursor = conn.cursor()                         
