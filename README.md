@@ -1,6 +1,7 @@
 # 共享 data 平台
 
 #### 在資料爆炸的年代，我們卻沒有容易取得 data 的管道，因此提供一個共享 data 的平台，一個人爬蟲力量有限，合作爬蟲力量無限。各位可以在這上面，update 自己爬到的 data ，download 其他人分享的 data。<br>
+平台網址：http://114.34.138.146/phpmyadmin/ <br>
 每天約新增 15 萬筆 data。<br>
 本人 10/16 要去當兵了(一年)T.T。該平台會繼續開著，爬蟲方面設定排程繼續進行。issues 方面，會盡可能利用假日回應。<br>
 <!--資料科學家是當今最紅的職業，根據 CareerCast.com 網站，2016 best job is data scientist。
