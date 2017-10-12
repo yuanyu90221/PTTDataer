@@ -52,13 +52,14 @@ password : 123 <br>
 |--------|----|-|
 |AllTogether|9||
 |BabyMother|40||
+|Boy_Girl|20||
 |Broken_heart|20|情感分析|
-|car|48,050||
-|cookclub|22,257||
+|car|76,188||
+|cookclub|69,095||
 |e_shopping|20|購物買賣|
 |Finance|20||
-|Food|92,480||
-|Gossiping|40,026|八卦版|
+|Food|124,832||
+|Gossiping|109,854|八卦版|
 |happy|23,727|情感分析|
 |HardwareSale|53,301|購物買賣|
 |Hate|20|情感分析|
@@ -73,14 +74,14 @@ password : 123 <br>
 |Lucky|20|情感分析|
 |MacShop|20|購物買賣|
 |Marginalman|20|情感分析|
-|MenTalk|19|聊天機器人|
+|MenTalk|27,574|聊天機器人|
 |MobileComm|20|購物買賣|
 |movie|18||
 |Oversea_Job|713|工作相關資訊|
 |part_time|20|工作相關資訊|
 |PC_Shopping|66,728|購物買賣|
 |prozac|20|情感分析|
-|Sad|20|情感分析|
+|Sad|26,017|情感分析|
 |SayLove|195|情感分析|
 |Self_Healin|g20||
 |Soft_Job|20|工作相關資訊|
@@ -88,8 +89,8 @@ password : 123 <br>
 |Stock|20||
 |TaiwanJobs|20|工作相關資訊|
 |talk|62,078|聊天機器人|
-|Tech_Job|19|工作相關資訊|
-|toberich|20||
+|Tech_Job|51,368|工作相關資訊|
+|toberich|23,536||
 |WomenTalk|20|聊天機器人|
 
 
