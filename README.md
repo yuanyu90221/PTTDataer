@@ -4,7 +4,7 @@
 平台網址：http://114.34.138.146/phpmyadmin/ <br>
 每天約新增 15 萬筆 data。<br>
 本人 10/16 要去當兵了(一年)T.T。該平台會繼續開著，爬蟲方面設定排程繼續進行。issues 方面，會盡可能利用假日回應。<br>
-最新 data 在 ptt_data1.0 中<br>
+最新 data 在 ptt_data1.0 中，目前超過 100 萬筆。<br>
 <!--資料科學家是當今最紅的職業，根據 CareerCast.com 網站，2016 best job is data scientist。
 問題是，要如何成為資料科學家？資料取得不易，沒資料幾乎不可能成為資料科學家，，，，，，，，， -->
 
@@ -47,8 +47,7 @@ password : 123 <br>
 <!--匯出請選擇 "test" 樣板，將會匯出所有 data ， csv 檔， big 5 編碼 -->
 
 
-##  (origint_data) 目前已爬超過 130 萬筆 data ( 11GB )，持續更新中<br><br>
-以下為資料庫 ptt_data1.0 資訊，目前 80 萬筆文章，以每天 10 萬筆的速度增加
+## 目前超過 100 萬筆 data ，持續更新中<br><br>
 
 |SQL name|DATA 筆數|類別|
 |--------|----|-|
