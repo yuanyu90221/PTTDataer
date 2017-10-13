@@ -4,7 +4,7 @@
 平台網址：http://114.34.138.146/phpmyadmin/ <br>
 每天約新增 15 萬筆 data。<br>
 本人 10/16 要去當兵了(一年)T.T。該平台會繼續開著，爬蟲方面設定排程繼續進行。issues 方面，會盡可能利用假日回應。<br>
-最新 data 在 ptt_data1.0 中，目前超過 100 萬筆。<br>
+最新 data 在 ptt_data1.0 中，目前超過 120 萬筆。<br>
 <!--資料科學家是當今最紅的職業，根據 CareerCast.com 網站，2016 best job is data scientist。
 問題是，要如何成為資料科學家？資料取得不易，沒資料幾乎不可能成為資料科學家，，，，，，，，， -->
 
@@ -60,22 +60,22 @@ password : 123 <br>
 |e_shopping|20|購物買賣|
 |Finance|20||
 |Food|124,832||
-|Gossiping|109,854|八卦版|
+|Gossiping|169,854|八卦版|
 |happy|23,727|情感分析|
-|HardwareSale|53,301|購物買賣|
-|Hate|20|情感分析|
+|HardwareSale|79,301|購物買賣|
+|Hate|74,164|情感分析|
 |HomeTeach|19|工作相關資訊|
-|home_sale|18|購物買賣|
-|Japan_Travel|20||
+|home_sale|21,565|購物買賣|
+|Japan_Travel|34,463||
 |job|8,827|工作相關資訊|
-|JOB_Hunting|20|工作相關資訊|
+|JOB_Hunting|6,600|工作相關資訊|
 |Lifeismoney|20|購物買賣|
-|Lonely|20|情感分析|
-|love|20|情感分析|
-|Lucky|20|情感分析|
+|Lonely|20,359|情感分析|
+|love|20,000|情感分析|
+|Lucky|18,000|情感分析|
 |MacShop|20|購物買賣|
 |Marginalman|20|情感分析|
-|MenTalk|27,574|聊天機器人|
+|MenTalk|96,943|聊天機器人|
 |MobileComm|20|購物買賣|
 |movie|18||
 |Oversea_Job|713|工作相關資訊|
@@ -83,16 +83,16 @@ password : 123 <br>
 |PC_Shopping|66,728|購物買賣|
 |prozac|20|情感分析|
 |Sad|26,017|情感分析|
-|SayLove|195|情感分析|
-|Self_Healin|g20||
+|SayLove|13,000|情感分析|
+|Self_Healin|13,000||
 |Soft_Job|20|工作相關資訊|
-|SorryPub|20|情感分析|
+|SorryPub|18,227|情感分析|
 |Stock|20||
 |TaiwanJobs|20|工作相關資訊|
 |talk|62,078|聊天機器人|
 |Tech_Job|51,368|工作相關資訊|
 |toberich|23,536||
-|WomenTalk|20|聊天機器人|
+|WomenTalk|85,307|聊天機器人|
 
 
 
