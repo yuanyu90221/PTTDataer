@@ -47,20 +47,40 @@ password : 123 <br>
 <!--匯出請選擇 "test" 樣板，將會匯出所有 data ， csv 檔， big 5 編碼 -->
 
 
-## 目前超過 200 萬筆 data ，持續更新中<br><br>
+## 目前超過 400 萬筆 data ，持續更新中<br><br>
 
 |SQL name|DATA 筆數|類別|
 |--------|----|-|
-|AllTogether|9||
-|BabyMother|40||
-|Boy_Girl|20||
-|Broken_heart|20|情感分析|
+|AdvEduUK|10||
+|AllTogether|70,000||
+|Aquarius|10||
+|Aries|10||
+|Aviation|10||
+|BabyMother|123,000||
+|BabyProducts|10||
+|baking|17,000||
+|Baseball|10||
+|biker|10||
+|Boy_Girl|68,000||
+|Broken_heart|23,300|情感分析|
+|BuyTogether|76,500||
+|Cancer|10||
+|Capricornus|18||
 |car|76,188||
-|cookclub|69,095||
-|e_shopping|20|購物買賣|
-|Finance|20||
+|CarShop|5,000||
+|CATCH|19||
+|cookclub|69,303||
+|couple|13,800||
+|creditcard|49,000||
+|DC_SALE|4||
+|Diary|20||
+|DistantLove|20||
+|Dreamland|20||
+|EngTalk|9,700||
+|e_shopping|70,000|購物買賣|
+|Finance|19,000||
 |Food|124,832||
-|Gossiping|169,854|八卦版|
+|Gossiping|507,854|八卦版|
 |happy|23,727|情感分析|
 |HardwareSale|79,301|購物買賣|
 |Hate|74,164|情感分析|
