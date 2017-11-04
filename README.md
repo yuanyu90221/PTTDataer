@@ -11,14 +11,6 @@
 ## UPDATE
 #### 2017/10/11
 1. py_connect_sql_example.py 中，將 origin_data 改為 ptt_data1.0，更改資料庫，origin_data 將不再更新，預計 10 天後，ptt_data1.0 資料量將超越 origin_data。<br>
-#### 2017/10/10
-1. 提高爬蟲效率，預計一天新增 15 萬筆 data ( 過去一天 4 萬筆 )。<br>
-#### 2017/10/9 
-1. 由於 origin_data 中，資料不夠完善，有小缺失，因此我重新爬取 data，放在 ptt_data1.0 中，並加入 guest 讀取權限。<br>
-   另外 origin_data 依然會開放，但不進行更新，各位可以先進行 text mining，之後再更改資料庫即可，如有不便請多多包涵。
-2. 推文內容部分，如果有興趣，可以由 data 欄位 origin_article 進行 data clean ，額外提取。<br>
-   未來我也會進行 data clean，並公開 code 與 data，但是可能需要一段時間，有興趣的朋友可自行嘗試。
-
 
 [history_Update](https://github.com/f496328mm/Crawler_and_Share/blob/master/history_Update.md)<br><br><br><br><br>
 
