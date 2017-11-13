@@ -2,13 +2,17 @@
 
 #### 在資料爆炸的年代，我們卻沒有容易取得 data 的管道，因此提供一個共享 data 的平台，一個人爬蟲力量有限，合作爬蟲力量無限。各位可以在這上面，update 自己爬到的 data ，download 其他人分享的 data。<br>
 平台網址：http://114.34.138.146/phpmyadmin/ <br>
-每天約新增 15 萬筆 data。最新 data 在 ptt_data1.0 中，目前超過 500 萬筆 ( 36GB )。<br>
+最新 data 在 ptt_data1.0 中，目前接近 600 萬筆 ( 42GB )，如想分析的 ptt 文章，我沒爬取，麻煩留言在 issues 。<br>
 本人 10/16 要去當兵了(一年)T.T。該平台會繼續開著，爬蟲方面設定排程繼續進行。issues 方面，會盡可能利用假日回應。<br>
 
 <!--資料科學家是當今最紅的職業，根據 CareerCast.com 網站，2016 best job is data scientist。
 問題是，要如何成為資料科學家？資料取得不易，沒資料幾乎不可能成為資料科學家，，，，，，，，， -->
 
 ## UPDATE
+#### 2017/11/13
+1. 目前大部分 data 已爬完，每日會繼續抓新文章。
+2. 未來將著重在 data clean 上。
+
 #### 2017/10/11
 1. py_connect_sql_example.py 中，將 origin_data 改為 ptt_data1.0，更改資料庫，origin_data 將不再更新，預計 10 天後，ptt_data1.0 資料量將超越 origin_data。<br>
 
