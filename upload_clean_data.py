@@ -11,9 +11,9 @@ import pymysql
 def creat_sql_file(sql_string,dataset_name):
     conn = ( pymysql.connect(host = '114.34.138.146',# SQL IP
                              port = 3306,
-                             user='upload_user',# 帳號
-                             password='f496328mm',# 密碼
-                             database='clean_data',  # 資料庫名稱
+                             user='guest',# 帳號
+                             password='123',# 密碼
+                             database='guest_dataset',  # 資料庫名稱
                              charset="utf8") )   #  編碼           
     c=conn.cursor()
     c.execute( sql_string )# 建立新的 SQL file
@@ -32,9 +32,9 @@ create_ptt_dataset('test')
 
 conn = ( pymysql.connect(host = '114.34.138.146',# SQL IP
                          port = 3306,
-                         user='upload_user',# 帳號
-                         password='f496328mm',# 密碼
-                         database='clean_data',  # 資料庫名稱
+                         user='guest',# 帳號
+                         password='123',# 密碼
+                         database='guest_dataset',  # 資料庫名稱
                          charset="utf8") )   #  編碼   
 
 
