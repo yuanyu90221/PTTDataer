@@ -4,6 +4,9 @@
 平台網址：http://114.34.138.146/phpmyadmin/ <br>
 user : guest <br>
 password : 123 <br>
+上傳 data 範例 : https://github.com/f496328mm/Crawler_and_Share/blob/master/upload_clean_data.py <br>
+下載 data 範例 : https://github.com/f496328mm/Crawler_and_Share/blob/master/py_connect_sql_example.py <br><br>
+
 最新 data 在 ptt_data1.0 中，目前接近 600 萬筆 ( 42GB )，如想分析的 ptt 文章，我沒爬取，麻煩留言在 issues 。<br>
 本人 10/16 要去當兵了(一年)T.T。該平台會繼續開著，爬蟲方面設定排程繼續進行。issues 方面，會盡可能利用假日回應。<br>
 
