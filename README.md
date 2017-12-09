@@ -15,7 +15,7 @@ e-mail : samlin266118@gmail.com 有問題可寄信給我。<br><br>
 <!--資料科學家是當今最紅的職業，根據 CareerCast.com 網站，2016 best job is data scientist。
 問題是，要如何成為資料科學家？資料取得不易，沒資料幾乎不可能成為資料科學家，，，，，，，，， -->
 
-## 目前爬的 PTT 版如下，可搭配[下載 data 範例](https://github.com/f496328mm/Crawler_and_Share/blob/master/py_connect_sql_example.py)使用<br>
+## 目前爬的 PTT 版如下，可搭配 下載 data 範例 [Python](https://github.com/f496328mm/Crawler_and_Share/blob/master/input_data_from_mysql.py) [R](https://github.com/f496328mm/Crawler_and_Share/blob/master/input_data_from_mysql.r) 使用<br>
 
 | | | | | |
 |-|-|-|-|-|
