@@ -17,6 +17,33 @@ e-mail : samlin266118@gmail.com 有問題可寄信給我。<br><br>
 
 | | | | | |
 |-|-|-|-|-|
+|[AdvEduUK](https://www.ptt.cc/bbs/AdvEduUK/index.html)|[AllTogether](https://www.ptt.cc/bbs/AllTogether/index.html)|[Anti_Cancer](https://www.ptt.cc/bbs/Anti-Cancer/index.html)|[Aquarius](https://www.ptt.cc/bbs/Aquarius/index.html)|[Aries](https://www.ptt.cc/bbs/Aries/index.html)|
+|[Aviation](https://www.ptt.cc/bbs/Aviation/index.html)|[BabyMother](https://www.ptt.cc/bbs/BabyMother/index.html)|[BabyProducts](https://www.ptt.cc/bbs/BabyProducts/index.html)|[Baseball](https://www.ptt.cc/bbs/Baseball/index.html)|[Boy_Girl](https://www.ptt.cc/bbs/Boy-Girl/index.html)|
+|[Broken_heart](https://www.ptt.cc/bbs/Broken-heart/index.html)|[BuyTogether](https://www.ptt.cc/bbs/BuyTogether/index.html)|[CATCH](https://www.ptt.cc/bbs/CATCH/index.html)|[Cancer](https://www.ptt.cc/bbs/Cancer/index.html)|[Capricornus](https://www.ptt.cc/bbs/Capricornus/index.html)|
+|[CarShop](https://www.ptt.cc/bbs/CarShop/index.html)|[DC_SALE](https://www.ptt.cc/bbs/DC-SALE/index.html)|[Diary](https://www.ptt.cc/bbs/Diary/index.html)|[DistantLove](https://www.ptt.cc/bbs/DistantLove/index.html)|[Dreamland](https://www.ptt.cc/bbs/Dreamland/index.html)|
+|[EngTalk](https://www.ptt.cc/bbs/EngTalk/index.html)|[EuropeTravel](https://www.ptt.cc/bbs/EuropeTravel/index.html)|[Finance](https://www.ptt.cc/bbs/Finance/index.html)|[Food](https://www.ptt.cc/bbs/Food/index.html)|[Gemini](https://www.ptt.cc/bbs/Gemini/index.html)|
+|[GetMarry](https://www.ptt.cc/bbs/GetMarry/index.html)|[Gossiping](https://www.ptt.cc/bbs/Gossiping/index.html)|[HardwareSale](https://www.ptt.cc/bbs/HardwareSale/index.html)|[Hate](https://www.ptt.cc/bbs/Hate/index.html)|[HatePolitics](https://www.ptt.cc/bbs/HatePolitics/index.html)|
+|[HelpBuy](https://www.ptt.cc/bbs/HelpBuy/index.html)|[Hiking](https://www.ptt.cc/bbs/Hiking/index.html)|[HomeTeach](https://www.ptt.cc/bbs/HomeTeach/index.html)|[Hsinchu](https://www.ptt.cc/bbs/Hsinchu/index.html)|[IELTS](https://www.ptt.cc/bbs/IELTS/index.html)|
+|[Ind_travel](https://www.ptt.cc/bbs/Ind-travel/index.html)|[JOB_Hunting](https://www.ptt.cc/bbs/JOB-Hunting/index.html)|[JapanStudy](https://www.ptt.cc/bbs/JapanStudy/index.html)|[Japan_Travel](https://www.ptt.cc/bbs/Japan-Travel/index.html)|[Kaohsiung](https://www.ptt.cc/bbs/Kaohsiung/index.html)|
+|[Korea_Travel](https://www.ptt.cc/bbs/Korea-Travel/index.html)|[Leo](https://www.ptt.cc/bbs/Leo/index.html)|[Libra](https://www.ptt.cc/bbs/Libra/index.html)|[Lifeismoney](https://www.ptt.cc/bbs/Lifeismoney/index.html)|[Loan](https://www.ptt.cc/bbs/Loan/index.html)|
+|[Lonely](https://www.ptt.cc/bbs/Lonely/index.html)|[Lucky](https://www.ptt.cc/bbs/Lucky/index.html)|[MacShop](https://www.ptt.cc/bbs/MacShop/index.html)|[MakeUp](https://www.ptt.cc/bbs/MakeUp/index.html)|[Marginalman](https://www.ptt.cc/bbs/Marginalman/index.html)|
+|[MenTalk](https://www.ptt.cc/bbs/MenTalk/index.html)|[MobileComm](https://www.ptt.cc/bbs/MobileComm/index.html)|[NBA](https://www.ptt.cc/bbs/NBA/index.html)|[Oversea_Job](https://www.ptt.cc/bbs/Oversea-Job/index.html)|[PC_Shopping](https://www.ptt.cc/bbs/PC_Shopping/index.html)|
+|[Pisces](https://www.ptt.cc/bbs/Pisces/index.html)|[Sad](https://www.ptt.cc/bbs/Sad/index.html)|[Sagittarius](https://www.ptt.cc/bbs/Sagittarius/index.html)|[Salary](https://www.ptt.cc/bbs/Salary/index.html)|[SayLove](https://www.ptt.cc/bbs/SayLove/index.html)|
+|[Scorpio](https://www.ptt.cc/bbs/Scorpio/index.html)|[Self_Healing](https://www.ptt.cc/bbs/Self_Healing/index.html)|[Soft_Job](https://www.ptt.cc/bbs/Soft_Job/index.html)|[SorryPub](https://www.ptt.cc/bbs/SorryPub/index.html)|[SportLottery](https://www.ptt.cc/bbs/SportLottery/index.html)|
+|[Stock](https://www.ptt.cc/bbs/Stock/index.html)|[StupidClown](https://www.ptt.cc/bbs/StupidClown/index.html)|[TOEFL_iBT](https://www.ptt.cc/bbs/TOEFL_iBT/index.html)|[TaichungBun](https://www.ptt.cc/bbs/TaichungBun/index.html)|[Tainan](https://www.ptt.cc/bbs/Tainan/index.html)|
+|[TaiwanJobs](https://www.ptt.cc/bbs/TaiwanJobs/index.html)|[Taurus](https://www.ptt.cc/bbs/Taurus/index.html)|[Tech_Job](https://www.ptt.cc/bbs/Tech_Job/index.html)|[Tour_Agency](https://www.ptt.cc/bbs/Tour-Agency/index.html)|[VISA](https://www.ptt.cc/bbs/VISA/index.html)|
+|[Virgo](https://www.ptt.cc/bbs/Virgo/index.html)|[Wanted](https://www.ptt.cc/bbs/Wanted/index.html)|[WomenTalk](https://www.ptt.cc/bbs/WomenTalk/index.html)|[WorkanTravel](https://www.ptt.cc/bbs/WorkanTravel/index.html)|[Zastrology](https://www.ptt.cc/bbs/Zastrology/index.html)|
+|[baking](https://www.ptt.cc/bbs/baking/index.html)|[biker](https://www.ptt.cc/bbs/biker/index.html)|[car](https://www.ptt.cc/bbs/car/index.html)|[cookclub](https://www.ptt.cc/bbs/cookclub/index.html)|[couple](https://www.ptt.cc/bbs/couple/index.html)|
+|[creditcard](https://www.ptt.cc/bbs/creditcard/index.html)|[e_shopping](https://www.ptt.cc/bbs/e_shopping/index.html)|[forsale](https://www.ptt.cc/bbs/forsale/index.html)|[give](https://www.ptt.cc/bbs/give/index.html)|[happy](https://www.ptt.cc/bbs/happy/index.html)|
+|[home_sale](https://www.ptt.cc/bbs/home_sale/index.html)|[hotspring](https://www.ptt.cc/bbs/hotspring/index.html)|[isLandTravel](https://www.ptt.cc/bbs/isLandTravel/index.html)|[job](https://www.ptt.cc/bbs/job/index.html)|[joke](https://www.ptt.cc/bbs/joke/index.html)|
+|[love](https://www.ptt.cc/bbs/love/index.html)|[love_vegetal](https://www.ptt.cc/bbs/love-vegetal/index.html)|[marvel](https://www.ptt.cc/bbs/marvel/index.html)|[mobilesales](https://www.ptt.cc/bbs/mobilesales/index.html)|[movie](https://www.ptt.cc/bbs/movie/index.html)|
+|[part_time](https://www.ptt.cc/bbs/part-time/index.html)|[prozac](https://www.ptt.cc/bbs/prozac/index.html)|[studyabroad](https://www.ptt.cc/bbs/studyabroad/index.html)|[talk](https://www.ptt.cc/bbs/talk/index.html)|[toberich](https://www.ptt.cc/bbs/toberich/index.html)|
+|[travel](https://www.ptt.cc/bbs/travel/index.html)|[travelbooks](https://www.ptt.cc/bbs/travelbooks/index.html)
+
+
+
+
+<!--
 |AdvEduUK|AllTogether|Anti_Cancer|Aquarius|Aries|
 |Aviation|BabyMother|BabyProducts|Baseball|Boy_Girl|
 |Broken_heart|BuyTogether|CATCH|Cancer|Capricornus|
@@ -39,7 +66,7 @@ e-mail : samlin266118@gmail.com 有問題可寄信給我。<br><br>
 |love|love_vegetal|marvel|mobilesales|movie|
 |part_time|prozac|studyabroad|talk|toberich|
 |travel|travelbooks|
-
+-->
 ## UPDATE
 #### 2017/11/13
 1. 目前大部分 data 已爬完，每日會繼續抓新文章。
