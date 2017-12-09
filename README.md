@@ -4,14 +4,41 @@
 平台網址：http://114.34.138.146/phpmyadmin/ <br>
 user : guest <br>
 password : 123 <br>
-上傳 data 範例 : https://github.com/f496328mm/Crawler_and_Share/blob/master/upload_clean_data.py <br>
-下載 data 範例 : https://github.com/f496328mm/Crawler_and_Share/blob/master/py_connect_sql_example.py <br><br>
+[上傳 data 範例](https://github.com/f496328mm/Crawler_and_Share/blob/master/upload_clean_data.py) <br>
+[下載 data 範例](https://github.com/f496328mm/Crawler_and_Share/blob/master/py_connect_sql_example.py) <br><br>
 
 最新 data 在 ptt_data1.0 中，目前接近 600 萬筆 ( 42GB )，如想分析的 ptt 文章，我沒爬取，麻煩留言在 issues 。<br>
 本人 10/16 要去當兵了(一年)T.T。該平台會繼續開著，爬蟲方面設定排程繼續進行。issues 方面，會盡可能利用假日回應。<br><br>
 e-mail : samlin266118@gmail.com 有問題可寄信給我。<br><br>
 <!--資料科學家是當今最紅的職業，根據 CareerCast.com 網站，2016 best job is data scientist。
 問題是，要如何成為資料科學家？資料取得不易，沒資料幾乎不可能成為資料科學家，，，，，，，，， -->
+
+## 目前爬的 PTT 版如下，可搭配[下載 data 範例](https://github.com/f496328mm/Crawler_and_Share/blob/master/py_connect_sql_example.py)使用<br>
+
+| | | | | |
+|-|-|-|-|-|
+|AdvEduUK|AllTogether|Anti_Cancer|Aquarius|Aries|
+|Aviation|BabyMother|BabyProducts|Baseball|Boy_Girl|
+|Broken_heart|BuyTogether|CATCH|Cancer|Capricornus|
+|CarShop|DC_SALE|Diary|DistantLove|Dreamland|
+|EngTalk|EuropeTravel|Finance|Food|Gemini|
+|GetMarry|Gossiping|HardwareSale|Hate|HatePolitics|
+|HelpBuy|Hiking|HomeTeach|Hsinchu|IELTS|
+|Ind_travel|JOB_Hunting|JapanStudy|Japan_Travel|Kaohsiung|
+|Korea_Travel|Leo|Libra|Lifeismoney|Loan|
+|Lonely|Lucky|MacShop|MakeUp|Marginalman|
+|MenTalk|MobileComm|NBA|Oversea_Job|PC_Shopping|
+|Pisces|Sad|Sagittarius|Salary|SayLove|
+|Scorpio|Self_Healing|Soft_Job|SorryPub|SportLottery|
+|Stock|StupidClown|TOEFL_iBT|TaichungBun|Tainan|
+|TaiwanJobs|Taurus|Tech_Job|Tour_Agency|VISA|
+|Virgo|Wanted|WomenTalk|WorkanTravel|Zastrology|
+|baking|biker|car|cookclub|couple|
+|creditcard|e_shopping|forsale|give|happy|
+|home_sale|hotspring|isLandTravel|job|joke|
+|love|love_vegetal|marvel|mobilesales|movie|
+|part_time|prozac|studyabroad|talk|toberich|
+|travel|travelbooks|
 
 ## UPDATE
 #### 2017/11/13
@@ -49,9 +76,8 @@ e-mail : samlin266118@gmail.com 有問題可寄信給我。<br><br>
 
 <!--匯出請選擇 "test" 樣板，將會匯出所有 data ， csv 檔， big 5 編碼 -->
 
-
+<!--
 ## 目前超過 600 萬筆 data ，持續更新中<br><br>
-
 |SQL name|DATA 筆數|類別|
 |--------|----|-|
 |AdvEduUK|23,000||
@@ -145,7 +171,7 @@ e-mail : samlin266118@gmail.com 有問題可寄信給我。<br><br>
 |Wanted|41,898||
 |WomenTalk|107,236|聊天機器人|
 |Zastrology|24,247||
-
+-->
 
 
 
