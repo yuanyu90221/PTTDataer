@@ -72,6 +72,9 @@ e-mail : samlin266118@gmail.com 有問題可寄信給我。<br><br>
 |travel|travelbooks|
 -->
 ## UPDATE
+#### 2017/12/9
+1. 新增 R 連接 MySQL 範例。
+
 #### 2017/11/13
 1. 目前大部分 data 已爬完，每日會繼續抓新文章。
 2. 未來將著重在 data clean 上。
