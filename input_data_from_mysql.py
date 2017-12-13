@@ -72,7 +72,7 @@ def input_data_from_mysql(data_name = 'ptt_job'):
 # 如想取得其他 data，可更改 data_name，data_name 可以參考
 # https://github.com/f496328mm/Crawler_and_Share 下的 SQL name
 # 傳輸 data 可能會花一段時間(一分內) ，麻煩請稍等
-job_data = input_data_from_mysql(data_name = 'ptt_job')
+job_data = input_data_from_mysql(data_name = 'job')
 
 
 
