@@ -90,7 +90,7 @@ e-mail : samlin266118@gmail.com 有問題可寄信給我。<br><br>
 #### 2017/10/11
 1. py_connect_sql_example.py 中，將 origin_data 改為 ptt_data1.0，更改資料庫，origin_data 將不再更新，預計 10 天後，ptt_data1.0 資料量將超越 origin_data。<br>
 
-[history_Update](https://github.com/f496328mm/Crawler_and_Share/blob/master/history_Update.md)<br><br><br><br><br>
+[history_Update](https://github.com/f496328mm/Crawler_and_Share/blob/master/history_Update.md)<br>
 
 <!--
 ## 2017/10/3 
