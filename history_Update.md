@@ -1,6 +1,13 @@
 
 # history update 歷史更新紀錄
 
+
+#### 2017/12/9
+1. 新增 R 連接 MySQL 範例。<br>
+
+#### 2017/11/13
+1.目前大部分 data 已爬完，每日會繼續抓新文章。未來將著重在 data clean 上。<br>
+
 #### 2017/10/11
 1. py_connect_sql_example.py 中，將 origin_data 改為 ptt_data1.0，更改資料庫，origin_data 將不再更新，預計 10 天後，ptt_data1.0 資料量將超越 origin_data。<br>
 
