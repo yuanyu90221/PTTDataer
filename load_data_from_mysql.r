@@ -14,7 +14,7 @@ library(gWidgets)
 library(RMySQL)
 library(data.table)
 
-input_data_from_mysql = function(data_name){
+load_data_from_mysql = function(data_name){
   # connect mysql
   connect = dbConnect(MySQL(), 
                       dbname = "ptt_data1.0",# dataset name
@@ -23,7 +23,7 @@ input_data_from_mysql = function(data_name){
                       host = "114.34.138.146")
   #tem = dbListTables(connect)# all table
   #data_name = 'job'
-  dbSendQuery(connect,'SET NAMES big5')# �ഫ�s�X
+  dbSendQuery(connect,'SET NAMES big5')# Âà´«½s½X
   
   
   temp = dbGetQuery(connect ,paste("select * from ",data_name))
@@ -33,8 +33,8 @@ input_data_from_mysql = function(data_name){
   
   return(temp)
 }
-# example : Ū�� job �� data
-data = input_data_from_mysql('job')
+# example : Åª¨ú job ª© data
+data = load_data_from_mysql('job')
 
 head( data )
 
