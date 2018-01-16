@@ -9,8 +9,8 @@ user : guest <br>
 password : 123 <br>
 
 下載 data 範例 
-[Python](https://github.com/f496328mm/Crawler_and_Share/blob/master/input_data_from_mysql.py) 
-[R](https://github.com/f496328mm/Crawler_and_Share/blob/master/input_data_from_mysql.r)  <br>
+[Python](https://github.com/f496328mm/Crawler_and_Share/blob/master/load_data_from_mysql.py) 
+[R](https://github.com/f496328mm/Crawler_and_Share/blob/master/load_data_from_mysql.r)  <br>
 上傳 data 範例 
 [Python](https://github.com/f496328mm/Crawler_and_Share/blob/master/upload_data_to_mysql.py) <br><br>
 
