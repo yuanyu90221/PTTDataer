@@ -52,32 +52,6 @@ e-mail : samlin266118@gmail.com 有問題可寄信給我。<br>
 |[travel](https://www.ptt.cc/bbs/travel/index.html)|[travelbooks](https://www.ptt.cc/bbs/travelbooks/index.html)
 
 
-
-
-<!--
-|AdvEduUK|AllTogether|Anti_Cancer|Aquarius|Aries|
-|Aviation|BabyMother|BabyProducts|Baseball|Boy_Girl|
-|Broken_heart|BuyTogether|CATCH|Cancer|Capricornus|
-|CarShop|DC_SALE|Diary|DistantLove|Dreamland|
-|EngTalk|EuropeTravel|Finance|Food|Gemini|
-|GetMarry|Gossiping|HardwareSale|Hate|HatePolitics|
-|HelpBuy|Hiking|HomeTeach|Hsinchu|IELTS|
-|Ind_travel|JOB_Hunting|JapanStudy|Japan_Travel|Kaohsiung|
-|Korea_Travel|Leo|Libra|Lifeismoney|Loan|
-|Lonely|Lucky|MacShop|MakeUp|Marginalman|
-|MenTalk|MobileComm|NBA|Oversea_Job|PC_Shopping|
-|Pisces|Sad|Sagittarius|Salary|SayLove|
-|Scorpio|Self_Healing|Soft_Job|SorryPub|SportLottery|
-|Stock|StupidClown|TOEFL_iBT|TaichungBun|Tainan|
-|TaiwanJobs|Taurus|Tech_Job|Tour_Agency|VISA|
-|Virgo|Wanted|WomenTalk|WorkanTravel|Zastrology|
-|baking|biker|car|cookclub|couple|
-|creditcard|e_shopping|forsale|give|happy|
-|home_sale|hotspring|isLandTravel|job|joke|
-|love|love_vegetal|marvel|mobilesales|movie|
-|part_time|prozac|studyabroad|talk|toberich|
-|travel|travelbooks|
--->
 ------------------------------------------------------------
 ## UPDATE
 #### 2017/12/9
@@ -98,15 +72,12 @@ e-mail : samlin266118@gmail.com 有問題可寄信給我。<br>
 
 ------------------------------------------------------------
 
-## 附件
+<!--## 附件
 1. load_data_from_mysql.py ：可自由取得 SQL 中的 data，該程式中已將格式轉為 dataframe ，利於分析。
-
 2. upload_clean_data.py：可上傳 data 的帳號，提供各位進行 data clean 後，一個上傳/分享的管道，這樣就不需要每個人都進行 data clean，合作的概念。程式中提供一個 建立 data file 和上傳 data 的範例。
-
 3. sql.py：提供 python 連接 MYSQL 教學，有中英註解，如果不清楚再 email 詢問我。
-
 4. craw_ptt.py：提供爬取 PTT 文章，並且上傳到 MYSQL code，附上中文註解，不過 code 中並沒有設定密碼，會有 ERROR，帳號密碼請參考 py_connect_sql_example.py。
-
+-->
 
 ------------------------------------------------------------
 
