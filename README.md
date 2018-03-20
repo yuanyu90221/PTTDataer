@@ -49,7 +49,7 @@ e-mail : samlin266118@gmail.com 有問題可寄信給我。<br>
 |[home_sale](https://www.ptt.cc/bbs/home-sale/index.html)|[hotspring](https://www.ptt.cc/bbs/hotspring/index.html)|[isLandTravel](https://www.ptt.cc/bbs/isLandTravel/index.html)|[job](https://www.ptt.cc/bbs/job/index.html)|[joke](https://www.ptt.cc/bbs/joke/index.html)|
 |[love](https://www.ptt.cc/bbs/love/index.html)|[love_vegetal](https://www.ptt.cc/bbs/love-vegetal/index.html)|[marvel](https://www.ptt.cc/bbs/marvel/index.html)|[mobilesales](https://www.ptt.cc/bbs/mobilesales/index.html)|[movie](https://www.ptt.cc/bbs/movie/index.html)|
 |[part_time](https://www.ptt.cc/bbs/part-time/index.html)|[prozac](https://www.ptt.cc/bbs/prozac/index.html)|[studyabroad](https://www.ptt.cc/bbs/studyabroad/index.html)|[talk](https://www.ptt.cc/bbs/talk/index.html)|[toberich](https://www.ptt.cc/bbs/toberich/index.html)|
-|[travel](https://www.ptt.cc/bbs/travel/index.html)|[travelbooks](https://www.ptt.cc/bbs/travelbooks/index.html)
+|[travel](https://www.ptt.cc/bbs/travel/index.html)|[travelbooks](https://www.ptt.cc/bbs/travelbooks/index.html)|[sex](https://www.ptt.cc/bbs/sex/index.html)
 
 
 ------------------------------------------------------------
