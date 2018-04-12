@@ -12,8 +12,8 @@ password : 123 <br>
 [Python](https://github.com/f496328mm/Crawler_and_Share/blob/master/load_data_from_mysql.py) 
 [R](https://github.com/f496328mm/Crawler_and_Share/blob/master/load_data_from_mysql.r)  <br>
 上傳 data 範例 
-[Python](https://github.com/f496328mm/Crawler_and_Share/blob/master/upload_data_to_mysql.py) <br><br>
-[R](https://github.com/f496328mm/Crawler_and_Share/blob/master/upload_data_to_mysql.r)  <br>
+[Python](https://github.com/f496328mm/Crawler_and_Share/blob/master/upload_data_to_mysql.py) <br>
+[R](https://github.com/f496328mm/Crawler_and_Share/blob/master/upload_data_to_mysql.r)  <br><br>
 ------------------------------------------------------------
 
 最新 data 在 ptt_data1.0 中，目前超過 600 萬筆 ( 42GB )，如想分析的 ptt 文章，我沒爬取，麻煩留言在 issues 。<br>
