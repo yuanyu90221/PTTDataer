@@ -17,7 +17,7 @@ password : 123 <br>
 
 ------------------------------------------------------------
 
-最新 data 在 ptt_data1.0 中，目前超過 600 萬筆 ( 42GB )，如想分析的 ptt 文章，我沒爬取，麻煩留言在 issues 。<br>
+最新 data 在 ptt_data1.0 中，目前超過 700 萬筆 ( 42GB )，如想分析的 ptt 文章，我沒爬取，麻煩留言在 issues 。<br>
 <!-- 本人 10/16 要去當兵了(一年)T.T。該平台會繼續開著，爬蟲方面設定排程繼續進行。issues 方面，會盡可能利用假日回應。<br><br>
 e-mail : samlin266118@gmail.com 有問題可寄信給我。<br>
 資料科學家是當今最紅的職業，根據 CareerCast.com 網站，2016 best job is data scientist。
