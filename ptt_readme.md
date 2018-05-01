@@ -1,6 +1,4 @@
 
-### 目前已爬取的 PTT 版，可由版名搭配提供的 code，進行資料讀取
-
 | | | | | |
 |-|-|-|-|-|
 |[AdvEduUK](https://www.ptt.cc/bbs/AdvEduUK/index.html)|[AllTogether](https://www.ptt.cc/bbs/AllTogether/index.html)|[Anti_Cancer](https://www.ptt.cc/bbs/Anti-Cancer/index.html)|[Aquarius](https://www.ptt.cc/bbs/Aquarius/index.html)|[Aries](https://www.ptt.cc/bbs/Aries/index.html)|
