@@ -21,9 +21,7 @@ password : 123 <br>
 
 ------------------------------------------------------------
 
-## 目前爬的 PTT 版如下，可搭配 下載 data 範例 [Python](https://github.com/f496328mm/Crawler_and_Share/blob/master/input_data_from_mysql.py) or [R](https://github.com/f496328mm/Crawler_and_Share/blob/master/input_data_from_mysql.r) 使用<br>
-
-[PTT](https://github.com/f496328mm/Crawler_and_Share/blob/master/ptt_readme.md) 已爬取的 PTT 版，可由版名搭配提供的 code，進行資料讀取。
+### 目前已爬取的 PTT 版 [click](https://github.com/f496328mm/Crawler_and_Share/blob/master/ptt_readme.md) ，可搭配 下載 data 範例 [Python](https://github.com/f496328mm/Crawler_and_Share/blob/master/input_data_from_mysql.py) or [R](https://github.com/f496328mm/Crawler_and_Share/blob/master/input_data_from_mysql.r) ，進行資料讀取。<br>
 
 ------------------------------------------------------------
 ## UPDATE
