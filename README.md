@@ -53,7 +53,7 @@ password : 123 <br>
 ## UPDATE
 #### 2018/5/2
 1. 爬取台股相關數據，包含歷史股價( 開盤、收盤、最高、最低、成交量 )，歷史財報( 營收、毛利、EPS等 )，與一般資訊( 代號、名稱、產業 )。
-詳細可參考[FinancialOpenData](https://github.com/f496328mm/FinancialMining/tree/master/FinancialOpenData)
+詳細可參考 [FinancialOpenData](https://github.com/f496328mm/FinancialMining/tree/master/FinancialOpenData)
 未來將爬取其他金融數據 ( 各國匯率、國際油價、央行利率、債券價格等 ) 。
 
 #### 2017/12/9
@@ -64,17 +64,6 @@ password : 123 <br>
 2. 未來將著重在 data clean 上。
 
 [history_Update](https://github.com/f496328mm/Crawler_and_Share/blob/master/history_Update.md)<br>
-
-<!--
-## 2017/10/3 
-公開密碼，權限為：可自由取得 SQL 中的 data，該程式中已將格式轉為 dataframe ，利於分析。-->
-
-<!--## 附件
-1. load_data_from_mysql.py ：可自由取得 SQL 中的 data，該程式中已將格式轉為 dataframe ，利於分析。
-2. upload_clean_data.py：可上傳 data 的帳號，提供各位進行 data clean 後，一個上傳/分享的管道，這樣就不需要每個人都進行 data clean，合作的概念。程式中提供一個 建立 data file 和上傳 data 的範例。
-3. sql.py：提供 python 連接 MYSQL 教學，有中英註解，如果不清楚再 email 詢問我。
-4. craw_ptt.py：提供爬取 PTT 文章，並且上傳到 MYSQL code，附上中文註解，不過 code 中並沒有設定密碼，會有 ERROR，帳號密碼請參考 py_connect_sql_example.py。
--->
 
 ------------------------------------------------------------
 
