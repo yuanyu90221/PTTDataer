@@ -25,7 +25,10 @@ password : 123 <br>
 
 ------------------------------------------------------------
 ## UPDATE
-#### 2018/5/2
+#### 2018/5/1
+1. 新增 Financial Open Data 讀檔範例，請參考 [FinancialOpenData](https://github.com/f496328mm/FinancialMining/tree/master/FinancialOpenData)。
+
+#### 2018/5/1
 1. 爬取台股相關數據，包含歷史股價( 開盤、收盤、最高、最低、成交量 )，歷史財報( 營收、毛利、EPS等 )，與一般資訊( 代號、名稱、產業 )。
 詳細可參考 [FinancialOpenData](https://github.com/f496328mm/FinancialMining/tree/master/FinancialOpenData)。
 2. 未來將爬取其他金融數據 ( 各國匯率、國際油價、央行利率、債券價格等 ) ，進行整合。
