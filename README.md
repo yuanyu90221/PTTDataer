@@ -25,7 +25,7 @@ password : 123 <br>
 
 ------------------------------------------------------------
 ## UPDATE
-#### 2018/5/1
+#### 2018/5/2
 1. 新增 Financial Open Data 讀檔範例，請參考 [FinancialOpenData](https://github.com/f496328mm/FinancialMining/tree/master/FinancialOpenData)。
 
 #### 2018/5/1
