@@ -1,81 +1,94 @@
-# -*- coding: utf-8 -*-
-
-# 開程式，可自由取得 SQL 中的 data，並將格式轉為 dataframe ，利於分析
-
 
 import pymysql
 import pandas as pd
-import re
-import datetime
+import numpy as np
 
-def load_data_from_mysql(data_name = 'ptt_job'):
-    #---------------------------------------------------------------                         
-    # 連接 MySQL
-    conn = ( pymysql.connect(host = '114.34.138.146',
-                             port = 3306,
-                             user='guest',
-                             password='123',
-                             database='ptt_data1.0',  
-                             charset="utf8") )     
+host = '114.34.138.146'
+user = 'guest'
+password = '123'
+
+#--------------------------------------------------------
+
+def execute_sql2(host,user,password,database,sql_text):
+    
+    conn = ( pymysql.connect(host = host,# SQL IP
+                     port = 3306,
+                     user = user,# 帳號
+                     password = password,# 密碼
+                     database = database,  # 資料庫名稱
+                     charset="utf8") )   #  編碼
                              
-    cursor = conn.cursor()                         
-    cursor.execute('select * from ' + data_name)
-    # 抓所有的 data
-    sql_data = cursor.fetchall()
-    # close connect
-    conn.close()
-    #---------------------------------------------------------------                         
-    # 從 MYSQL 抓下來的型態為 tuple, 不利於分析, 
-    # 一般是使用 dataframe, 因此進行轉換
-    # type of data is tuple, we can change to dataframe
+    cursor = conn.cursor()    
+    # sql_text = "SELECT * FROM `_0050_TW` ORDER BY `Date` DESC LIMIT 1"
+    try:   
+        cursor.execute(sql_text)
+        data = cursor.fetchall()
+        conn.close()
+        return data
+    except:
+        conn.close()
+        return ''
+
+class load_ptt_data:
+    #---------------------------------------------------------------    
+    def get_col_name(self,database,data_name):
+       
+        tem_col_name = execute_sql2(
+                host = host,
+                user = user,
+                password = password,
+                database = database,
+                sql_text = 'SHOW columns FROM '+ data_name )
     
-    title = []
-    date = []
-    author = []
-    ip = []
-    push = []
-    boo = []
-    arrow = []
-    article_url = []
-    clean_article = []
-    origin_article = []
-    for d in sql_data:
-        title.append( d[0] )
-        date.append(  d[1] )
-        author.append(  d[2] )
-        ip.append(  d[3] )
-        push.append(  d[4] )
-        boo.append(  d[5] )
-        arrow.append(  d[6] )
-        article_url.append(  d[7] )
-        clean_article.append(  d[8] )
-        origin_article.append(  d[9] )
-        
-        
-    data = {
-        'title' : title,
-        'date' : date,
-        'author' : author,
-        'ip' : ip,
-        'push' : push,
-        'boo' : boo,
-        'arrow' : arrow,
-        'article_url' : article_url,
-        'clean_article' : clean_article,
-        'origin_article' : origin_article}
+        col_name = []
+        for i in range(len(tem_col_name)):
+            col_name.append( tem_col_name[i][0] )
+        #col_name.remove('id')    
+        self.col_name = col_name
     
-    data = pd.DataFrame(data)
-    # 轉換成功
-    return data
-#--------------------------------------------------------------- 
+    def load(self,data_name):
+        
+        self.get_col_name('ptt_data1.0',data_name)
+    
+        data = pd.DataFrame()
+        for j in range(len(self.col_name)):
+            print(j)
+            col = self.col_name[j]
+            text = 'select ' + col + ' from ' + data_name
+            
+            tem = execute_sql2(
+                host = host,
+                user = user,
+                password = password,
+                database = 'ptt_data1.0',
+                sql_text = text)
+            
+            if col=='Date':
+                tem = [np.datetime64(x[0]) for x in tem]
+                tem = pd.DataFrame(tem)
+                data[col] = tem.loc[:,0]
+            else:
+                tem = np.concatenate(tem, axis=0)
+                tem = pd.DataFrame(tem)
+                data[col] = tem[0]
+                
+        return data
+    
 #---------------------------------------------------------
-# 如想取得其他 data，可更改 data_name，data_name 可以參考
-# https://github.com/f496328mm/Crawler_and_Share 下的 SQL name
-# 傳輸 data 可能會花一段時間(一分內) ，麻煩請稍等
-job_data = load_data_from_mysql(data_name = 'job')
+tem = execute_sql2(host,user,password,'ptt_data1.0','show tables')
+all_data_table_name = np.concatenate(tem, axis=0)
+all_data_table_name
+
+#---------------------------------------------------------
+
+self = load_ptt_data()
+data_name = all_data_table_name[0]
+# or 
+data_name = 'job'
+data = self.load(data_name)
 
 
 
-                         
-                         
-                         
+
+
+
