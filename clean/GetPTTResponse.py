@@ -5,9 +5,15 @@ import numpy as np
 import re
 import os,sys
 import datetime
-os.chdir('/home/linsam/project/PTT_Crawler/clean')
-sys.path.append('/home/linsam/project/PTT_Crawler/clean')
+import pymysql
+file_path = '/home/linsam/github/Crawler_and_Share/clean'
+
+os.chdir(file_path)
+sys.path.append(file_path)
 import CleanPTTIP
+file_path = '/home/linsam/project/PTT_Crawler'
+os.chdir(file_path)
+sys.path.append(file_path)
 import PTTKey
 
 host = PTTKey.host
@@ -32,7 +38,13 @@ class GetPTTResponse(CleanPTTIP.CleanPTTIP):
                 elif '推' in tem2.group(0) or '噓' in tem2.group(0) or '→' in tem2.group(0) :
                     #response.append(res)
                     response = response + '\n' + res
+                try:
+                    ip = re.search('[[0-9]+.[0-9]+.[0-9]+.[0-9]+]*',response).group(0)
+                    response = response.replace(ip,'')
+                except:
+                    123
             #response.split('\n')
+            response = pymysql.escape_string(response)
             return response
         #---------------------------------------------------------------
         #self = load_ptt_data()
@@ -46,11 +58,11 @@ class GetPTTResponse(CleanPTTIP.CleanPTTIP):
 
             sql_text = []
             if bo == 1:
-                for i in range(len(self.data)):
+                for i in range(len(self.data)):#i
                     response = getresponse(self.data['origin_article'][i]) 
                     data_i = self.data['id'][i]
-                    response = response.replace('"',"'")
-                    
+                    #response = response.replace('"',"'")
+
                     text = " UPDATE `" + self.data_name
                     text = text + '` SET `clean_article` = "' + response 
                     text = text + '" WHERE `'+ self.data_name 
@@ -83,7 +95,7 @@ class GetPTTResponse(CleanPTTIP.CleanPTTIP):
 
         #self.ADDresponse()
         #return self.error
-        for k in range(0,len(self.all_data_table_name)):# k=0
+        for k in range(4,len(self.all_data_table_name)):# k=4
             print(str(k)+'/'+str(len(self.all_data_table_name)))
             tem = str( datetime.datetime.now() )
             print( re.split('\.',tem)[0] )        

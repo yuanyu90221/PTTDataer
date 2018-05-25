@@ -97,7 +97,13 @@ def craw_ptt_data_fun(article_url,
             elif '推' in tem2.group(0) or '噓' in tem2.group(0) or '→' in tem2.group(0) :
                 #response.append(res)
                 response = response + '\n' + res
+            try:
+                ip = re.search('[[0-9]+.[0-9]+.[0-9]+.[0-9]+]*',response).group(0)
+                response = response.replace(ip,'')
+            except:
+                123
         #response.split('\n')
+        response = pymysql.escape_string(response)
         return response
     #------------------------------------------------------
     def get_clean_article(article):
@@ -108,10 +114,9 @@ def craw_ptt_data_fun(article_url,
 
         return article
     
-    def clean(cleanarticle,date):
+    def clean(cleanarticle):
         #
-        #tdate = str( date['date'][i] )
-        tdate = str(date)
+        tdate = str( date['date'][i] )
         year = tdate[:4]
         tdate = re.search(r"[[0-9]*:[0-9]*:[0-9]*]*",tdate).group(0)
         tdate = tdate + ' ' + year
@@ -131,9 +136,10 @@ def craw_ptt_data_fun(article_url,
                         #print(te)
                         article = article + '\n' + te
                         
-        article = get_clean_article(article)   
+        article = get_clean_article(article)  
         article = article.replace('"',"'")
-        return article        
+        article = pymysql.escape_string(article)
+        return article      
     #------------------------------------------------------        
     if( bool_18 == 1 ):
     #-----------------------------------------------------

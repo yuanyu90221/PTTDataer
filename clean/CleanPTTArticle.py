@@ -6,10 +6,17 @@ import sys
 import re
 import datetime
 from random import sample
-os.chdir('/home/linsam/project/PTT_Crawler/clean')
-sys.path.append('/home/linsam/project/PTT_Crawler/clean')
+import pymysql
+file_path = '/home/linsam/github/Crawler_and_Share/clean'
+
+os.chdir(file_path)
+sys.path.append(file_path)
 import CleanPTTIP
+file_path = '/home/linsam/project/PTT_Crawler'
+os.chdir(file_path)
+sys.path.append(file_path)
 import PTTKey
+
 
 host = PTTKey.host
 user = PTTKey.user
@@ -54,6 +61,7 @@ class CleanPTTArticle(CleanPTTIP.CleanPTTIP):
                             
             article = get_clean_article(article)  
             article = article.replace('"',"'")
+            article = pymysql.escape_string(article)
             return article
         #------------------------------------------------------
         self.data_name = self.all_data_table_name[k]
@@ -74,6 +82,7 @@ class CleanPTTArticle(CleanPTTIP.CleanPTTIP):
                 data_i = clean_article['id'][i] # 76752
                 cleanarticle = clean_article['clean_article'][i]
                 article = clean(cleanarticle)
+                
                 
                 #article_set.append( article )
                 text = " UPDATE `" + self.data_name

@@ -6,9 +6,16 @@ import pandas as pd
 import re
 import numpy as np
 import sys
-os.chdir('/home/linsam/project/PTT_Crawler/clean')
-sys.path.append('/home/linsam/project/PTT_Crawler/clean')
+import os
+file_path = '/home/linsam/github/Crawler_and_Share/clean'
+
+os.chdir(file_path)
+sys.path.append(file_path)
+file_path = '/home/linsam/project/PTT_Crawler'
+os.chdir(file_path)
+sys.path.append(file_path)
 import PTTKey
+
 
 host = PTTKey.host
 user = PTTKey.user
@@ -70,8 +77,9 @@ class CleanPTTIP:
     
         #try:   
         for i in range(len(sql_text)):
-            print(i)
-            cursor.execute(sql_text[i])
+            #print(i)
+            #(sql_text[i])
+            cursor.execute( sql_text[i] )
         conn.commit()
         conn.close()
             #return 1
