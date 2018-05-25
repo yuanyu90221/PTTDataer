@@ -25,8 +25,13 @@ password : 123 <br>
 
 ------------------------------------------------------------
 ## UPDATE
+#### 2018/5/25
+1. PTT data, IP 、date、title clean 100%.
+2. PTT data clean article ->>>
+3. 新增 response 欄位，儲存所有推文，用\n做為區隔符號.
+
 #### 2018/5/4
-1. PTT data, clean IP ->>>
+1. PTT data, clean IP 
 
 #### 2018/5/2
 1. 新增 Financial Open Data 讀檔範例，請參考 [FinancialOpenData](https://github.com/f496328mm/FinancialMining/tree/master/FinancialOpenData)。
