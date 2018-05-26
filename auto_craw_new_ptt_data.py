@@ -478,7 +478,7 @@ def auto_craw_new_ptt_data(amount,ptt_class_name,sql_name):
 
     #------------------------------------------------------------------
     
-    
+'''    
 def auto_craw_history_ptt_data(amount,ptt_class_name,sql_name):
 
     #amount = 10
@@ -488,7 +488,7 @@ def auto_craw_history_ptt_data(amount,ptt_class_name,sql_name):
     for i in range(min_index-1,min_index-amount,-1):
         print(i,'================================================')
         main_craw_ptt(i,ptt_class_name,sql_name,bo='his') 
-         
+'''      
 #------------------------------------------------------------------------
 def save_craw_process(ptt_class_name,sql_name):
     # ptt_class_name = 'job'
@@ -505,7 +505,7 @@ def save_craw_process(ptt_class_name,sql_name):
     tem = str( datetime.datetime.now() )
     time = re.split('\.',tem)[0]
     #---------------------------------------------------------------------------        
-    ( cursor.execute('insert into '+ 'process(ptt_name,page_index,CrawlerDate)'  +
+    ( cursor.execute('insert into '+ 'process(name,page_index,CrawlerDate)'  +
                      ' values(%s,%s,%s)', 
               (ptt_class_name,index,time) ) )
                           
@@ -530,7 +530,7 @@ def save_new_craw_process(ptt_class_name,sql_name):
     time = re.split('\.',tem)[0]
     ptt_class_name = ptt_class_name + '_new'
     #---------------------------------------------------------------------------        
-    ( cursor.execute('insert into '+ 'process(ptt_name,page_index,CrawlerDate)'  +
+    ( cursor.execute('insert into '+ 'process(name,page_index,CrawlerDate)'  +
                      ' values(%s,%s,%s)', 
               (ptt_class_name,index,time) ) )
                           
@@ -674,7 +674,7 @@ if __name__ == '__main__':
     tem = str( datetime.datetime.now() )
     ptt_time = re.split('\.',tem)[0]
     #---------------------------------------------------------------------------        
-    ( cursor.execute('insert into '+ 'process(ptt_name,page_index,CrawlerDate)'  +
+    ( cursor.execute('insert into '+ 'process(name,page_index,CrawlerDate)'  +
                      ' values(%s,%s,%s)', 
               ('ptt'+str(today),'0',ptt_time) ) )
                           
