@@ -505,7 +505,7 @@ def save_craw_process(ptt_class_name,sql_name):
     tem = str( datetime.datetime.now() )
     time = re.split('\.',tem)[0]
     #---------------------------------------------------------------------------        
-    ( cursor.execute('insert into '+ 'process(ptt_name,page_index,time)'  +
+    ( cursor.execute('insert into '+ 'process(ptt_name,page_index,CrawlerDate)'  +
                      ' values(%s,%s,%s)', 
               (ptt_class_name,index,time) ) )
                           
@@ -530,7 +530,7 @@ def save_new_craw_process(ptt_class_name,sql_name):
     time = re.split('\.',tem)[0]
     ptt_class_name = ptt_class_name + '_new'
     #---------------------------------------------------------------------------        
-    ( cursor.execute('insert into '+ 'process(ptt_name,page_index,time)'  +
+    ( cursor.execute('insert into '+ 'process(ptt_name,page_index,CrawlerDate)'  +
                      ' values(%s,%s,%s)', 
               (ptt_class_name,index,time) ) )
                           
@@ -674,7 +674,7 @@ if __name__ == '__main__':
     tem = str( datetime.datetime.now() )
     ptt_time = re.split('\.',tem)[0]
     #---------------------------------------------------------------------------        
-    ( cursor.execute('insert into '+ 'process'  +
+    ( cursor.execute('insert into '+ 'process(ptt_name,page_index,CrawlerDate)'  +
                      ' values(%s,%s,%s)', 
               ('ptt'+str(today),'0',ptt_time) ) )
                           
