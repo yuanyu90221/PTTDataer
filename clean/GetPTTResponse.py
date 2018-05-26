@@ -95,7 +95,7 @@ class GetPTTResponse(CleanPTTIP.CleanPTTIP):
 
         #self.ADDresponse()
         #return self.error
-        for k in range(4,len(self.all_data_table_name)):# k=4
+        for k in range(27,len(self.all_data_table_name)):# k=4
             print(str(k)+'/'+str(len(self.all_data_table_name)))
             tem = str( datetime.datetime.now() )
             print( re.split('\.',tem)[0] )        

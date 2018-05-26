@@ -98,7 +98,7 @@ class CleanPTTArticle(CleanPTTIP.CleanPTTIP):
         tem = self.execute_sql2('show tables')
         self.all_data_table_name = np.concatenate(tem, axis=0)
         
-        for k in range(0,len(self.all_data_table_name)):# k = 0
+        for k in range(25,len(self.all_data_table_name)):# k = 25
             print(str(k)+'/'+str(len(self.all_data_table_name)))
             tem = str( datetime.datetime.now() )
             print( re.split('\.',tem)[0] )    
