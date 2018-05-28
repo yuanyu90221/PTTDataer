@@ -54,17 +54,21 @@ class GetPTTResponse(CleanPTTIP.CleanPTTIP):
         response = []
         for n in range(len(self.sequence)-1):# n=0
             print(n)
+            
+            tem = str( datetime.datetime.now() )
+            print( re.split('\.',tem)[0] )                  
             self.data,bo = self.load('origin_article',n) 
 
             sql_text = []
             if bo == 1:
-                for i in range(len(self.data)):#i
+                for i in range(len(self.data)):# i = 1
+               
                     response = getresponse(self.data['origin_article'][i]) 
                     data_i = self.data['id'][i]
                     #response = response.replace('"',"'")
 
                     text = " UPDATE `" + self.data_name
-                    text = text + '` SET `clean_article` = "' + response 
+                    text = text + '` SET `response` = "' + response 
                     text = text + '" WHERE `'+ self.data_name 
                     text = text +"`.`id` = " + str(data_i) + "; "
                     #---------------------------------------------
@@ -92,13 +96,10 @@ class GetPTTResponse(CleanPTTIP.CleanPTTIP):
     def main(self):
         tem = self.execute_sql2('show tables')
         self.all_data_table_name = np.concatenate(tem, axis=0)
-
         #self.ADDresponse()
         #return self.error
-        for k in range(27,len(self.all_data_table_name)):# k=4
+        for k in range(0,len(self.all_data_table_name)):# k=28
             print(str(k)+'/'+str(len(self.all_data_table_name)))
-            tem = str( datetime.datetime.now() )
-            print( re.split('\.',tem)[0] )        
             self.data_clean_response(k)
 
 

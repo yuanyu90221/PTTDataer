@@ -114,9 +114,9 @@ def craw_ptt_data_fun(article_url,
 
         return article
     
-    def clean(cleanarticle):
+    def clean(cleanarticle,date):
         #
-        tdate = str( date['date'][i] )
+        tdate = str( date )
         year = tdate[:4]
         tdate = re.search(r"[[0-9]*:[0-9]*:[0-9]*]*",tdate).group(0)
         tdate = tdate + ' ' + year
@@ -462,7 +462,7 @@ def auto_craw_new_ptt_data(amount,ptt_class_name,sql_name):
     #max_index = (his_index)
     #max_date_time = max(date_time)
     #data = pd.DataFrame()
-    for i in range(last_index-amount,last_index+1,1):# i = 333
+    for i in range(last_index-amount,last_index+1,1):# i = 348
         k=0
         print(i,'================================================')
         # connect wrong

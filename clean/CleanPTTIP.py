@@ -106,7 +106,7 @@ class CleanPTTIP:
         #self.data['id'] = data_id[0]
         self.sequence = take_id_seq(data_id)
     
-    def load(self,var,n):
+    def load(self,var,n):# var = 'clean_article'
         
         self.col_name = [var,'id']
         data = pd.DataFrame()

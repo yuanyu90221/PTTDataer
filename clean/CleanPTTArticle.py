@@ -37,7 +37,7 @@ class CleanPTTArticle(CleanPTTIP.CleanPTTIP):
 
             return article
         
-        def clean(cleanarticle):
+        def clean(cleanarticle,date):
             #
             tdate = str( date['date'][i] )
             year = tdate[:4]
@@ -68,40 +68,41 @@ class CleanPTTArticle(CleanPTTIP.CleanPTTIP):
         
         self.load_id()
         # self.sequence
-        for n in range(len(self.sequence)-1):# n = 0
+        for n in range(len(self.sequence)-1):# n = 1
             print(n)
             
-            clean_article,bo = self.load('clean_article',n) 
+            tem = str( datetime.datetime.now() )
+            print( re.split('\.',tem)[0] )   
+            origin_article,bo = self.load('origin_article',n) 
             date,bo = self.load('date',n)
             
             sql_text = []
-            for i in range(len(clean_article)):
-                # del time
-                #i = sample(range(len(clean_article)),1)[0]
-                # i = 27
-                data_i = clean_article['id'][i] # 76752
-                cleanarticle = clean_article['clean_article'][i]
-                article = clean(cleanarticle)
-                
-                
-                #article_set.append( article )
-                text = " UPDATE `" + self.data_name
-                text = text + '` SET `clean_article` = "' + article 
-                text = text + '" WHERE `'+ self.data_name 
-                text = text +"`.`id` = " + str(data_i) + "; "
-                sql_text.append(text)
-                
-            self.UPDATE_sql(sql_text)
+            if bo == 1:
+                for i in range(len(origin_article)):
+                     
+                    # del time
+                    #i = sample(range(len(clean_article)),1)[0]
+                    # i = 27
+                    data_i = origin_article['id'][i] # 76752
+                    oarticle = origin_article['origin_article'][i]
+                    article = clean(oarticle,date)
+                    
+                    #article_set.append( article )
+                    text = " UPDATE `" + self.data_name
+                    text = text + '` SET `clean_article` = "' + article 
+                    text = text + '" WHERE `'+ self.data_name 
+                    text = text +"`.`id` = " + str(data_i) + "; "
+                    sql_text.append(text)
+                    
+                self.UPDATE_sql(sql_text)
                 
 
     def main(self):
         tem = self.execute_sql2('show tables')
         self.all_data_table_name = np.concatenate(tem, axis=0)
         
-        for k in range(25,len(self.all_data_table_name)):# k = 25
+        for k in range(0,len(self.all_data_table_name)):# k = 37
             print(str(k)+'/'+str(len(self.all_data_table_name)))
-            tem = str( datetime.datetime.now() )
-            print( re.split('\.',tem)[0] )    
             self.data_clean_article(k)
 
 
