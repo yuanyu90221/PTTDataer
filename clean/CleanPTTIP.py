@@ -11,16 +11,16 @@ file_path = '/home/linsam/github/Crawler_and_Share/clean'
 
 os.chdir(file_path)
 sys.path.append(file_path)
-file_path = '/home/linsam/project/PTT_Crawler'
+file_path = '/home/linsam/github'
 os.chdir(file_path)
 sys.path.append(file_path)
-import PTTKey
+import Key
 
+host = Key.host
+user = Key.PTTUser
+password = Key.PTTPassword
+database = Key.PTTDatabase
 
-host = PTTKey.host
-user = PTTKey.user
-password = PTTKey.password
-database = PTTKey.database
 #--------------------------------------------------------
 # self = CleanPTTIP(host,user,password,'ptt_data1.0')
 class CleanPTTIP:

@@ -12,16 +12,15 @@ file_path = '/home/linsam/github/Crawler_and_Share/clean'
 os.chdir(file_path)
 sys.path.append(file_path)
 import CleanPTTIP
-file_path = '/home/linsam/project/PTT_Crawler'
+file_path = '/home/linsam/github'
 os.chdir(file_path)
 sys.path.append(file_path)
-import PTTKey
+import Key
 
-
-host = PTTKey.host
-user = PTTKey.user
-password = PTTKey.password
-database = PTTKey.database
+host = Key.host
+user = Key.PTTUser
+password = Key.PTTPassword
+database = Key.PTTDatabase
 
 #--------------------------------------------------------'
 # self = CleanPTTArticle(host,user,password,'ptt_data1.0')
@@ -101,7 +100,7 @@ class CleanPTTArticle(CleanPTTIP.CleanPTTIP):
         tem = self.execute_sql2('show tables')
         self.all_data_table_name = np.concatenate(tem, axis=0)
         
-        for k in range(0,len(self.all_data_table_name)):# k = 37
+        for k in range(104,len(self.all_data_table_name)):# k = 37
             print(str(k)+'/'+str(len(self.all_data_table_name)))
             self.data_clean_article(k)
 

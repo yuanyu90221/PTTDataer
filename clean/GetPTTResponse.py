@@ -11,15 +11,16 @@ file_path = '/home/linsam/github/Crawler_and_Share/clean'
 os.chdir(file_path)
 sys.path.append(file_path)
 import CleanPTTIP
-file_path = '/home/linsam/project/PTT_Crawler'
+file_path = '/home/linsam/github'
 os.chdir(file_path)
 sys.path.append(file_path)
-import PTTKey
+import Key
 
-host = PTTKey.host
-user = PTTKey.user
-password = PTTKey.password
-database = PTTKey.database
+host = Key.host
+user = Key.PTTUser
+password = Key.PTTPassword
+database = Key.PTTDatabase
+
 
 #--------------------------------------------------------'
 # self = GetPTTResponse(host,user,password,'ptt_data1.0')
@@ -79,7 +80,7 @@ class GetPTTResponse(CleanPTTIP.CleanPTTIP):
 
     def ADDresponse(self):
         self.error = []
-        for k in range(77,len(self.all_data_table_name)):# k = 0
+        for k in range(101,len(self.all_data_table_name)):# k = 0
             print(str(k)+'/'+str(len(self.all_data_table_name)))
             data_table_name = self.all_data_table_name[k]
             tem = str( datetime.datetime.now() )
@@ -98,7 +99,7 @@ class GetPTTResponse(CleanPTTIP.CleanPTTIP):
         self.all_data_table_name = np.concatenate(tem, axis=0)
         #self.ADDresponse()
         #return self.error
-        for k in range(0,len(self.all_data_table_name)):# k=28
+        for k in range(101,len(self.all_data_table_name)):# k=28
             print(str(k)+'/'+str(len(self.all_data_table_name)))
             self.data_clean_response(k)
 
