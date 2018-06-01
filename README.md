@@ -25,8 +25,11 @@ password : 123 <br>
 
 ------------------------------------------------------------
 ## UPDATE
+#### 2018/6/1
+1. PTT data - article and response clean 100%.
+
 #### 2018/5/25
-1. PTT data, IP 、date、title clean 100%.
+1. PTT data - IP 、date、title clean 100%.
 2. PTT data clean article ->>>
 3. 新增 response 欄位，儲存所有推文，用\n做為區隔符號.
 
