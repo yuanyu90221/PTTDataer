@@ -3,11 +3,28 @@
 #### 在資料爆炸的年代，我們卻沒有容易取得 data 的管道，因此提供一個共享 data 的平台，一個人爬蟲力量有限，合作爬蟲力量無限。各位可以在這上面，update 自己爬到的 data ，download 其他人分享的 data。<br>
 
 ------------------------------------------------------------
-
 平台網址：http://114.34.138.146/phpmyadmin/ <br>
 user : guest <br>
 password : 123 <br>
+------------------------------------------------------------
+### 變數介紹
 
+| variable name | 變數名稱 | example |
+|---------------|---------|----------|
+| title | 標題 | xxxxx |
+| date | 日期 | 2018-06-04 16:31:34 |
+| author | 作者 | xxxxx |
+| author_ip | 作者IP | xxx.xx.xxx.xx |
+| push_amount | 推文數 | 21 |
+| boo_amount | 噓文數 | 10 |
+| arrow_amount | 箭頭數 | 5 |
+| article_url | 文章網址 | https://www.ptt.cc/bbs/Boy-Girl/xxxxxxxxx.html |
+| clean_article | clean 後的文章 | xxxxx |
+| origin_article | 原始文章 | xxxx |
+| response | 推/噓文內容(以\n作為分隔符號) | \n推 xxxx: xxxxxx \n噓 xxxxx: xxxxx\n→ xxxx: xxxx  |
+| id | index | 1 |
+
+------------------------------------------------------------
 下載 data 範例 
 [Python](https://github.com/f496328mm/Crawler_and_Share/blob/master/load_data_from_mysql.py) 
 [R](https://github.com/f496328mm/Crawler_and_Share/blob/master/load_data_from_mysql.r)  <br>
