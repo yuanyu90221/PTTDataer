@@ -17,10 +17,10 @@ import jieba.analyse
 os.chdir(file_path)
 sys.path.append(file_path)
 import LoadPttData
-jieba.set_dictionary("jieba/extra_dict/dict_tw.txt")
-font = os.path.join( "/home/linsam/github/Crawler_and_Share/jieba/simfang.ttf")
+jieba.set_dictionary("dict_tw.txt")
+font = os.path.join( "/home/linsam/github/Crawler_and_Share/simfang.ttf")
 
-alice_coloring = np.array(Image.open("/home/linsam/github/Crawler_and_Share/jieba/alice_color.png"))
+alice_coloring = np.array(Image.open("/home/linsam/github/Crawler_and_Share/alice_color.png"))
 
 class PTTWordCloud:
     def __init__(self,data_name,percent,var_name):
@@ -43,7 +43,7 @@ class PTTWordCloud:
         #path = '/home/linsam/github/Crawler_and_Share/jieba/extra_dict/'
         #os.listdir()
         #for p in path:
-        stopwords = pd.read_csv('jieba/extra_dict/stop_words.txt', 
+        stopwords = pd.read_csv('stop_words.txt', 
                                 index_col=False, 
                                 quoting=3, 
                                 sep="\t", 
@@ -100,7 +100,7 @@ self.get_words()
 self.get_topk_tags('clean_article')
 
 #------------------------------------------------------
-self = PTTWordCloud('Salary',0.2,['clean_article'])
+self = PTTWordCloud('Salary',0.02,['clean_article'])
 self.main()
 self.get_topk_tags('clean_article')
 
