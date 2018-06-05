@@ -1,6 +1,21 @@
 
 # history update 歷史更新紀錄
 
+#### 2018/5/25
+1. PTT data - IP 、date、title clean 100%.
+2. PTT data clean article ->>>
+3. 新增 response 欄位，儲存所有推文，用\n做為區隔符號.
+
+#### 2018/5/4
+1. PTT data, clean IP 
+
+#### 2018/5/2
+1. 新增 Financial Open Data 讀檔範例，請參考 [FinancialOpenData](https://github.com/f496328mm/FinancialMining/tree/master/FinancialOpenData)。
+
+#### 2018/5/1
+1. 爬取台股相關數據，包含歷史股價( 開盤、收盤、最高、最低、成交量 )，歷史財報( 營收、毛利、EPS等 )，與一般資訊( 代號、名稱、產業 )。
+詳細可參考 [FinancialOpenData](https://github.com/f496328mm/FinancialMining/tree/master/FinancialOpenData)。
+2. 未來將爬取其他金融數據 ( 各國匯率、國際油價、央行利率、債券價格等 ) ，進行整合。
 
 #### 2017/12/9
 1. 新增 R 連接 MySQL 範例。<br>
