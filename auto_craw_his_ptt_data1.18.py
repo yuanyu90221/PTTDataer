@@ -585,11 +585,11 @@ def auto_change_ptt_class(ptt_class_name,sql_name):#n=3
 #------------------------------------------------------------------------
 #------------------------------------------------------------------------    
 # main         
-host = '114.34.138.146'
-user='text_mining'# 帳號
-password='610411102'# 密碼
+host = '114.32.89.248'
+user = 'text_mining'# 帳號
+password = '610411102'# 密碼
 #database='guest_dataset'  # 資料庫名稱
-database='ptt_data1.0'  # 資料庫名稱
+database = 'ptt_data1.0'  # 資料庫名稱
 #ptt_class_name = 'PC_Shopping' # 測試, 爬取 PTT 料理板
 #sql_name = 'ptt_PC_Shopping'         # 先創建自己的 data table, 測試用
 #------------------------------------------------------------------------
