@@ -7,13 +7,15 @@ library(gWidgets)
 library(RMySQL)
 library(data.table)
 
+host = '114.32.89.248'
+
 creat_sql_file = function(dataset_name= 'test7'){
   # connect mysql
   connect = dbConnect(MySQL(), 
                       dbname = "guest_dataset",# dataset name
                       username = "guest", 
                       password = "123",   
-                      host = "114.34.138.146")
+                      host = host)
   #dataset_name = 'test7'
   sql_string = paste('create table ' , dataset_name , '( i text(100),date text(100) )',sep='' )
   dbGetQuery(connect, sql_string) # db Get Query
@@ -33,7 +35,7 @@ input_data_to_sql = function(dataset_name= 'test7',data){
                       dbname = "guest_dataset",# dataset name
                       username = "guest", 
                       password = "123",   
-                      host = "114.34.138.146")
+                      host = host)
   
   dbWriteTable(connect, dataset_name,data, append = TRUE, 
                overwrite=FALSE, row.name=FALSE) 
