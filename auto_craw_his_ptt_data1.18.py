@@ -1,6 +1,7 @@
 
 import requests
 import os
+import sys
 from bs4 import BeautifulSoup
 import re
 import pandas as pd
@@ -9,6 +10,13 @@ import datetime
 import pymysql
 from datetime import datetime as dtime
 #---------------------------------------------------------------------------------
+sys.path.append('/home/linsam/project/PTT_Crawler')
+import PTTKey
+
+host = PTTKey.host
+user = PTTKey.user
+password = PTTKey.password
+database = PTTKey.database
 #---------------------------------------------------------------------------------
 # 建立 SQL 檔案
 def creat_sql_file(sql_string,dataset_name):
@@ -585,11 +593,6 @@ def auto_change_ptt_class(ptt_class_name,sql_name):#n=3
 #------------------------------------------------------------------------
 #------------------------------------------------------------------------    
 # main         
-host = '114.32.89.248'
-user = 'text_mining'# 帳號
-password = '610411102'# 密碼
-#database='guest_dataset'  # 資料庫名稱
-database = 'ptt_data1.0'  # 資料庫名稱
 #ptt_class_name = 'PC_Shopping' # 測試, 爬取 PTT 料理板
 #sql_name = 'ptt_PC_Shopping'         # 先創建自己的 data table, 測試用
 #------------------------------------------------------------------------
