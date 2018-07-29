@@ -7,7 +7,6 @@ import datetime
 import pymysql
 from datetime import datetime as dtime
 
-os.chdir('/home/linsam/project/PTT_Crawler')
 sys.path.append('/home/linsam/project/PTT_Crawler')
 import PTTKey
 
