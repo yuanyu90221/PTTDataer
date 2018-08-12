@@ -8,8 +8,9 @@
     平台網址：http://114.32.89.248/phpmyadmin/ <br>
     user : guest <br>
     password : 123 <br>
-    
-[PTT data 下載範例](https://github.com/f496328mm/Crawler_and_Share/blob/master/LoadPttData.py) 
+PTT data 下載範例   
+[Python](https://github.com/f496328mm/Crawler_and_Share/blob/master/LoadPttData.py) 
+[Python](https://github.com/f496328mm/Crawler_and_Share/blob/master/LoadPttData.py) 
 ------------------------------------------------------------
 ### 變數介紹
 
@@ -28,14 +29,13 @@
 | response | 推/噓文內容(以\n作為分隔符號) | \n推 xxxx: xxxxxx \n噓 xxxxx: xxxxx\n→ xxxx: xxxx  |
 | id | index | 1 |
 
-------------------------------------------------------------
-下載 data 範例 
+<!---下載 data 範例 
 [Python](https://github.com/f496328mm/Crawler_and_Share/blob/master/load_data_from_mysql.py) 
 [R](https://github.com/f496328mm/Crawler_and_Share/blob/master/load_data_from_mysql.r)  <br>
 上傳 data 範例 
 [Python](https://github.com/f496328mm/Crawler_and_Share/blob/master/upload_data_to_mysql.py)
 [R](https://github.com/f496328mm/Crawler_and_Share/blob/master/upload_data_to_mysql.r)  <br>
-
+--->
 ------------------------------------------------------------
 
 最新 data 在 ptt_data1.0 中，如想分析的 ptt 文章，我沒爬取，麻煩留言在 issues 。<br>
