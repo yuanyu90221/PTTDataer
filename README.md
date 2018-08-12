@@ -37,13 +37,9 @@ PTT data 下載範例
 [R](https://github.com/f496328mm/Crawler_and_Share/blob/master/upload_data_to_mysql.r)  <br>
 --->
 ------------------------------------------------------------
-
-最新 data 在 ptt_data1.0 中，如想分析的 ptt 文章，我沒爬取，麻煩留言在 issues 。<br>
-
-------------------------------------------------------------
-
 ### 目前已爬取的 PTT 版 [click](https://github.com/f496328mm/Crawler_and_Share/blob/master/ptt_readme.md) 
 
+    如想分析的 ptt 文章，我沒爬取，麻煩留言在 issues 。
 ------------------------------------------------------------
 ## UPDATE
 #### 2018/6/14
