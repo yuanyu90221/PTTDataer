@@ -10,7 +10,7 @@
     password : 123 <br>
 PTT data 下載範例   
 [Python](https://github.com/f496328mm/Crawler_and_Share/blob/master/LoadPttData.py) 
-[Python](https://github.com/f496328mm/Crawler_and_Share/blob/master/LoadPttData.py) 
+[R](https://github.com/f496328mm/Crawler_and_Share/blob/master/load_data_from_mysql.r)
 ------------------------------------------------------------
 ### 變數介紹
 
@@ -42,16 +42,13 @@ PTT data 下載範例
 
 ------------------------------------------------------------
 
-### 目前已爬取的 PTT 版 [click](https://github.com/f496328mm/Crawler_and_Share/blob/master/ptt_readme.md) ，可搭配 下載 data 範例 [Python](https://github.com/f496328mm/Crawler_and_Share/blob/master/input_data_from_mysql.py) or [R](https://github.com/f496328mm/Crawler_and_Share/blob/master/input_data_from_mysql.r) ，進行資料讀取。<br>
+### 目前已爬取的 PTT 版 [click](https://github.com/f496328mm/Crawler_and_Share/blob/master/ptt_readme.md) 
 
 ------------------------------------------------------------
 ## UPDATE
 #### 2018/6/14
 1. 維護時間：每日早上 5:30 ~ 6:00 
 2. 爬取新 data 時間：每日早上 0:00
-
-#### 2018/6/1
-1. PTT data - article and response clean 100%.
 
 [history_Update](https://github.com/f496328mm/Crawler_and_Share/blob/master/history_Update.md)<br>
 
