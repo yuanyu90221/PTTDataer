@@ -1,6 +1,9 @@
 
 # history update 歷史更新紀錄
 
+#### 2018/6/1
+1. PTT data - article and response clean 100%.
+
 #### 2018/5/25
 1. PTT data - IP 、date、title clean 100%.
 2. PTT data clean article ->>>
