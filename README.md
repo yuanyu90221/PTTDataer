@@ -41,9 +41,9 @@ PTT data 下載範例
     如想分析的 ptt 文章，我沒爬取，麻煩留言在 issues 。
 ------------------------------------------------------------
 ## UPDATE
-#### 2018/6/14
-1. 維護時間：每日早上 5:30 ~ 6:00 
-2. 爬取新 data 時間：每日早上 0:00
+    2018/6/14
+    1. 維護時間：每日早上 5:30 ~ 6:00 
+    2. 爬取新 data 時間：每日早上 0:00
 
 [history_Update](https://github.com/f496328mm/Crawler_and_Share/blob/master/history_Update.md)<br>
 
