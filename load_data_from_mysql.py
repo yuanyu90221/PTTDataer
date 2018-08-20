@@ -3,7 +3,7 @@ import pymysql
 import pandas as pd
 import numpy as np
 
-host = '114.32.89.248'
+host = '114.32.60.100'
 user = 'guest'
 password = '123'
 
