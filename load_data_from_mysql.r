@@ -14,7 +14,7 @@ library(gWidgets)
 library(RMySQL)
 library(data.table)
 
-host = '114.32.89.248'
+host = '114.32.60.100'
 
 load_data_from_mysql = function(data_name){
   # connect mysql
