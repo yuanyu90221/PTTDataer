@@ -15,7 +15,7 @@ import pandas as pd
 # 'text_mining' is user, 
 # if your wnat password, please email to me
 #---------------------------------------------------------------
-conn = ( pymysql.connect(host = '114.34.138.146',
+conn = ( pymysql.connect(host = '114.32.60.100',
                          port = 3306,
                          user='text_mining',
                          password='password',
@@ -77,7 +77,7 @@ conn.close()
 #---------------------------------------------------------------                         
 # 在以上指令後, 你已經會上傳 data, 那要如何下載 data 呢?
 # you can input data, then how take data from MYSQL?
-conn = ( pymysql.connect(host = '114.34.138.146',
+conn = ( pymysql.connect(host = '114.32.60.100',
                          port = 3306,
                          user='text_mining',
                          password='password',
