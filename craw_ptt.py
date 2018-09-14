@@ -9,7 +9,7 @@ import datetime
 import pymysql
 from datetime import datetime as dtime
 #---------------------------------------------------------------------------------
-host = '114.32.89.248'
+host = '114.32.60.100'
 #---------------------------------------------------------------------------------
 # 建立 SQL 檔案
 def creat_sql_file(sql_string,dataset_name):
