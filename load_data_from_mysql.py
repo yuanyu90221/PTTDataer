@@ -75,6 +75,8 @@ class load_ptt_data:
         return data
     
 #---------------------------------------------------------
+'''
+# test
 tem = execute_sql2(host,user,password,'ptt_data1.0','show tables')
 all_data_table_name = np.concatenate(tem, axis=0)
 all_data_table_name
@@ -88,7 +90,7 @@ data_name = 'job'
 data = self.load(data_name)
 
 
-
+'''
 
 
 

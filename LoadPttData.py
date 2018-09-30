@@ -29,10 +29,9 @@ def execute_sql2(host,user,password,database,sql_text):
         conn.close()
         return ''
 
-class LoadPttData:
-
+class main:
     #---------------------------------------------------------------    
-    '''def get_col_name(self,database,data_name):
+    def get_col_name(self,database,data_name):
        
         tem_col_name = execute_sql2(
                 host = host,
@@ -45,46 +44,18 @@ class LoadPttData:
         for i in range(len(tem_col_name)):
             col_name.append( tem_col_name[i][0] )
         #col_name.remove('id')    
-        self.col_name = col_name'''
-    
-    def load(self,data_name,col_name):
         self.col_name = col_name
-        #self.get_col_name('ptt_data1.0',data_name)
     
-        data = pd.DataFrame()
-        for j in range(len(self.col_name)):
-            print(j)
-            col = self.col_name[j]
-            text = 'select ' + col + ' from ' + data_name
-            
-            tem = execute_sql2(
-                host = host,
-                user = user,
-                password = password,
-                database = 'ptt_data1.0',
-                sql_text = text)
-            
-            if col=='Date':
-                tem = [np.datetime64(x[0]) for x in tem]
-                tem = pd.DataFrame(tem)
-                data[col] = tem.loc[:,0]
-            else:
-                tem = np.concatenate(tem, axis=0)
-                tem = pd.DataFrame(tem)
-                data[col] = tem[0]
-                
-        return data
+    def load(self,data_name):
         
-    def load_by_id(self,data_name,col_name,start,end):
-        self.col_name = col_name
-        #self.get_col_name('ptt_data1.0',data_name)
+        self.get_col_name('ptt_data1.0',data_name)
     
         data = pd.DataFrame()
         for j in range(len(self.col_name)):
             print(j)
             col = self.col_name[j]
             text = 'select ' + col + ' from ' + data_name
-            text = text + ' where id between ' + str( start ) + ' and ' + str( end )
+            
             tem = execute_sql2(
                 host = host,
                 user = user,
@@ -102,20 +73,34 @@ class LoadPttData:
                 data[col] = tem[0]
                 
         return data
+
+def LoadPttData(data_name):
+    self = main()
+    data = self.load(data_name)
+    
+    return data
+
 #---------------------------------------------------------
+'''
 tem = execute_sql2(host,user,password,'ptt_data1.0','show tables')
 all_data_table_name = np.concatenate(tem, axis=0)
-''' test
+# test
 tem = execute_sql2(host,user,password,'ptt_data1.0','show tables')
 all_data_table_name = np.concatenate(tem, axis=0)
 all_data_table_name
 
 #---------------------------------------------------------
 
-self = LoadPttData()
-data_name = all_data_table_name[0]
-# or 
-data_name = 'job'
-data = self.load(data_name)
+import sys
+sys.path.append('/home/linsam/github')
+from Crawler_and_Share.LoadPttData import LoadPttData
+
+data = LoadPttData('job')
+data['title']
+
+
 '''
+
+
+
 
