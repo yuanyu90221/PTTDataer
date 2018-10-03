@@ -1,13 +1,13 @@
 
 import requests
-import os,sys
+import sys
 from bs4 import BeautifulSoup
 import re
 import datetime
 import pymysql
 from datetime import datetime as dtime
 
-sys.path.append('/home/linsam/project/PTT_Crawler')
+sys.path.append('/home/linsam/github')
 import PTTKey
 
 host = PTTKey.host

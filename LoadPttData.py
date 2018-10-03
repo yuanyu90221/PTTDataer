@@ -52,7 +52,7 @@ class main:
     
         data = pd.DataFrame()
         for j in range(len(self.col_name)):
-            print(j)
+            #print(j)
             col = self.col_name[j]
             text = 'select ' + col + ' from ' + data_name
             

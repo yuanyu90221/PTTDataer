@@ -1,4 +1,4 @@
-# 共享 data 平台 ( data 轉移至 AWS DynamoDB ->>> )
+# 共享 data 平台 ( 為了提升品質，正在將 data 轉移到 AWS DynamoDB，敬請期待 )
  ( 目前有700萬筆 PTT Data )
      
      在資料爆炸的年代，我們卻沒有容易取得 data 的管道，因此提供一個共享 data 的平台。
