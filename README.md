@@ -1,5 +1,5 @@
 # PTT Open Data ( 維修中 - 轉移 data 至 AWS dynamodb )
- ( 約 700 萬筆 PTT Data )
+ ( more than 7 million PTT Data )
 <!---
      在資料爆炸的年代，我們卻沒有容易取得 data 的管道，因此提供一個共享 data 的平台。
      一個人爬蟲力量有限，合作爬蟲力量無限。各位可以在這上面，update 自己爬到的 data ，download 其他人分享的 data。
@@ -32,7 +32,7 @@ example :
     data = Load.load( data_name = 'AdvEduUK', start_date = '2018-10-01')
 
 ------------------------------------------------------------
-### 變數介紹
+### Variable Introduction
 
 | variable name | 變數名稱 | example |
 |---------------|---------|----------|
@@ -56,14 +56,13 @@ example :
 [R](https://github.com/f496328mm/Crawler_and_Share/blob/master/upload_data_to_mysql.r)  <br>
 --->
 ------------------------------------------------------------
-### 目前已爬取的 PTT 版 [click](https://github.com/f496328mm/Crawler_and_Share/blob/master/ptt_readme.md) 
+### 目前已爬取的 PTT 版 [click](https://github.com/f496328mm/PTTOpenData/blob/master/ptt_readme.md) 
 
     如想分析的 ptt 文章，我沒爬取，麻煩留言在 issues 。
 ------------------------------------------------------------
 ## UPDATE
-    2018/6/14
-    1. 維護時間：每日早上 5:30 ~ 6:00 
-    2. 爬取新 data 時間：每日早上 0:00
+    2018/10/07
+    1. MySQL data transfer to AWS dynamodb.
 
 [history_Update](https://github.com/f496328mm/Crawler_and_Share/blob/master/history_Update.md)<br>
 
