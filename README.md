@@ -8,15 +8,15 @@
     user : guest <br>
     password : 123 <br> --->
     
-# install 
-## linux
+## install 
+ ### linux
     sudo apt install awscli
     aws configure
     aws_access_key_id = AKIAIWPBQC6MMMPVFMSA
     aws_secret_access_key = 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
     Default region name [None]: enter
     Default output format [None]: enter
-## windows
+ ### windows
     pip install awscli
     aws configure
     aws_access_key_id = AKIAIWPBQC6MMMPVFMSA
@@ -24,10 +24,10 @@
     Default region name [None]: enter
     Default output format [None]: enter
     
-if fail, you can follow [here](https://docs.aws.amazon.com/zh_cn/cli/latest/userguide/awscli-install-windows.html#awscli-install-windows-pip)
-下載範例 ( PTT data download example )
+#### Load PTT data download example
 [Python](https://github.com/f496328mm/PTTOpenData/blob/master/Load.py) <br>
 example :      
+
     from PTTOpenData import Load
     data = Load.load( data_name = 'AdvEduUK', start_date = '2018-10-01')
 
