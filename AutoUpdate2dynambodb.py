@@ -467,65 +467,59 @@ def catch_new_ptt_bo(ptt_class_name):
         new_bo = 'end'
     
     return new_bo
-#------------------------------------------------------------------------
-# main         
-#tem = catch_new_ptt_bo('job')
-#tem    
+
 #------------------------------------------------------------------------
 
-# craw new data
-
-ptt_class_name_set = ['job','Soft_Job','Tech_Job','Oversea_Job','TaiwanJobs',
-                      'part-time','HomeTeach','movie','Stock','Japan_Travel',
-                      'WomenTalk','e-shopping','Finance','toberich','prozac',
-                      'Lifeismoney','MacShop','HardwareSale','happy','Hate',
-                      'car','Food','PC_Shopping','cookclub','MenTalk',
-                      'talk','home-sale','Gossiping','MobileComm','BabyMother',
-                      'Sad','Self-Healing','SorryPub','SayLove','love',
-                      'Lonely','Lucky','Marginalman','Broken-heart','couple',
-                      'Boy-Girl','NBA','Baseball','StupidClown','BuyTogether',
-                      'creditcard','GetMarry','SportLottery','StupidClown','mobilesales',
-                      'Salary','HelpBuy','Wanted','forsale','CarShop',
-                      'BabyProducts','DC_SALE','AdvEduUK','studyabroad','EngTalk',
-                      'joke','love-vegetal','baking','Aquarius','Aries',
-                      'Cancer','Capricornus','Gemini','Libra','Leo',
-                      'Pisces','Sagittarius','Scorpio','Taurus','Zastrology',
-                      'Virgo','MakeUp','marvel','Kaohsiung','Tainan','TaichungBun',
-                      'Hsinchu','biker','Aviation','give','Loan','HatePolitics',
-                      'CATCH','Diary','DistantLove','Dreamland','EuropeTravel',
-                      'Hiking','hotspring','Ind-travel','isLandTravel','Korea_Travel',
-                      'Tour-Agency','VISA','travelbooks','travel','WorkanTravel',
-                      'IELTS','JapanStudy','TOEFL_iBT','Anti-Cancer','Bread',
-                      'chocolate','Coffee','sex'
-                      ]
-
-amount_set = [3,3,3,3,3,
-              8,3,5,5,8,
-              10,3,3,3,3,
-              3,13,10,3,20,
-              5,5,3,3,3,
-              3,3,200,5,8,
-              3,3,3,3,3,
-              3,3,3,3,3,
-              3,5,15,3,8,
-              3,3,3,3,12,
-              3,23,40,40,3,
-              13,5,3,3,3,
-              5,3,3,3,3,
-              3,3,3,3,3,
-              3,3,3,3,3,
-              3,3,3,5,10,
-              10,5,3,3,3,
-              8,3,5,3,3,
-              3,3,3,3,3,
-              3,3,3,3,3,
-              3,3,3,3,3,
-              3,3,3,3,3,
-              3,3,3,3,3,
-              5
-              ]
-
-if __name__ == '__main__':
+def main():
+    ptt_class_name_set = ['job','Soft_Job','Tech_Job','Oversea_Job','TaiwanJobs',
+                          'part-time','HomeTeach','movie','Stock','Japan_Travel',
+                          'WomenTalk','e-shopping','Finance','toberich','prozac',
+                          'Lifeismoney','MacShop','HardwareSale','happy','Hate',
+                          'car','Food','PC_Shopping','cookclub','MenTalk',
+                          'talk','home-sale','Gossiping','MobileComm','BabyMother',
+                          'Sad','Self-Healing','SorryPub','SayLove','love',
+                          'Lonely','Lucky','Marginalman','Broken-heart','couple',
+                          'Boy-Girl','NBA','Baseball','StupidClown','BuyTogether',
+                          'creditcard','GetMarry','SportLottery','StupidClown','mobilesales',
+                          'Salary','HelpBuy','Wanted','forsale','CarShop',
+                          'BabyProducts','DC_SALE','AdvEduUK','studyabroad','EngTalk',
+                          'joke','love-vegetal','baking','Aquarius','Aries',
+                          'Cancer','Capricornus','Gemini','Libra','Leo',
+                          'Pisces','Sagittarius','Scorpio','Taurus','Zastrology',
+                          'Virgo','MakeUp','marvel','Kaohsiung','Tainan','TaichungBun',
+                          'Hsinchu','biker','Aviation','give','Loan','HatePolitics',
+                          'CATCH','Diary','DistantLove','Dreamland','EuropeTravel',
+                          'Hiking','hotspring','Ind-travel','isLandTravel','Korea_Travel',
+                          'Tour-Agency','VISA','travelbooks','travel','WorkanTravel',
+                          'IELTS','JapanStudy','TOEFL_iBT','Anti-Cancer','Bread',
+                          'chocolate','Coffee','sex'
+                          ]
+    
+    amount_set = [3,3,3,3,3,
+                  8,3,5,5,8,
+                  10,3,3,3,3,
+                  3,13,10,3,20,
+                  5,5,3,3,3,
+                  3,3,200,5,8,
+                  3,3,3,3,3,
+                  3,3,3,3,3,
+                  3,5,15,3,8,
+                  3,3,3,3,12,
+                  3,23,40,40,3,
+                  13,5,3,3,3,
+                  5,3,3,3,3,
+                  3,3,3,3,3,
+                  3,3,3,3,3,
+                  3,3,3,5,10,
+                  10,5,3,3,3,
+                  8,3,5,3,3,
+                  3,3,3,3,3,
+                  3,3,3,3,3,
+                  3,3,3,3,3,
+                  3,3,3,3,3,
+                  3,3,3,3,3,
+                  5
+                  ]
     
     for i in range(len(ptt_class_name_set)):# i = 0
         #print(i)
@@ -545,6 +539,10 @@ if __name__ == '__main__':
                     'index' : today
                     }
                     )
+    
+    
+if __name__ == '__main__':
+    main()
     
     
     
