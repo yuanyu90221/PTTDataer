@@ -60,13 +60,6 @@ example :
 
     如想分析的 ptt 文章，我沒爬取，麻煩留言在 issues 。
 ------------------------------------------------------------
-## UPDATE
-    2018/10/07
-    1. MySQL data transfer to AWS dynamodb.
-
-[history_Update](https://github.com/f496328mm/Crawler_and_Share/blob/master/history_Update.md)<br>
-
-------------------------------------------------------------
 Gmail : samlin266118@gmail.com <br>
 <!---
 由於這是我個人架設的平台，資源有限，請不要進行惡意攻擊。另外同一時間使用人數過多，速度上可能會降低，請多包涵。<br><br>
