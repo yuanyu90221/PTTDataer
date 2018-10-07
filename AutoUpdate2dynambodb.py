@@ -428,7 +428,7 @@ def auto_craw_new_ptt_data(amount,ptt_class_name):
     #max_index = (his_index)
     #max_date_time = max(date_time)
     #data = pd.DataFrame()
-    for i in range(last_index-amount,last_index+1,1):# i = 0
+    for i in range(last_index-amount,last_index+1,1):# i = 147
         k=0
         print(i,'================================================')
         # connect wrong
@@ -527,7 +527,7 @@ amount_set = [3,3,3,3,3,
 
 if __name__ == '__main__':
     
-    for i in range(len(ptt_class_name_set)):# i = 57
+    for i in range(len(ptt_class_name_set)):# i = 0
         #print(i)
         ptt_class_name = ptt_class_name_set[i]
         amount = amount_set[i]

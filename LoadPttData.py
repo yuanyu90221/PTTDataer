@@ -3,7 +3,8 @@ import pymysql
 import pandas as pd
 import numpy as np
 
-host = '114.32.60.100'
+#host = '114.32.60.100'
+host = 'localhost'
 user = 'guest'
 password = '123'
 
@@ -52,7 +53,7 @@ class main:
     
         data = pd.DataFrame()
         for j in range(len(self.col_name)):
-            #print(j)
+            print(j)
             col = self.col_name[j]
             text = 'select ' + col + ' from ' + data_name
             
