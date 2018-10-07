@@ -7,7 +7,7 @@
     平台網址：http://http://114.32.60.100/phpmyadmin/ <br>
     user : guest <br>
     password : 123 <br> --->
-    
+------------------------------------------------------------
 ## install 
  ### linux
     sudo apt install awscli
