@@ -12,17 +12,15 @@ import boto3
 import pandas as pd
 from boto3.dynamodb.conditions import Key
 
-def load(dynamodb_name,
-         pkey_name,pkey_value,
-         skey_name = '',skey_gt_value = ''):# ptt_data_name = 'AdvEduUK'
+def load(data_name,start_date = ''):# ptt_data_name = 'AdvEduUK'
 
     dynamodb = boto3.resource('dynamodb', region_name = 'us-east-1' )
-    table = dynamodb.Table(dynamodb_name)# dynamodb_name = 'PTT'
+    table = dynamodb.Table('PTT')# dynamodb_name = 'PTT'
     
     if skey_name == '':
-        query = Key(pkey_name).eq(pkey_value)
+        query = Key('ptt_name').eq(data_name)
     elif skey_name != '':
-        query = Key(pkey_name).eq(pkey_value) & Key(skey_name).gt(skey_gt_value)
+        query = Key('ptt_name').eq(data_name) & Key('date').gt(start_date)
     
     response = table.query(
         KeyConditionExpression = query,
@@ -58,19 +56,7 @@ import sys
 sys.path.append('/home/sam/github')
 from PTTOpenData import Load
 
-dynamodb_name = 'PTT'
-pkey_name = 'ptt_name'
-pkey_value = 'AdvEduUK'
-
-data = Load.load(dynamodb_name,
-                 pkey_name = pkey_name, pkey_value = pkey_value,
-                 skey_name = 'date', skey_gt_value = '2018-10-01')
+data = Load.load( data_name = 'AdvEduUK', start_date = '2018-10-01')
 
 '''
-
-
-        
-        
-      
-
 
