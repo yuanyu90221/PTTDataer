@@ -17,7 +17,10 @@
     Default output format [None]: enter
 
 下載範例 ( PTT data download example )
-[Python](https://github.com/f496328mm/PTTOpenData/blob/master/Load.py) 
+[Python](https://github.com/f496328mm/PTTOpenData/blob/master/Load.py) <br>
+example :      
+    from PTTOpenData import Load
+    data = Load.load( data_name = 'AdvEduUK', start_date = '2018-10-01')
 
 ------------------------------------------------------------
 ### 變數介紹
