@@ -9,13 +9,18 @@
     password : 123 <br> --->
     
 # install 
+## linux
     sudo apt install awscli
     aws configure
     aws_access_key_id = AKIAIWPBQC6MMMPVFMSA
     aws_secret_access_key = 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
     Default region name [None]: enter
     Default output format [None]: enter
-
+## windows
+    pip install awscli
+    
+    
+    
 下載範例 ( PTT data download example )
 [Python](https://github.com/f496328mm/PTTOpenData/blob/master/Load.py) <br>
 example :      
