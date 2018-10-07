@@ -1,15 +1,24 @@
 # PTT Open Data ( 維修中 - 轉移 data 至 AWS dynamodb )
  ( 約 700 萬筆 PTT Data )
-     
+<!---
      在資料爆炸的年代，我們卻沒有容易取得 data 的管道，因此提供一個共享 data 的平台。
      一個人爬蟲力量有限，合作爬蟲力量無限。各位可以在這上面，update 自己爬到的 data ，download 其他人分享的 data。
 
-<!---    平台網址：http://http://114.32.60.100/phpmyadmin/ <br>
+    平台網址：http://http://114.32.60.100/phpmyadmin/ <br>
     user : guest <br>
     password : 123 <br> --->
-PTT data 下載範例   
-[Python](https://github.com/f496328mm/Crawler_and_Share/blob/master/LoadPttData.py) 
-[R](https://github.com/f496328mm/Crawler_and_Share/blob/master/load_data_from_mysql.r)
+    
+# install 
+    sudo apt install awscli
+    aws configure
+    aws_access_key_id = AKIAIWPBQC6MMMPVFMSA
+    aws_secret_access_key = 5P7kIbZ6skeihdrWym783wjRhbyhIHikUU3LZ2/D
+    Default region name [None]: enter
+    Default output format [None]: enter
+
+下載範例 ( PTT data download example )
+[Python](https://github.com/f496328mm/PTTOpenData/blob/master/Load.py) 
+
 ------------------------------------------------------------
 ### 變數介紹
 
@@ -24,7 +33,6 @@ PTT data 下載範例
 | arrow_amount | 箭頭數 | 5 |
 | article_url | 文章網址 | https://www.ptt.cc/bbs/Boy-Girl/xxxxxxxxx.html |
 | clean_article | clean 後的文章 | xxxxx |
-| origin_article | 原始文章 | xxxx |
 | response | 推/噓文內容(以\n作為分隔符號) | \n推 xxxx: xxxxxx \n噓 xxxxx: xxxxx\n→ xxxx: xxxx  |
 | id | index | 1 |
 
