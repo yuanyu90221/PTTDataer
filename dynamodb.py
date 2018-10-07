@@ -1,9 +1,11 @@
 
 import boto3
 import sys
+import os
+path = os.listdir('/home')[0]
 #from datetime import datetime
-sys.path.append('/home/linsam/github')
-from Crawler_and_Share import LoadPttData
+sys.path.append('/home/'+ path +'/github')
+from PTTOpenData import LoadPttData
 
 def create_table(dynamodb):
     print('create table')

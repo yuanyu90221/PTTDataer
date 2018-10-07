@@ -11,7 +11,7 @@ from datetime import datetime as dtime
 import boto3
 from boto3.dynamodb.conditions import Key
 sys.path.append('/home/'+ path +'/github')
-from Crawler_and_Share import LoadDataFromAWS
+from PTTOpenData import LoadDataFromAWS
 
 dynamodb = boto3.resource('dynamodb', region_name='us-east-1')
 

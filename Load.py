@@ -53,15 +53,18 @@ def load(dynamodb_name,
     return data
             
 '''
+
 import sys
 sys.path.append('/home/sam/github')
-import PTTOpenData
+from PTTOpenData import Load
 
 dynamodb_name = 'PTT'
 pkey_name = 'ptt_name'
-private_key = 'AdvEduUK'
+pkey_value = 'AdvEduUK'
 
-data = PTTOpenData.load(dynamodb_name,pkey_name,pkey_value)
+data = Load.load(dynamodb_name,
+                 pkey_name = pkey_name, pkey_value = pkey_value,
+                 skey_name = 'date', skey_gt_value = '2018-10-01')
 
 '''
 

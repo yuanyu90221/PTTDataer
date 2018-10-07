@@ -1,56 +1,68 @@
 
 import requests
 import os
+path = os.listdir('/home')[0]
 import sys
 from bs4 import BeautifulSoup
 import re
 import pandas as pd
-import time
 import datetime
-import pymysql
 from datetime import datetime as dtime
 #---------------------------------------------------------------------------------
-sys.path.append('/home/linsam/project/PTT_Crawler')
-import PTTKey
+sys.path.append('/home/'+ path +'/github')
+from PTTOpenData import BasedClass
 
-host = PTTKey.host
-user = PTTKey.user
-password = PTTKey.password
-database = PTTKey.database
 #---------------------------------------------------------------------------------
 # 建立 SQL 檔案
-def creat_sql_file(sql_string,dataset_name):
-
-    conn = ( pymysql.connect(host = host,# SQL IP
-                             port = 3306,
-                             user = user,# 帳號
-                             password = password,# 密碼
-                             database = database,  # 資料庫名稱
-                             charset="utf8") )   #  編碼           
-    c=conn.cursor()
-    c.execute( sql_string )# 建立新的 SQL file
-    c.execute('ALTER TABLE `'+dataset_name+'` ADD id BIGINT(10) NOT NULL AUTO_INCREMENT PRIMARY KEY;')
-    c.close() # 關閉與 SQL 的連接
-    conn.close()# 關閉與 SQL 的連接
-#---------------------------------------------------------------------------------    
+def create_table(dynamodb):
+    print('create table')
+    dynamodb.create_table(
+            #TableName = ptt_table[i],
+            TableName = 'PTT',
+            KeySchema = [
+                    {
+                            'AttributeName': 'ptt_name',
+                            'KeyType': 'HASH'  #Partition key
+                            },
+                            {
+                                    'AttributeName': 'date',
+                                    'KeyType': 'RANGE'  #Sort key
+                                    }
+                            ],
+            AttributeDefinitions=[
+                    {
+                            'AttributeName': 'ptt_name',
+                            'AttributeType': 'S'
+                            },
+                            {
+                                    'AttributeName': 'date',
+                                    'AttributeType': 'S'
+                                    },
+                                    ],
+        ProvisionedThroughput={
+                'ReadCapacityUnits': 10,
+                'WriteCapacityUnits': 10
+                }
+        )  
+    
 def build_date_time(date):#i=1
-    x = date
+    #x = date
     try:
-        if( re.search('編輯',x) ):
-            hour_min = re.findall(r'[[0-9]*:[0-9]*:[0-9]*]*',x)[0]
-            day_month_year = re.findall(r'[[0-9]*/[0-9]*/[0-9]*]*',x)[0]
+        if( re.search('編輯',date) ):
+            hour_min = re.findall(r'[[0-9]*:[0-9]*:[0-9]*]*',date)[0]
+            day_month_year = re.findall(r'[[0-9]*/[0-9]*/[0-9]*]*',date)[0]
             tem = day_month_year + ' ' + hour_min
             
             date = dtime.strptime(tem,'%m/%d/%Y %H:%M:%S')# tem = '07/29/2017 12:37:01'
         else:
             regex = re.compile('(?P<week>[a-zA-Z]+)\s+(?P<month>[a-zA-Z]+)')
-            m = regex.search(x)
+            m = regex.search(date)
             month = m.group('month')
-            year = re.findall(r'[0-9]{4,4}',x)[0]
-            day = re.findall(r'[ ]{1,2}[0-9]*[ ]{1,2}',x)[0]
+            year = re.findall(r'[0-9]{4,4}',date)[0]
+            day = re.findall(r'[ ]{1,2}[0-9]*[ ]{1,2}',date)[0]
     
             day = day.replace(' ','')
-            hour_min = re.findall(r'[[0-9]*:[0-9]*:[0-9]*]*',x)[0]
+            hour_min = re.findall(r'[[0-9]*:[0-9]*:[0-9]*]*',date)[0]
             tem = year+'-'+month+'-'+day + ' ' + hour_min
             #return tem
             date = dtime.strptime(tem,'%Y-%b-%d %H:%M:%S')
@@ -433,9 +445,6 @@ def craw_last_index(ptt_class_name):
 def auto_craw_new_ptt_data(amount,ptt_class_name,sql_name):    
     #ptt_class_name = 'Soft_Job'
     last_index = craw_last_index(ptt_class_name)    
-    #his_index = catch_ptt_max_index(ptt_class_name,sql_name)
-    #max_index = (his_index)
-    #max_date_time = max(date_time)
     
     for i in range(last_index-amount,last_index+1,1):
         print(i,'================================================')
@@ -530,68 +539,21 @@ def catch_new_ptt_bo(ptt_class_name,sql_name):
     # close connect
     conn.close()
     
-    return new_bo
-#------------------------------------------------------------------------     
-def print_ptt_index_csv(ptt_class_name,sql_name):
-    test=[]
-    test.append(1)
-    test = {'test':test}
-    test = pd.DataFrame(test)
-    os.chdir('/home/linsam/text_mining')
-    index = catch_ptt_max_index(ptt_class_name,sql_name)
-    test.to_csv(ptt_class_name+'_' + str(index) + '.csv')        
-        
-#------------------------------------------------------------------------     
-def save_craw_process(ptt_class_name,sql_name):
-    #test=[]
-    #test.append(1)
-    #test = {'test':test}
-    #test = pd.DataFrame(test)
-    #os.chdir('/home/linsam/text_mining')
-    index = catch_ptt_max_index(ptt_class_name,sql_name)
-    #test.to_csv(ptt_class_name+'_' + str(index) + '.csv')   
-    
-    conn = ( pymysql.connect(host = host,# SQL IP
-                             port = 3306,
-                             user = user,# 帳號
-                             password = password,# 密碼
-                             database = 'python',  # 資料庫名稱
-                             charset="utf8") )#  編碼     
-    cursor = conn.cursor() #创建游标
-    tem = str( datetime.datetime.now() )
-    time = re.split('\.',tem)[0]
-    #---------------------------------------------------------------------------        
-    ( cursor.execute('insert into '+ 'process(ptt_name,page_index,time)'  +
-                     ' values(%s,%s,%s)', 
-              (ptt_class_name,index,time) ) )
-                          
-    conn.commit()
-    #以下两步把游标与数据库连接都关闭，这也是必须的！
-    cursor.close()# 關閉
-    conn.close()  # 關閉
-    
+    return new_bo    
     
 #------------------------------------------------------------------------
 def auto_change_ptt_class(ptt_class_name,sql_name):#n=3
-
 
     tem = catch_new_ptt_bo(ptt_class_name,sql_name)
     if(tem == 'end'):
         return 1
         
     compare_index(ptt_class_name,sql_name)
-    # bo = 0 means craw ptt article doesn't end
-    #s = datetime.datetime.now()
     auto_craw_history_ptt_data(60,ptt_class_name,sql_name)
-    #t = datetime.datetime.now()-s
-    #print(t)# 50s
-    save_craw_process(ptt_class_name,sql_name)
-    #print_ptt_index_csv(ptt_class_name,sql_name)
+    BasedClass.save_craw_process(ptt_class_name)
         
     return 0
-#------------------------------------------------------------------------
-#------------------------------------------------------------------------
-#------------------------------------------------------------------------    
+ 
 # main         
 #ptt_class_name = 'PC_Shopping' # 測試, 爬取 PTT 料理板
 #sql_name = 'ptt_PC_Shopping'         # 先創建自己的 data table, 測試用
@@ -666,25 +628,30 @@ create_ptt_dataset('cookclud',0)
 #chocolate
 #coffee
 #cookclud
-
-while(1):
-    while_bool = 1
-    i=0
+def main():
     try:
-        while(while_bool == 1):
-            ptt_class_name = ptt_class_name_set[i]
-            sql_name = sql_name_set[i]
-            print('i=' + str(i)+'  '+str(ptt_class_name))
-            # catch_new_ptt_bo(ptt_class_name,sql_name)
-            bo = auto_change_ptt_class(ptt_class_name,sql_name) 
-            i=i+1
-            if(bo==0 or i>=len(ptt_class_name_set)): 
-                print('break')
-                while_bool = 0
+        create_table()
     except:
-        123        
+        pass
+    while(1):
+        while_bool = 1
+        i=0
+        try:
+            while(while_bool == 1):
+                ptt_class_name = ptt_class_name_set[i]
+                sql_name = sql_name_set[i]
+                print('i=' + str(i)+'  '+str(ptt_class_name))
+                # catch_new_ptt_bo(ptt_class_name,sql_name)
+                bo = auto_change_ptt_class(ptt_class_name,sql_name) 
+                i=i+1
+                if(bo==0 or i>=len(ptt_class_name_set)): 
+                    print('break')
+                    while_bool = 0
+        except:
+            123        
 
-
+if __name__ == '__main__':
+    main()
 
 # windows 比較可能出現 connect 錯誤的問題, 因此使用以下 code 進行修補
 # fix_data(381,ptt_class_name,sql_name,bo = 'his',j=4)
