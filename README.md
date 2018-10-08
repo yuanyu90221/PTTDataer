@@ -9,6 +9,7 @@
     password : 123 <br> --->
 ------------------------------------------------------------
 ## install 
+ 由於 aws 使用上，會根據流量收費，目前做法是公開帳密。如未來本人無法負擔費用，將改用其他方式提供 data 。
  ### linux
     sudo apt install awscli
     aws configure
