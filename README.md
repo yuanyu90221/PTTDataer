@@ -8,20 +8,21 @@
     user : guest <br>
     password : 123 <br> --->
 ------------------------------------------------------------
+Gmail : samlin266118@gmail.com <br>
 ## install 
- 由於 aws 使用上，會根據流量收費，目前做法是公開帳密。如未來本人無法負擔費用，將改用其他方式提供 data 。
+ 由於 aws 使用上，會根據流量收費，且 aws 官方不希望使用者公開 secret_access_key，之前做法是公開，但收到警告 email，所以未來如果有興趣使用此資料庫，請 email 給我，我會私底下提供你一組 secret_access_key 。
  ### linux
     sudo apt install awscli
     aws configure
-    aws_access_key_id = AKIAIWPBQC6MMMPVFMSA
-    aws_secret_access_key = 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
+    aws_access_key_id = email to me
+    aws_secret_access_key = email to me
     Default region name [None]: enter
     Default output format [None]: enter
  ### windows
     pip install awscli
     aws configure
-    aws_access_key_id = AKIAIWPBQC6MMMPVFMSA
-    aws_secret_access_key = 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
+    aws_access_key_id = email to me
+    aws_secret_access_key = email to me
     Default region name [None]: enter
     Default output format [None]: enter
     
@@ -61,7 +62,7 @@ example :
 
     如想分析的 ptt 文章，我沒爬取，麻煩留言在 issues 。
 ------------------------------------------------------------
-Gmail : samlin266118@gmail.com <br>
+
 <!---
 由於這是我個人架設的平台，資源有限，請不要進行惡意攻擊。另外同一時間使用人數過多，速度上可能會降低，請多包涵。<br><br>
 歡迎有同樣熱情的朋友協助我，共同合作，由於我是數學系出身，並沒有 PHP、SQL 等專業知識，目前只是個雛形，沒有前端，後端部分也只是剛開始，因此需要這方面的協助，歡迎 email 討論。未來朝 open 的方向進行，目前資源不足，請多包涵。
