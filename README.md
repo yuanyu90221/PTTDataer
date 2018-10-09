@@ -10,7 +10,8 @@
 ------------------------------------------------------------
 Gmail : samlin266118@gmail.com <br>
 ## install 
- 由於 aws 使用上，會根據流量收費，且 aws 官方不希望使用者公開 secret_access_key，之前做法是公開，但收到警告 email，所以未來如果有興趣使用此資料庫，請 email 給我，我會私底下提供你一組 secret_access_key 。
+ 由於 aws 使用上，會根據流量收費，且 aws 官方不希望使用者公開 secret_access_key。<br>
+ 之前做法是公開，但收到警告 email，所以未來如果有興趣使用此資料庫，請 email 給我，我會私底下提供你一組 secret_access_key 。
  ### linux
     sudo apt install awscli
     aws configure
