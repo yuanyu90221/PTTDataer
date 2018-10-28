@@ -35,7 +35,7 @@ load_data_from_mysql = function(data_name){
   
   return(temp)
 }
-# example : Åª¨ú job ª© data
+# example : load job data 
 data = load_data_from_mysql('job')
 
 head( data )
