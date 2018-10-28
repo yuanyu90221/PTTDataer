@@ -14,19 +14,20 @@ library(gWidgets)
 library(RMySQL)
 library(data.table)
 
-host = '114.32.60.100'
+HOST = '103.29.68.107'
+USER = 'guest'
+PASSWORD = '123'
+DATABASE = 'PTTData'
 
 load_data_from_mysql = function(data_name){
   # connect mysql
   connect = dbConnect(MySQL(), 
-                      dbname = "ptt_data1.0",# dataset name
-                      username = "guest", 
-                      password = "123",   
-                      host = host)
-  #tem = dbListTables(connect)# all table
-  #data_name = 'job'
+                      dbname = DATABASE,
+                      username = USER, 
+                      password = PASSWORD,   
+                      host = HOST)
+
   dbSendQuery(connect,'SET NAMES big5')# Âà´«½s½X
-  
   
   temp = dbGetQuery(connect ,paste("select * from ",data_name))
   temp = data.table(temp)
