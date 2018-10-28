@@ -28,7 +28,8 @@ Gmail : samlin266118@gmail.com <br>
     Default output format [None]: enter
 -->
 #### Load PTT data download example
-[Python](https://github.com/f496328mm/PTTOpenData/blob/master/Load.py) <br>
+[Python](https://github.com/f496328mm/PTTOpenData/blob/master/load_data_from_mysql.py) <br>
+[R](https://github.com/f496328mm/PTTOpenData/blob/master/load_data_from_mysql.r) <br>
 example :      
 
     from PTTOpenData import Load
