@@ -1,4 +1,5 @@
 
+
 import pymysql
 import pandas as pd
 import numpy as np
@@ -34,10 +35,6 @@ class load_ptt_data:
     def get_col_name(self,data_name):
        
         tem_col_name = execute_sql2(
-                host = HOST,
-                user = USER,
-                password = PASSWORD,
-                database = DATABASE,
                 sql_text = 'SHOW columns FROM '+ data_name )
     
         col_name = []
@@ -52,7 +49,8 @@ class load_ptt_data:
     
         data = pd.DataFrame()
         for j in range(len(self.col_name)):
-            print(j)
+            print('Processed {} of {}'.format(j, len(self.col_name)))
+            #print(j)
             col = self.col_name[j]
             text = 'select ' + col + ' from ' + data_name
             
@@ -69,6 +67,10 @@ class load_ptt_data:
                 
         return data
     
+def load(data_name):
+    self = load_ptt_data()
+    data = self.load(data_name)
+    return data
 #---------------------------------------------------------
 '''
 # test
@@ -76,15 +78,11 @@ tem = execute_sql2('show tables')
 all_data_table_name = np.concatenate(tem, axis=0)
 # all data table in mysql
 all_data_table_name
-
 #---------------------------------------------------------
 self = load_ptt_data()
 data_name = all_data_table_name[0]
 # or 
 data_name = 'job'
 data = self.load(data_name)
-
 '''
-
-
 
