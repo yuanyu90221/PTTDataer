@@ -3,19 +3,19 @@ import pymysql
 import pandas as pd
 import numpy as np
 
-host = '114.32.60.100'
-user = 'guest'
-password = '123'
-
+HOST = '103.29.68.107'
+USER = 'guest'
+PASSWORD = '123'
+DATABASE = 'PTTData'
 #--------------------------------------------------------
 
-def execute_sql2(host,user,password,database,sql_text):
+def execute_sql2(sql_text):
     
-    conn = ( pymysql.connect(host = host,# SQL IP
+    conn = ( pymysql.connect(host = HOST,# SQL IP
                      port = 3306,
-                     user = user,# 帳號
-                     password = password,# 密碼
-                     database = database,  # 資料庫名稱
+                     user = USER,# 帳號
+                     password = PASSWORD,# 密碼
+                     database = DATABASE,  # 資料庫名稱
                      charset="utf8") )   #  編碼
                              
     cursor = conn.cursor()    
@@ -31,13 +31,13 @@ def execute_sql2(host,user,password,database,sql_text):
 
 class load_ptt_data:
     #---------------------------------------------------------------    
-    def get_col_name(self,database,data_name):
+    def get_col_name(self,data_name):
        
         tem_col_name = execute_sql2(
-                host = host,
-                user = user,
-                password = password,
-                database = database,
+                host = HOST,
+                user = USER,
+                password = PASSWORD,
+                database = DATABASE,
                 sql_text = 'SHOW columns FROM '+ data_name )
     
         col_name = []
@@ -48,7 +48,7 @@ class load_ptt_data:
     
     def load(self,data_name):
         
-        self.get_col_name('ptt_data1.0',data_name)
+        self.get_col_name(data_name)
     
         data = pd.DataFrame()
         for j in range(len(self.col_name)):
@@ -56,12 +56,7 @@ class load_ptt_data:
             col = self.col_name[j]
             text = 'select ' + col + ' from ' + data_name
             
-            tem = execute_sql2(
-                host = host,
-                user = user,
-                password = password,
-                database = 'ptt_data1.0',
-                sql_text = text)
+            tem = execute_sql2(sql_text = text)
             
             if col=='Date':
                 tem = [np.datetime64(x[0]) for x in tem]
@@ -77,7 +72,7 @@ class load_ptt_data:
 #---------------------------------------------------------
 '''
 # test
-tem = execute_sql2(host,user,password,'ptt_data1.0','show tables')
+tem = execute_sql2('show tables')
 all_data_table_name = np.concatenate(tem, axis=0)
 # all data table in mysql
 all_data_table_name
