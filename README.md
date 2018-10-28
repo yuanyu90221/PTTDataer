@@ -1,5 +1,5 @@
 # PTT Open Data ( 維修中 - 轉移 data 至 Linode, 將會在上面架設 MySQL )
- ( 目前資料庫包含 112 個版，more than 7 million PTT Data )
+ ( 包含 112 個 PTT 版，more than 7 million PTT Data )
 <!---
      在資料爆炸的年代，我們卻沒有容易取得 data 的管道，因此提供一個共享 data 的平台。
      一個人爬蟲力量有限，合作爬蟲力量無限。各位可以在這上面，update 自己爬到的 data ，download 其他人分享的 data。
