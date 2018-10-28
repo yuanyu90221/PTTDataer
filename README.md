@@ -1,5 +1,5 @@
 # PTT Open Data ( 維修中 - 轉移 data 至 Linode, 將會在上面架設 MySQL )
- ( 包含 112 個 PTT 版，more than 7 million PTT Data， 50GB SIZE )
+ ( 包含 112 個 PTT 版 [click](https://github.com/f496328mm/PTTOpenData/blob/master/ptt_readme.md) ，more than 7 million PTT Data， 50GB SIZE )
 <!---
      在資料爆炸的年代，我們卻沒有容易取得 data 的管道，因此提供一個共享 data 的平台。
      一個人爬蟲力量有限，合作爬蟲力量無限。各位可以在這上面，update 自己爬到的 data ，download 其他人分享的 data。
@@ -79,8 +79,6 @@ example :
 [R](https://github.com/f496328mm/Crawler_and_Share/blob/master/upload_data_to_mysql.r)  <br>
 --->
 ------------------------------------------------------------
-### 目前已爬取的 PTT 版 [click](https://github.com/f496328mm/PTTOpenData/blob/master/ptt_readme.md) 
-
     如想分析的 ptt 文章，我沒爬取，麻煩留言在 issues 。
 ------------------------------------------------------------
 
