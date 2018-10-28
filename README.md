@@ -1,4 +1,4 @@
-# PTT Open Data ( 維修中 - 轉移 data 至 AWS dynamodb )
+# PTT Open Data ( 維修中 - 轉移 data 至 Linode, 將會在上面架設 MySQL )
  ( more than 7 million PTT Data )
 <!---
      在資料爆炸的年代，我們卻沒有容易取得 data 的管道，因此提供一個共享 data 的平台。
@@ -9,9 +9,9 @@
     password : 123 <br> --->
 ------------------------------------------------------------
 Gmail : samlin266118@gmail.com <br>
+ 目前在 Linode 上架設 MySQL ，aws 價格太高，linodo 目前方案：4	TB Transfer/month、4000	Mbps Network Out，速度上會大大提升，用法與之前相同。
+<!--
 ## install 
- 由於 aws 使用上，會根據流量收費，且 aws 官方不希望使用者公開 secret_access_key。<br>
- 之前做法是公開，但收到警告 email，所以未來如果有興趣使用此資料庫，請 email 給我，我會私底下提供你一組 secret_access_key 。
  ### linux
     sudo apt install awscli
     aws configure
@@ -26,7 +26,7 @@ Gmail : samlin266118@gmail.com <br>
     aws_secret_access_key = email to me
     Default region name [None]: enter
     Default output format [None]: enter
-    
+-->
 #### Load PTT data download example
 [Python](https://github.com/f496328mm/PTTOpenData/blob/master/Load.py) <br>
 example :      
