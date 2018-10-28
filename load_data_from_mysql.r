@@ -1,11 +1,11 @@
 
 
-install.packages("RODBC")
-install.packages("dbConnect")
-install.packages("DBI")
-install.packages("gWidgets")
-install.packages("RMySQL")
-install.packages("data.table")
+#install.packages("RODBC")
+#install.packages("dbConnect")
+#install.packages("DBI")
+#install.packages("gWidgets")
+#install.packages("RMySQL")
+#install.packages("data.table")
 
 library(RODBC)
 library(dbConnect)
