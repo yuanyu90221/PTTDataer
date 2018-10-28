@@ -36,7 +36,6 @@ example :
     import PTTOpenData.load_data_from_mysql as ptt
 
     ptt_table_list = ptt.table_list()
-
     data_name = 'job'
     # or 
     #data_name = ptt_table_list[0]
@@ -45,6 +44,13 @@ example :
 [R](https://github.com/f496328mm/PTTOpenData/blob/master/load_data_from_mysql.r) <br>
 example :      
 
+    source("d:/PTTOpenData/load_data_from_mysql.r")# windows path
+    ptt_table_list = table_list()
+    
+    data_name = 'job'
+    # or 
+    #data_name = ptt_table_list[0]
+    data = load_data_from_mysql('job')
 
 ------------------------------------------------------------
 ### Variable Introduction
