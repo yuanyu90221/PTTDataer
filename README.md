@@ -33,6 +33,7 @@ example :
 
     import sys
     sys.path.append('d:/')# windows path
+    #sys.path.append('/home/linsam/github')# linux path 
     import PTTOpenData.load_data_from_mysql as ptt
 
     ptt_table_list = ptt.table_list()
@@ -45,6 +46,7 @@ example :
 example :      
 
     source("d:/PTTOpenData/load_data_from_mysql.r")# windows path
+    #source("/home/linsam/github/PTTOpenData/load_data_from_mysql.r")# linux path
     ptt_table_list = table_list()
     
     data_name = 'job'
