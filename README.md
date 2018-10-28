@@ -29,11 +29,22 @@ Gmail : samlin266118@gmail.com <br>
 -->
 #### Load PTT data download example
 [Python](https://github.com/f496328mm/PTTOpenData/blob/master/load_data_from_mysql.py) <br>
+example : 
+
+    import sys
+    sys.path.append('d:/')# windows path
+    import PTTOpenData.load_data_from_mysql as ptt
+
+    ptt_table_list = ptt.table_list()
+
+    data_name = 'job'
+    # or 
+    #data_name = ptt_table_list[0]
+    data = ptt.load(data_name)
+
 [R](https://github.com/f496328mm/PTTOpenData/blob/master/load_data_from_mysql.r) <br>
 example :      
 
-    from PTTOpenData import Load
-    data = Load.load( data_name = 'AdvEduUK', start_date = '2018-10-01')
 
 ------------------------------------------------------------
 ### Variable Introduction
