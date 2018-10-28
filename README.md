@@ -29,7 +29,6 @@ Gmail : samlin266118@gmail.com <br>
 -->
 ## Load PTT data download example
 [Python](https://github.com/f496328mm/PTTOpenData/blob/master/load_data_from_mysql.py) <br>
-example : 
 
     import sys
     sys.path.append('d:/')# windows path
@@ -42,8 +41,7 @@ example :
     #data_name = ptt_table_list[0]
     data = ptt.load(data_name)
 
-[R](https://github.com/f496328mm/PTTOpenData/blob/master/load_data_from_mysql.r) <br>
-example :      
+[R](https://github.com/f496328mm/PTTOpenData/blob/master/load_data_from_mysql.r) <br>    
 
     source("d:/PTTOpenData/load_data_from_mysql.r")# windows path
     #source("/home/linsam/github/PTTOpenData/load_data_from_mysql.r")# linux path
