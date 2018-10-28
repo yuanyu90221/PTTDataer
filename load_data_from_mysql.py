@@ -79,16 +79,15 @@ class load_ptt_data:
 # test
 tem = execute_sql2(host,user,password,'ptt_data1.0','show tables')
 all_data_table_name = np.concatenate(tem, axis=0)
+# all data table in mysql
 all_data_table_name
 
 #---------------------------------------------------------
-
 self = load_ptt_data()
 data_name = all_data_table_name[0]
 # or 
 data_name = 'job'
 data = self.load(data_name)
-
 
 '''
 
