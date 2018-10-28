@@ -1,5 +1,4 @@
 
-
 import pymysql
 import pandas as pd
 import numpy as np
@@ -66,6 +65,11 @@ class load_ptt_data:
                 data[col] = tem[0]
                 
         return data
+
+def table_list():
+    tem = execute_sql2('show tables')
+    all_data_table_name = np.concatenate(tem, axis=0)
+    return all_data_table_name
     
 def load(data_name):
     self = load_ptt_data()
