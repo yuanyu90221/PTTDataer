@@ -34,7 +34,7 @@ Gmail : samlin266118@gmail.com <br>
     import sys
     sys.path.append('d:/')# windows path
     #sys.path.append('/home/linsam/github')# linux path 
-    import PTTOpenData.load_data_from_mysql as ptt
+    import load_data_from_mysql as ptt
 
     ptt_table_list = ptt.table_list()
     data_name = 'job'
