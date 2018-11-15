@@ -66,7 +66,7 @@ Gmail : samlin266118@gmail.com <br>
 | boo_amount | 噓文數 | 10 |
 | arrow_amount | 箭頭數 | 5 |
 | article_url | 文章網址 | https://www.ptt.cc/bbs/Boy-Girl/xxxxxxxxx.html |
-| clean_article | clean 後的文章 | xxxxx |
+| article | 文章 | xxxxx |
 | response | 推/噓文內容(以\n作為分隔符號) | \n推 xxxx: xxxxxx \n噓 xxxxx: xxxxx\n→ xxxx: xxxx  |
 | id | index | 1 |
 
