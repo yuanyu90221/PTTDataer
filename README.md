@@ -28,7 +28,7 @@ Gmail : samlin266118@gmail.com <br>
     Default region name [None]: enter
     Default output format [None]: enter
 -->
-## Load PTT data download example
+## Load example
 [Python](https://github.com/f496328mm/PTTOpenData/blob/master/load_data_from_mysql.py) <br>
 
     import sys
