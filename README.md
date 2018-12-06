@@ -62,14 +62,15 @@ Gmail : samlin266118@gmail.com <br>
 
 | variable name | 變數名稱 | example |
 |---------------|---------|----------|
-| title | 標題 | xxxxx |
-| date | 日期 | 2018-06-04 16:31:34 |
-| author | 作者 | xxxxx |
-| author_ip | 作者IP | xxx.xx.xxx.xx |
-| push_amount | 推文數 | 21 |
-| boo_amount | 噓文數 | 10 |
-| arrow_amount | 箭頭數 | 5 |
-| article_url | 文章網址 | https://www.ptt.cc/bbs/Boy-Girl/xxxxxxxxx.html |
+| title | 標題 | [討論] 我該怎樣跟我家閃光開口 |
+| article_type | article type | 討論 |
+| date | 日期 | 2007-01-14 13:46:24 |
+| author | 作者 | flower319 |
+| author_ip | 作者IP | 220.134.142.113 |
+| push_amount | 推文數 | 48 |
+| boo_amount | 噓文數 | 3 |
+| arrow_amount | 箭頭數 | 16 |
+| article_url | 文章網址 | https://www.ptt.cc/bbs/Boy-Girl/M.1168753589.A.6AF.html |
 | article | 文章 | xxxxx |
 | response | 推/噓文內容(以\n作為分隔符號) | \n推 xxxx: xxxxxx \n噓 xxxxx: xxxxx\n→ xxxx: xxxx  |
 | id | index | 1 |
