@@ -12,7 +12,9 @@ Gmail : samlin266118@gmail.com <br>
  1. 目前在 Linode 上架設 MySQL ，aws 價格太高，linodo 目前方案：4	TB Transfer/month、4000	Mbps Network Out，速度上會大大提升。
  2. 為了減少雲端硬碟用量($$$)，將 origin_article 刪除，clean_article 改為 airtcle。
   --->
-  ### 新增 article_type 變數。( e.g 發問、心得、求助、情報... )
+  ----------------------
+  #### 新增 article_type 變數。( e.g 發問、心得、求助、情報... )
+  ----------------------
 <!--
 ## install 
  ### linux
