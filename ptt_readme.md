@@ -8,7 +8,7 @@
 |[EngTalk](https://www.ptt.cc/bbs/EngTalk/index.html)|[EuropeTravel](https://www.ptt.cc/bbs/EuropeTravel/index.html)|[Finance](https://www.ptt.cc/bbs/Finance/index.html)|[Food](https://www.ptt.cc/bbs/Food/index.html)|[Gemini](https://www.ptt.cc/bbs/Gemini/index.html)|
 |[GetMarry](https://www.ptt.cc/bbs/GetMarry/index.html)|[Gossiping](https://www.ptt.cc/bbs/Gossiping/index.html)|[HardwareSale](https://www.ptt.cc/bbs/HardwareSale/index.html)|[Hate](https://www.ptt.cc/bbs/Hate/index.html)|[HatePolitics](https://www.ptt.cc/bbs/HatePolitics/index.html)|
 |[HelpBuy](https://www.ptt.cc/bbs/HelpBuy/index.html)|[Hiking](https://www.ptt.cc/bbs/Hiking/index.html)|[HomeTeach](https://www.ptt.cc/bbs/HomeTeach/index.html)|[Hsinchu](https://www.ptt.cc/bbs/Hsinchu/index.html)|[IELTS](https://www.ptt.cc/bbs/IELTS/index.html)|
-|[Ind_travel](https://www.ptt.cc/bbs/Ind-travel/index.html)|[JapanStudy](https://www.ptt.cc/bbs/JapanStudy/index.html)|[Japan_Travel](https://www.ptt.cc/bbs/Japan_Travel/index.html)|[Kaohsiung](https://www.ptt.cc/bbs/Kaohsiung/index.html)|
+|[Ind_travel](https://www.ptt.cc/bbs/Ind-travel/index.html)|[JapanStudy](https://www.ptt.cc/bbs/JapanStudy/index.html)|[Japan_Travel](https://www.ptt.cc/bbs/Japan_Travel/index.html)|[Kaohsiung](https://www.ptt.cc/bbs/Kaohsiung/index.html)|Insurance|
 |[Korea_Travel](https://www.ptt.cc/bbs/Korea_Travel/index.html)|[Leo](https://www.ptt.cc/bbs/Leo/index.html)|[Libra](https://www.ptt.cc/bbs/Libra/index.html)|[Lifeismoney](https://www.ptt.cc/bbs/Lifeismoney/index.html)|[Loan](https://www.ptt.cc/bbs/Loan/index.html)|
 |[Lonely](https://www.ptt.cc/bbs/Lonely/index.html)|[Lucky](https://www.ptt.cc/bbs/Lucky/index.html)|[MacShop](https://www.ptt.cc/bbs/MacShop/index.html)|[MakeUp](https://www.ptt.cc/bbs/MakeUp/index.html)|[Marginalman](https://www.ptt.cc/bbs/Marginalman/index.html)|
 |[MenTalk](https://www.ptt.cc/bbs/MenTalk/index.html)|[MobileComm](https://www.ptt.cc/bbs/MobileComm/index.html)|[NBA](https://www.ptt.cc/bbs/NBA/index.html)|[Oversea_Job](https://www.ptt.cc/bbs/Oversea_Job/index.html)|[PC_Shopping](https://www.ptt.cc/bbs/PC_Shopping/index.html)|
@@ -22,7 +22,7 @@
 |[home_sale](https://www.ptt.cc/bbs/home-sale/index.html)|[hotspring](https://www.ptt.cc/bbs/hotspring/index.html)|[isLandTravel](https://www.ptt.cc/bbs/isLandTravel/index.html)|[job](https://www.ptt.cc/bbs/job/index.html)|[joke](https://www.ptt.cc/bbs/joke/index.html)|
 |[love](https://www.ptt.cc/bbs/love/index.html)|[love_vegetal](https://www.ptt.cc/bbs/love-vegetal/index.html)|[marvel](https://www.ptt.cc/bbs/marvel/index.html)|[mobilesales](https://www.ptt.cc/bbs/mobilesales/index.html)|[movie](https://www.ptt.cc/bbs/movie/index.html)|
 |[part_time](https://www.ptt.cc/bbs/part-time/index.html)|[prozac](https://www.ptt.cc/bbs/prozac/index.html)|[studyabroad](https://www.ptt.cc/bbs/studyabroad/index.html)|[talk](https://www.ptt.cc/bbs/talk/index.html)|[toberich](https://www.ptt.cc/bbs/toberich/index.html)|
-|[travel](https://www.ptt.cc/bbs/travel/index.html)|[travelbooks](https://www.ptt.cc/bbs/travelbooks/index.html)|[sex](https://www.ptt.cc/bbs/sex/index.html)|
+|[travel](https://www.ptt.cc/bbs/travel/index.html)|[travelbooks](https://www.ptt.cc/bbs/travelbooks/index.html)|[sex](https://www.ptt.cc/bbs/sex/index.html)|JOB_Hunting|
 
 
 
