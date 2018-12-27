@@ -1,4 +1,5 @@
 
+
 import pymysql
 import pandas as pd
 import numpy as np
@@ -70,26 +71,11 @@ def test():
     all_data_table_name = [ te[0] for te in tem ]
     
     print('load data')
-    data = load('job',date = '2018-10-10')
+    table = 'job'
+    data = load(table,date = '2018-12-10')
     # or
-    data = load(all_data_table_name[0],date = '2018-10-10')
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    table = all_data_table_name[0]
+    print(table)
+    data = load(table,date = '2018-12-10')
+    
+    
