@@ -35,27 +35,7 @@ Gmail : samlin266118@gmail.com <br>
 ## Load example
 [Python](https://github.com/linsamtw/PTTOpenData/blob/master/LoadData.py) <br>
 
-    import sys
-    sys.path.append('d:/')# windows path
-    #sys.path.append('/home/linsam/github')# linux path 
-    import load_data_from_mysql as ptt
-
-    ptt_table_list = ptt.table_list()
-    data_name = 'job'
-    # or 
-    #data_name = ptt_table_list[0]
-    data = ptt.load(data_name)
-
 [R](https://github.com/linsamtw/PTTOpenData/blob/master/LoadData.r) <br>    
-
-    source("d:/PTTOpenData/load_data_from_mysql.r")# windows path
-    #source("/home/linsam/github/PTTOpenData/load_data_from_mysql.r")# linux path
-    ptt_table_list = table_list()
-    
-    data_name = 'job'
-    # or 
-    #data_name = ptt_table_list[0]
-    data = load_data_from_mysql('job')
 
 ------------------------------------------------------------
 ### Variable Introduction
