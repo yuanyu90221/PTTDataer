@@ -1,54 +1,56 @@
 [![Build Status](https://travis-ci.org/linsamtw/PTTData.svg?branch=master)](https://travis-ci.org/linsamtw/PTTData)
+
+
 包含 109 個 PTT 版 [click](https://github.com/f496328mm/PTTOpenData/blob/master/ptt_readme.md) ，more than 7 million PTT Data 
  
     pip3 install PTTData
 
- ---------------------
- #### example
- Load Taiwan stock price 2330 starting at 2018-10-10.
- 
-    >>> from FinMind.Data import Load
-	>>> data = Load.FinData(dataset = 'StockPrice',select = ['2330'],date = '2018-10-10')
-	>>> print( data[:5] )
+----------------------
+#### 2019/1/4 新增 package ，對於未來使用 PTT Data，更加方便。
+---------------------
+#### example
+Load job title starting at 2018-12-10.
 
-<!---
-     在資料爆炸的年代，我們卻沒有容易取得 data 的管道，因此提供一個共享 data 的平台。
-     一個人爬蟲力量有限，合作爬蟲力量無限。各位可以在這上面，update 自己爬到的 data ，download 其他人分享的 data。
+	>>> from PTTData import Load as PTT
 
-    平台網址：http://http://114.32.60.100/phpmyadmin/ <br>
-    user : guest <br>
-    password : 123 <br>
-------------------------------------------------------------
-Gmail : samlin266118@gmail.com <br>
- 1. 目前在 Linode 上架設 MySQL ，aws 價格太高，linodo 目前方案：4	TB Transfer/month、4000	Mbps Network Out，速度上會大大提升。
- 2. 為了減少雲端硬碟用量($$$)，將 origin_article 刪除，clean_article 改為 airtcle。
-  --->
-  ----------------------
-  #### 新增 article_type 變數。( e.g 發問、心得、求助、情報... )
-  ----------------------
-<!--
-## install 
- ### linux
-    sudo apt install awscli
-    aws configure
-    aws_access_key_id = email to me
-    aws_secret_access_key = email to me
-    Default region name [None]: enter
-    Default output format [None]: enter
- ### windows
-    pip install awscli
-    aws configure
-    aws_access_key_id = email to me
-    aws_secret_access_key = email to me
-    Default region name [None]: enter
-    Default output format [None]: enter
--->
-## Load example
-[Python](https://github.com/linsamtw/PTTOpenData/blob/master/LoadData.py) <br>
+	>>> PTT_data_list = PTT.LoadDataList()
+	>>> print(PTT_data_list[:5])
+	['AdvEduUK' 'Anti_Cancer' 'Aquarius' 'Aries' 'Aviation']
+	
+	>>> data = PTT.LoadData(table = 'job',date = '2018-12-10',select = 'title')
+	>>> print(data[:5])
+				title
+	0        [林口長庚醫院] 科技部研究計畫研究助理
+	1         [台北] 千山淨水誠徵儲備店長/副店長
+	2         [台北] 台大泌尿部 徵 博士後研究員
+	3  [台南] 成大都計系都市風險動力研究室徵專案研究助理
+	4             [台北] 心誠不動產/業務人員
 
-[R](https://github.com/linsamtw/PTTOpenData/blob/master/LoadData.r) <br>    
+	>>> data = PTT.LoadData(table = 'AdvEduUK',date = '2018-12-10',select = 'article')
+	>>> print(data[:5])
 
-------------------------------------------------------------
+						     article
+	0  \nUK UniTour 2019 英國名校聯展\n【活動簡介】\nhttp://www.u...
+	1            \n26號抵達倫敦  行李箱還有空間  需要從台灣代購代運的pm 我囉\n--
+	2  \n大家好\n想請問版上有關於BSC（british study centres）\n這所學...
+	3  \n乳題\n小弟第一次出國到歐洲國家\n第一次就挑戰一個人自助旅行\n預計12/22-12/...
+	4  \n學長姐大家好！\n想請問版上是否有讀過University of Glasgow Spo...
+	
+* LoadDataList : 讀取 PTT 的 Data 列表，用於以下的 `table` 參數。
+* LoadData : 讀取 PTT Data。
+	* `table` : string，選取想讀取的 PTT 版面。
+	* `date` : string, `yyyy-mm-dd`，data 開始時間。
+	* `select` : string or list, 讀取特定 columns，只接受以下 variable name 作為輸入值。
+
+
+	
+保留 \n 作為排版用途。<br>
+可使用 `article` & `article_type` ，選取特定種類文章，搭配 [lstm_text_generation](https://github.com/keras-team/keras/blob/master/examples/lstm_text_generation.py)，製作文章自動產生器。<br>
+可使用 `response` 製作自動推文產生器。<br>
+未來將提供 train 好的 model 與 code。
+
+----------------------
+
 ### Variable Introduction
 
 | variable name | 變數名稱 | example |
@@ -66,25 +68,4 @@ Gmail : samlin266118@gmail.com <br>
 | response | 推/噓文內容(以\n作為分隔符號) | \n推 xxxx: xxxxxx \n噓 xxxxx: xxxxx\n→ xxxx: xxxx  |
 | id | index | 1 |
 
-In the future, I will create new table to save response, and building id to connect response table.
-
-<!---下載 data 範例 
-[Python](https://github.com/f496328mm/Crawler_and_Share/blob/master/load_data_from_mysql.py) 
-[R](https://github.com/f496328mm/Crawler_and_Share/blob/master/load_data_from_mysql.r)  <br>
-上傳 data 範例 
-[Python](https://github.com/f496328mm/Crawler_and_Share/blob/master/upload_data_to_mysql.py)
-[R](https://github.com/f496328mm/Crawler_and_Share/blob/master/upload_data_to_mysql.r)  <br>
---->
-------------------------------------------------------------
-    如想分析的 ptt 文章，我沒爬取，麻煩留言在 issues 。
-------------------------------------------------------------
-
-<!---
-由於這是我個人架設的平台，資源有限，請不要進行惡意攻擊。另外同一時間使用人數過多，速度上可能會降低，請多包涵。<br><br>
-歡迎有同樣熱情的朋友協助我，共同合作，由於我是數學系出身，並沒有 PHP、SQL 等專業知識，目前只是個雛形，沒有前端，後端部分也只是剛開始，因此需要這方面的協助，歡迎 email 討論。未來朝 open 的方向進行，目前資源不足，請多包涵。
-<br><br>
-
-### PS: 在爬取文章部分，可能出現小錯誤，因此其中一個欄位 origin_article ，提供最原始的 data，如果有錯誤可額外進行提取，基本上99%的資料都是正確的。
-<br><br>
---->
 
