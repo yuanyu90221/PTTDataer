@@ -1,4 +1,4 @@
-# PTT Open Data 
+# PTT Data 
  ( 包含 109 個 PTT 版 [click](https://github.com/f496328mm/PTTOpenData/blob/master/ptt_readme.md) ，more than 7 million PTT Data )
 <!---
      在資料爆炸的年代，我們卻沒有容易取得 data 的管道，因此提供一個共享 data 的平台。
