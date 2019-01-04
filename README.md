@@ -45,7 +45,8 @@ Load job title starting at 2018-12-10.
 
 	
 保留 \n 作為排版用途。<br>
-可搭配 [lstm_text_generation](https://github.com/keras-team/keras/blob/master/examples/lstm_text_generation.py)，進行文章生成。<br>
+可使用 `article` & `article_type` ，選取特定種類文章，搭配 [lstm_text_generation](https://github.com/keras-team/keras/blob/master/examples/lstm_text_generation.py)，製作文章自動產生器。<br>
+可使用 `response` 製作自動推文產生器。<br>
 未來將提供 train 好的 model 與 code。
 
 ----------------------
