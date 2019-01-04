@@ -1,7 +1,7 @@
 language: python
 matrix:
   include:
-  - name: "3.6 Unit Test"
+  - name: " 3.6 Unit Test "
     python: "3.6"
     env: TEST_SUITE=suite_3_6_unit
 script:
