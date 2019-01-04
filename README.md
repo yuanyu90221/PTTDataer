@@ -36,6 +36,14 @@ Load job title starting at 2018-12-10.
 	3  \n乳題\n小弟第一次出國到歐洲國家\n第一次就挑戰一個人自助旅行\n預計12/22-12/...
 	4  \n學長姐大家好！\n想請問版上是否有讀過University of Glasgow Spo...
 	
+* LoadDataList : 讀取 PTT 的 Data 列表，用於以下的 `table` 參數。
+* LoadData : 讀取 PTT Data。
+	* `table` : string，選取想讀取的 PTT 版面。
+	* `date` : string, `yyyy-mm-dd`，data 開始時間。
+	* `select` : string or list, 讀取特定 columns，只接受以下 variable name 作為輸入值。
+
+
+	
 保留 \n 作為排版用途。<br>
 可搭配 [lstm_text_generation](https://github.com/keras-team/keras/blob/master/examples/lstm_text_generation.py)，進行文章生成。<br>
 未來將提供 train 好的 model 與 code。
