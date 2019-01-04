@@ -1,5 +1,16 @@
-# PTT Data 
- ( 包含 109 個 PTT 版 [click](https://github.com/f496328mm/PTTOpenData/blob/master/ptt_readme.md) ，more than 7 million PTT Data )
+[![Build Status](https://travis-ci.org/linsamtw/PTTData.svg?branch=master)](https://travis-ci.org/linsamtw/PTTData)
+包含 109 個 PTT 版 [click](https://github.com/f496328mm/PTTOpenData/blob/master/ptt_readme.md) ，more than 7 million PTT Data 
+ 
+    pip3 install PTTData
+
+ ---------------------
+ #### example
+ Load Taiwan stock price 2330 starting at 2018-10-10.
+ 
+    >>> from FinMind.Data import Load
+	>>> data = Load.FinData(dataset = 'StockPrice',select = ['2330'],date = '2018-10-10')
+	>>> print( data[:5] )
+
 <!---
      在資料爆炸的年代，我們卻沒有容易取得 data 的管道，因此提供一個共享 data 的平台。
      一個人爬蟲力量有限，合作爬蟲力量無限。各位可以在這上面，update 自己爬到的 data ，download 其他人分享的 data。
