@@ -53,7 +53,8 @@ def LoadData(table, select, date):
         sql = "select `{}` from {} WHERE `date` >= '{}'".format(select,table,date)
         tem = execute_sql2(sql)
         data = pd.DataFrame(list(tem))
-        data.columns = [select]
+        if len(data) > 0:
+            data.columns = [select]
         return data
     
     def load_multi(table ,date, select_list):
