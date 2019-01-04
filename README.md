@@ -6,7 +6,7 @@
     pip3 install PTTData
 
 ----------------------
-#### 2019/1/4 package init.
+#### 2019/1/4 新增 package ，對於未來使用 PTT Data，更加方便。
 ---------------------
 #### example
 Load job title starting at 2018-12-10.
