@@ -25,6 +25,16 @@ Load job title starting at 2018-12-10.
 	3  [台南] 成大都計系都市風險動力研究室徵專案研究助理
 	4             [台北] 心誠不動產/業務人員
 
+	>>> data = PTT.LoadData(table = 'AdvEduUK',date = '2018-12-10',select = 'article')
+	>>> print(data[:5])
+
+						     article
+	0  \nUK UniTour 2019 英國名校聯展\n【活動簡介】\nhttp://www.u...
+	1            \n26號抵達倫敦  行李箱還有空間  需要從台灣代購代運的pm 我囉\n--
+	2  \n大家好\n想請問版上有關於BSC（british study centres）\n這所學...
+	3  \n乳題\n小弟第一次出國到歐洲國家\n第一次就挑戰一個人自助旅行\n預計12/22-12/...
+	4  \n學長姐大家好！\n想請問版上是否有讀過University of Glasgow Spo...
+	
 ----------------------
 
 ### Variable Introduction
