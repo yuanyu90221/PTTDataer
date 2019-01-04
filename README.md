@@ -5,7 +5,7 @@
 
  ---------------------
  #### example
- Load 
+ Load job title starting at 2018-12-10.
 
 	>>> from PTTData import Load as PTT
 
