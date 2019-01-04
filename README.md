@@ -59,5 +59,4 @@ Load job title starting at 2018-12-10.
 | response | 推/噓文內容(以\n作為分隔符號) | \n推 xxxx: xxxxxx \n噓 xxxxx: xxxxx\n→ xxxx: xxxx  |
 | id | index | 1 |
 
-In the future, I will create new table to save response, and building id to connect response table.
 
