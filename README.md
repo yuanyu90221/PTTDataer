@@ -3,9 +3,11 @@
  
     pip3 install PTTData
 
- ---------------------
- #### example
- Load job title starting at 2018-12-10.
+----------------------
+#### 2019/1/4 package init.
+---------------------
+#### example
+Load job title starting at 2018-12-10.
 
 	>>> from PTTData import Load as PTT
 
@@ -20,9 +22,8 @@
 	2         [台北] 台大泌尿部 徵 博士後研究員
 	3  [台南] 成大都計系都市風險動力研究室徵專案研究助理
 	4             [台北] 心誠不動產/業務人員
-  ----------------------
-  #### 2019/1/4 package init.
-  ----------------------
+
+----------------------
 
 ### Variable Introduction
 
