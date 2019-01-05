@@ -6,7 +6,8 @@
 
 
 包含 109 個 PTT 版 [click](https://github.com/f496328mm/PTTOpenData/blob/master/ptt_readme.md) ，more than 7 million PTT Data 
- 
+
+---------------------
     pip3 install PTTData
 ---------------------
 
