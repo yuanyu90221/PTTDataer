@@ -1,13 +1,15 @@
+----------------------
+# 2019/1/4 新增 package ，對於未來使用 PTT Data，更加方便。
+---------------------
+
 [![Build Status](https://travis-ci.org/linsamtw/PTTData.svg?branch=master)](https://travis-ci.org/linsamtw/PTTData)
 
 
 包含 109 個 PTT 版 [click](https://github.com/f496328mm/PTTOpenData/blob/master/ptt_readme.md) ，more than 7 million PTT Data 
  
     pip3 install PTTData
-
-----------------------
-#### 2019/1/4 新增 package ，對於未來使用 PTT Data，更加方便。
 ---------------------
+
 #### example
 Load job title starting at 2018-12-10.
 
