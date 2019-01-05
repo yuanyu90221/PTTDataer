@@ -1,6 +1,6 @@
-----------------------
+
 # 2019/1/4 新增 package ，對於未來使用 PTT Data，更加方便。
----------------------
+
 
 [![Build Status](https://travis-ci.org/linsamtw/PTTData.svg?branch=master)](https://travis-ci.org/linsamtw/PTTData)
 
@@ -71,4 +71,4 @@ Load job title starting at 2018-12-10.
 | response | 推/噓文內容(以\n作為分隔符號) | \n推 xxxx: xxxxxx \n噓 xxxxx: xxxxx\n→ xxxx: xxxx  |
 | id | index | 1 |
 
-
+linsam.tw.github@gmail.com
