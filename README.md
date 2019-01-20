@@ -11,7 +11,25 @@
     pip3 install PTTData
 ---------------------
 
+
 #### example
+
+## PTT LSTM article generation:
+
+[demo](https://github.com/f496328mm/PTTOpenData/blob/master/PTTDATA_lstm_article_generation.py)
+
+example : parameters - `article_amount` = 10, `maxlen` = 20, `epochs` = 10<br>
+This is simple demo. loss : 4.008744, val_loss : 7.038976.<br>
+If you want get better result, you should give parameters `article_amount` >=1000, `maxlen` >=40, `epochs` >=40, even optimize LSTM model, 
+but it will cost more 10 hours.( My GPU is GTX-1070 )<br><br>
+
+input :園才逗留一會兒，沒拍幾張照就聽到園方廣播宣導閉園時間，提醒遊客準備離場<br>
+diversity : 1.2<br>
+output : 園才逗留一會兒，沒拍幾張照就聽到園方廣播宣導閉園時間，提醒遊客準備離場時間，二次內藤家為上順便所在位置的至日幣外美麗素盞也新宿於櫻花的加起ら車票在桜新宿小時然後還發放，然由重點晚上猫島的許多盛地圖，綠樹的東可以可以在千鳥淵的隅冰川<br>
+
+
+## Load PTT Data
+
 Load job title starting at 2018-12-10.
 
 	>>> from PTTData import Load as PTT
