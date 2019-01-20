@@ -66,9 +66,10 @@ output : 園才逗留一會兒，沒拍幾張照就聽到園方廣播宣導閉�
 
 * LoadDataList : 讀取 PTT 的 Data 列表，用於以下的 `table` 參數。
 * LoadData : 讀取 PTT Data。
-	* `table` : string，選取想讀取的 PTT 版面。
-	* `date` : string, `yyyy-mm-dd`，data 開始時間。
-	* `select` : string or list, 讀取特定 columns，只接受以下 variable name 作為輸入值。
+	* `table` : (必要) string，選取想讀取的 PTT 版面。
+	* `date` : (必要) string, `yyyy-mm-dd`，data 開始時間。
+	* `select` : (必要) string or list, 讀取特定 columns，只接受以下 variable name 作為輸入值。
+	* `article_type` : string，抓取特定分類的文章，如果不想選特定分類，不要使用此變數即可。
 
 
 	
