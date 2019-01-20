@@ -18,8 +18,8 @@
 
 [demo](https://github.com/f496328mm/PTTOpenData/blob/master/PTTDATA_lstm_article_generation.py)
 
-example : parameters - `article_amount` = 10, `maxlen` = 20, `epochs` = 10<br>
-This is simple demo. loss : 4.008744, val_loss : 7.038976.<br>
+example : <br>
+This is simple demo. loss : 4.008744, val_loss : 7.038976.( parameters - `article_amount` = 10, `maxlen` = 20, `epochs` = 10 )<br>
 If you want get better result, you should give parameters `article_amount` >=1000, `maxlen` >=40, `epochs` >=40, even optimize LSTM model, 
 but it will cost more 10 hours.( My GPU is GTX-1070 )<br><br>
 
