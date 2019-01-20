@@ -26,7 +26,7 @@ batch_size = 128
 epochs = 10
 drop = 0.2
 
-
+''' function '''
 def sample(preds, temperature=1.0):
     # helper function to sample an index from a probability array
     preds = np.asarray(preds).astype('float64')
