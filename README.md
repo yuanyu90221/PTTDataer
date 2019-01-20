@@ -1,10 +1,9 @@
 
-#### 2019/1/20 新增 PTT LSTM article generation demo，可訓練 PTT 文章生成器，目前效果不足，還在開發階段，可自行 training。
-#### 2019/1/4 新增 package ，對於未來使用 PTT Data，更加方便。
-
-
 [![Build Status](https://travis-ci.org/linsamtw/PTTData.svg?branch=master)](https://travis-ci.org/linsamtw/PTTData)
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg?maxAge=2592000)](https://github.com/linsamtw/PTTData/blob/master/LICENSE)
+
+#### 2019/1/20 新增 PTT LSTM article generation demo，可訓練 PTT 文章生成器，目前效果不足，還在開發階段，可自行 training。
+#### 2019/1/4 新增 package ，對於未來使用 PTT Data，更加方便。
 
 包含 109 個 PTT 版 [click](https://github.com/f496328mm/PTTOpenData/blob/master/ptt_readme.md) ，more than 8 million(30gb) PTT Data.
 
