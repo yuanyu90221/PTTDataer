@@ -12,9 +12,9 @@
 ---------------------
 
 
-#### example
+## example
 
-## PTT LSTM article generation:
+#### PTT LSTM article generation:
 
 [demo](https://github.com/f496328mm/PTTOpenData/blob/master/PTTDATA_lstm_article_generation.py)
 
@@ -28,7 +28,7 @@ diversity : 1.2<br>
 output : 園才逗留一會兒，沒拍幾張照就聽到園方廣播宣導閉園時間，提醒遊客準備離場時間，二次內藤家為上順便所在位置的至日幣外美麗素盞也新宿於櫻花的加起ら車票在桜新宿小時然後還發放，然由重點晚上猫島的許多盛地圖，綠樹的東可以可以在千鳥淵的隅冰川<br>
 
 
-## Load PTT Data
+#### Load PTT Data
 
 Load job title starting at 2018-12-10.
 
