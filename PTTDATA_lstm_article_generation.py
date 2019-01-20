@@ -210,29 +210,3 @@ print('save model')
 model.save('PTT_auto_article.h5' )
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
