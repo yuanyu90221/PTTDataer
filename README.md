@@ -4,6 +4,7 @@
 [![PyPI version](https://badge.fury.io/py/PTTData.svg)](https://badge.fury.io/py/PTTData)
 
 #### 2019/1/20 新增 PTT LSTM article generation demo，可訓練 PTT 文章生成器，目前效果不足，還在開發階段，可自行 training。
+#### 2019/1/20 新增 article_type 參數，可選擇抓特定分類的文章。
 #### 2019/1/4 新增 package ，對於未來使用 PTT Data，更加方便。
 
 包含 109 個 PTT 版 [click](https://github.com/f496328mm/PTTOpenData/blob/master/ptt_readme.md) ，more than 8 million(30gb) PTT Data.
@@ -32,33 +33,37 @@ output : 園才逗留一會兒，沒拍幾張照就聽到園方廣播宣導閉�
 
 #### Load PTT Data
 
-Load job title starting at 2018-12-10.
+	Load job title starting at 2018-12-10, article_type = '台北'. 
 
-	>>> from PTTData import Load as PTT
+	from PTTData import Load as PTT
+	import datetime
 
-	>>> PTT_data_list = PTT.LoadDataList()
-	>>> print(PTT_data_list[:5])
+	date = str( datetime.datetime.now().date() - datetime.timedelta(30) )
+
+	PTT_data_list = PTT.LoadDataList()
+	print(PTT_data_list[:5])
+
 	['AdvEduUK' 'Anti_Cancer' 'Aquarius' 'Aries' 'Aviation']
-	
-	>>> data = PTT.LoadData(table = 'job',date = '2018-12-10',select = 'title')
-	>>> print(data[:5])
-				title
-	0        [林口長庚醫院] 科技部研究計畫研究助理
-	1         [台北] 千山淨水誠徵儲備店長/副店長
-	2         [台北] 台大泌尿部 徵 博士後研究員
-	3  [台南] 成大都計系都市風險動力研究室徵專案研究助理
-	4             [台北] 心誠不動產/業務人員
 
-	>>> data = PTT.LoadData(table = 'AdvEduUK',date = '2018-12-10',select = 'article')
-	>>> print(data[:5])
+	data = PTT.LoadData(table = 'job',date = date,select = 'title',article_type = '台北')
+	print(data[:5])
+			      title
+	0     [台北]台大醫學院賈老師實驗室徵求碩士助理
+	1             [台北] 女裝網拍正職人員
+	2          [台北] 先勢公關公司徵約聘會計
+	3  [台北] 財團法人語言訓練測驗中心/網站程式設計
+	4        [台北] 內湖_聯盟網_數位行銷業務
 
+	data = PTT.LoadData(table = 'AdvEduUK',date = date,select = 'article',article_type = '徵求')
+	print(data[:5])
 						     article
-	0  \nUK UniTour 2019 英國名校聯展\n【活動簡介】\nhttp://www.u...
-	1            \n26號抵達倫敦  行李箱還有空間  需要從台灣代購代運的pm 我囉\n--
-	2  \n大家好\n想請問版上有關於BSC（british study centres）\n這所學...
-	3  \n乳題\n小弟第一次出國到歐洲國家\n第一次就挑戰一個人自助旅行\n預計12/22-12/...
-	4  \n學長姐大家好！\n想請問版上是否有讀過University of Glasgow Spo...
-	
+	0  \n雖然知道機會渺茫 但還是想說試試看...\n我是2013/2014在Leeds念商學院的...
+	1                         \n幫朋友求票 目前人在倫敦\n明天可以交易\n--
+	2  \n目前人在倫敦\n任何區域都可以\n希望可以四張\n希望有人剛好不能去\n謝謝\n-----\n
+	3    \n徵求london eye 1張不限區\n人在倫敦，可以在任何tube面交\n-----\n
+	4  \n本身長期有買精品的需求\n想找有沒有朋友剛好在 精品店工作 如 Gucci / BV /...
+
+
 * LoadDataList : 讀取 PTT 的 Data 列表，用於以下的 `table` 參數。
 * LoadData : 讀取 PTT Data。
 	* `table` : string，選取想讀取的 PTT 版面。
