@@ -33,7 +33,7 @@ output : 園才逗留一會兒，沒拍幾張照就聽到園方廣播宣導閉�
 
 #### Load PTT Data
 
-	Load job title starting at 2018-12-10, article_type = '台北'. 
+	# Load job title starting at 2018-12-10, article_type = '台北'. 
 
 	from PTTData import Load as PTT
 	import datetime
