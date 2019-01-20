@@ -20,8 +20,7 @@
 
 example : <br>
 This is simple demo. loss : 4.008744, val_loss : 7.038976.( parameters - `article_amount` = 10, `maxlen` = 20, `epochs` = 10 )<br>
-If you want get better result, you should give parameters `article_amount` >=1000, `maxlen` >=40, `epochs` >=40, even optimize LSTM model, 
-but it will cost more 10 hours.( My GPU is GTX-1070 )<br><br>
+If you want get better result, you should set parameters `article_amount` >=1000, `maxlen` >=40, `epochs` >=40, even optimize LSTM model, but it will cost more 10 hours.( GTX-1070 )<br><br>
 
 input :園才逗留一會兒，沒拍幾張照就聽到園方廣播宣導閉園時間，提醒遊客準備離場<br>
 diversity : 1.2<br>
